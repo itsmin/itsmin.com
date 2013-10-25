@@ -5,6 +5,8 @@ date:   2013-09-11 02:21:40
 categories: bikes, bicycles, two wheels, two feet
 ---
 
+_draft_
+
 Everyone, and I do mean everyone, has some memory of bicycles from their childhood. For me, the majority of those memories took place on dirt paths amongst trees and piles of leaves where I feared the creatures living within (you know, like squirrels). I had a worse-than-noname bike my mother bought from a fellow Korean American small business owner for an "acceptable" price to pay for a 6 year old's bike - about $20.
 
 It didn't matter tho, I was 8 (*this number will continue to change*). I had a bike! A shiny chrome BMX bike with a saddle, pedals, and spoke wheels. It even had the tube rollers on the crossbar and toptube, to protect my 8 year old face and nuts! At least, it didn't matter until the neighborhood kids saw it. I remember rolling it out to meet the friends down the street, how they had looks of jealousy on their faces when they weren't being blinded by the light reflecting off the frame. Then the only other kid who was able to read (he was still an idiot), read the label on the down tube, "Fling O! What's a Fling O?". "It's Flying-O". "I never heard of Fling O, it's stupid". After some awkward insults were exchanged, I walked my bike with the checkerboard finishline flag style tube covers home feeling decisively less proud. A little bit of my 9 and a half year old heart died that day.
@@ -18,7 +20,7 @@ A 12 year old shouldn't be riding a bike. I mean, we have parents at our beck an
 ---
 
 
-Several of years ago, I started work at a startup in San Francisco. My wife and I had just had our second baby child and I'd over done the sympathy weight gain. My coworkers (who are all good friends now) were all active and fit so I tentatively asked a few of them for advice on buying a bike. Just something I could use to occassionally commute, and ride around on the weekends with the boys. It had been decades since I'd touched a bicycle but I found myself gravitating towards a single speed BMX for grown ups. 
+Several years ago, I started work at a startup in San Francisco. My wife and I had just had our second child and I'd over done the sympathy weight gain. My coworkers (who are all good friends now) were all active and fit so I tentatively asked a few of them for advice on buying a bike. Just something I could use to occassionally commute, and ride around on the weekends with the boys. It had been decades since I'd touched a bicycle but I found myself gravitating towards a single speed BMX for grown ups. 
 
 When the family was out of town on their annual visit to the in laws', I found myself on a staggered travel schedule because of work. On weekends and after hours, I went on long rides along the reservoir, underneath the elevated rail tracks, up dirt trails nearby "hanted" houses decorated for Halloween. The single speed got it's handlebars chopped, and bar ends were installed then removed. Aero bars were installed then removed (after some very funny looks were thrown my way). Weight was lost, tools were bought, and the neighborhood we were raising our sons in grew "familiar".
 

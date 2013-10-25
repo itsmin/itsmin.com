@@ -5,7 +5,9 @@ date:   2013-10-17 02:21:40
 categories: tv, movies, UI, experience design
 ---
 
-I've always been a bit of a media glutton, collecting well over 500 DVDs during my college years, and hundreds of VHS tapes written and rewritten with the anime or kungfu flick dujour. A shared cable line in an off campus apartment brought about the KPOP music videos, TV commercials and "naughty" clips library. The point is, I've always gone out of the way to not only watch, but gather, manage and share my media collections.
+_draft_
+
+I've always been a bit of a media glutton, collecting well over 500 DVDs during my college years, and hundreds of VHS tapes written and rewritten with the anime or kungfu flick dujour. A shared cable line in an off campus apartment brought about the KPOP music videos and TV commercials library. The point is, I've always gone out of the way to not only watch, but gather, manage and share my media collections.
 
 Fast forward several years and moves of several large/heavy boxes (full of DVDs, CDs, VCDs and hard drives) and I found myself as the sole design and user experience resource at a small startup called [CastTV][casttv]. CastTV, in a nutshell, was a video search engine made visible to the public via a consumer website. 
 
