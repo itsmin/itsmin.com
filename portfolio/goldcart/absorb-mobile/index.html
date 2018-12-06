@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html manifest="cache-manifest.manifest">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width; height=device-height; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon-precomposed" href="touch-icon.png">
+	<link rel="apple-touch-startup-image" href="splash-chrome.png">
+	<title>absOrb</title>
+	<style type="text/css">
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: #000;
+			color: white;
+		}
+
+		* {
+			-webkit-tap-highlight-color: transparent;
+		   	-webkit-user-select: none;    	
+		}
+		
+		#effect_toolbar { display:none; }
+		
+		#effect_port > div {
+			-webkit-transform: translate3d(0px, 0px, 0px) scale(1);
+			-webkit-transform-origin: 0px 0px;
+		}
+	</style>
+</head>
+<body>
+	<!-- <script type="text/javascript" src="/effect/api/play.js?game=chrome-absorb&rev=0.5a&mode=standard"></script> -->
+
+<script type="text/javascript" src="engine/EffectEngine.js"></script>
+<script type="text/javascript" src="chrome-absorb.js"></script>
+
+	<script language="JavaScript">
+		if (1 || ua.iphone || ua.ipad) {
+			if (0 && !window.navigator.standalone) {
+				$G.init = function() {}; // prevent engine from loading
+				el('effect_container').style.display = 'none';
+				document.write( '<br/><br/><table cellspacing="0" cellpadding="0" width="100%" height="100%"><tr><td align="center" valign="center"><img src="assets/images/logos/logos_title_blue.png"/><br/><br/><span style="font-family:Helvetica; font-size:18pt; color:#0D75BB;">Touch the "<b>+</b>" button below to install absOrb to your home screen.</span></td></tr></table>' );
+			}
+			else {
+				// in standalone mode, safari's user-agent string doesn't contain "Version/..." -- cripes
+				ua.safari2 = false;
+				ua.safari3 = true;
+				
+				// speed up load time by bypassing audio check -- we know audio isn't supported in mobile safari
+				gAudio.enabled = false;
+				var q = $G.getQuery();
+				q.effect_audio = 0;
+				var d = $G.getGameDef();
+				d.AudioEnabled = 0;
+			}
+		}
+		
+		$G.preloadSprite( 'MobileColorSwitch' );
+		
+		var firstTouch = true;
+		
+		$G.addEventListener( 'loadgame', function() {
+			var ap = document.getElementById('audio_player');
+			if (ap) ap.parentElement.removeChild(ap);
+			
+			$P.div.ontouchstart = function(e) {
+				if ($G.inGame) {
+					var pt = new Point( e.touches[0].screenX, e.touches[0].screenY );
+					
+					if (firstTouch) {
+						$G.mousePt = pt;
+						firstTouch = false;
+					}
+				
+					if (absorb.ui) {
+						var sprite = absorb.ui.lookupSpriteFromScreen(pt);
+						if (sprite && sprite.onMouseUp) {
+							sprite.onMouseUp();
+							return stop_event(e);
+						}
+						
+						absorb.ui.findSpritesByPoint(pt).each( function(sprite) {
+							if (sprite.onMouseUp) sprite.onMouseUp();
+						} );
+					}
+					if (absorb.hud) {
+						var sprite = absorb.hud.lookupSpriteFromScreen(pt);
+						if (sprite && sprite.onMouseUp) {
+							sprite.onMouseUp();
+							return stop_event(e);
+						}
+					}
+					if (absorb.splane) {
+						var sprite = absorb.splane.lookupSpriteFromScreen(pt);
+						if (sprite && sprite.onMouseUp) {
+							sprite.onMouseUp();
+							return stop_event(e);
+						}
+					}
+				
+					$G.mousePt = pt;
+					return stop_event(e);
+				}
+				else return true;
+			};
+			
+			$P.div.ontouchmove = function(e) {
+				if ($G.inGame) {
+					var pt = new Point( e.touches[0].screenX, e.touches[0].screenY );
+					$G.mousePt = pt;
+					return stop_event(e);
+				}
+				else return true;
+			};
+			
+			$P.div.ontouchend = function(e) {
+				return true;
+			};
+		} );
+	</script>
+</body>
+</html>

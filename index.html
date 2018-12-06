@@ -1,13 +1,59 @@
----
-layout: default
-title: itsmin
----
+<HTML>
+<HEAD>
+  <TITLE>its.min</TITLE>
+  <meta name="viewport" content="width=320" />
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript">
 
-<div id="home">
-  <!-- <h1>Blog Posts</h1> -->
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><!-- <span>{{ post.date | date_to_string }}</span> &nbsp;  --><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+	</script>
+</HEAD>
+
+<BODY>
+
+<div id="container">
+  <div id="canvas">
+    <div id="logo">
+    	<ul>
+    	  <li class="dark"></li>
+    	  <li class="dark"></li>
+    	  <li class="dark"></li>
+    	  <li class="neutral"></li>
+    	</ul>
+    	<ul>
+    	  <li class="neutral"></li>
+    	  <li></li>
+    	  <li></li>
+    	  <li class="neutral"></li>
+    	</ul>
+    	<ul>
+    	  <li class="neutral"></li>
+    	  <li></li>
+    	  <li></li>
+    	  <li class="neutral"></li>
+    	</ul>
+    	<ul>
+    	  <li class="neutral"></li>
+    	  <li class="neutral"></li>
+    	  <li class="neutral"></li>
+    	  <li class="light"></li>
+    	</ul>
+  	</div>
+  	<ul id="info">
+      <li><a href="portfolio/index.html" target="_blank">Min Chang</a></li>
+  	  <li>
+  	    Creativity & Craftsmanship
+  	  </li>
+  	  <li>
+  	    <a href="resume/minchang_resume-2019.pdf" target="_blank">Resum&eacute;</a> |
+        <a href="http://www.linkedin.com/pub/min-chang/0/447/459" target="_blank">LinkedIn</a>
+  	  </li>
+      <li>
+  	    <a href="portfolio/index.html" target="_blank">Portfolio</a>
+  	  </li>
+
+  	</ul>
+  </div>
 </div>
+
+</BODY>
+</HTML>

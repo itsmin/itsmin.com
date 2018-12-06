@@ -1,0 +1,139 @@
+/* Fortris 1.0 CSS */
+/* Copyright (c) 2011 GoldCartridge LLC */
+
+* {
+	-webkit-tap-higlight-color: transparent;
+   	-webkit-user-select: none;	
+}
+
+body {
+	background-color: #000;
+}
+
+#game_port {
+	background: url(images/backgrounds/main.png) no-repeat 0px 0px #000;
+}
+
+@font-face {
+	font-family: 'DINEngschriftStd';
+	src: url(fonts/DINEngschriftStd.otf);
+}
+@font-face {
+	font-family: 'DINMittelschriftStd';
+	src: url(fonts/DINMittelschriftStd.otf);
+}
+
+.clear { clear: both }
+
+#load_logo {
+	background: url(images/misc/goldcartridge_logo.gif) no-repeat center;
+}
+
+#playfield_bkgnd {
+	background: url(images/backgrounds/playfield.png) no-repeat 0px 0px;
+}
+
+#icon_rotate {
+	background: url(images/ui/rotate.png) no-repeat 0px 0px;
+}
+
+div.tile {
+	width: 20px;
+	height: 20px;
+}
+div.tile.next {
+	background: url(images/tiles/next.png) no-repeat 0px 0px;
+}
+div.tile.floating {
+	background: url(images/tiles/floating.png) no-repeat 0px 0px;
+}
+div.tile.placed {
+	background: url(images/tiles/placed.png) no-repeat 0px 0px;
+}
+
+div.ingame_thin_divider {
+	background: rgb(64, 64, 64);
+}
+
+div.ingame_double_border {
+	border: 3px double rgb(72, 72, 72);
+}
+
+#ingame_title {
+	background: url(images/ui/ingame-logo.png) no-repeat 0px 0px;
+}
+
+#ingame_timer {
+	background: url(images/ui/ingame-timer.png) no-repeat 0px 0px;
+}
+
+#ingame_level {
+	background: url(images/ui/ingame-level.png) no-repeat 0px 0px;
+}
+
+#ingame_score {
+	background: url(images/ui/ingame-score.png) no-repeat 0px 0px;
+}
+
+div.icon_button {
+	background: url(images/ui/icon-buttons.png) no-repeat 0px 0px;
+	cursor: pointer;
+}
+
+div.icon_button.music_on {
+	background-position: -132px 0px;
+}
+div.icon_button.music_off {
+	background-position: -176px 0px;
+}
+div.icon_button.sound_on {
+	background-position: 0px 0px;
+}
+div.icon_button.sound_off {
+	background-position: -44px 0px;
+}
+
+div.projectile {
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	width: 60px;
+	height: 120px;
+}
+div.projectile.shadows {
+	-webkit-mask-image: url(images/projectiles/mask-shadows.png);
+	z-index: 1;
+}
+div.projectile.midtones {
+	-webkit-mask-image: url(images/projectiles/mask-midtones.png);
+	z-index: 2;
+}
+div.projectile.highlights {
+	background-image: url(images/projectiles/mask-highlights.png);
+	z-index: 3;
+}
+
+div.plume {
+	background-image: url(images/misc/plume.png);
+}
+
+div.particle {
+	position: absolute;
+}
+
+div.debris {
+	background: url(images/tiles/debris.png) no-repeat 0px 0px;
+}
+
+div.alertnib {
+	width: 20px;
+	height: 20px;
+	background-image: url(images/misc/alert-nib-overlay.png);
+	background-position: 0px 0px;
+	-webkit-mask-image: url(images/misc/alert-nib-mask.png);
+	-webkit-mask-position: 0px 0px;
+}
+div.alertnib.pre {
+	background-position: -20px 0px;
+	-webkit-mask-position: -20px 0px;
+}

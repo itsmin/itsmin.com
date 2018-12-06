@@ -1,0 +1,79 @@
+/* CSS for Gold Cartridge Game Engine */
+/* Copyright (c) 2010 Joseph Huckaby */
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#game_port {
+	position: absolute;
+	overflow: hidden;
+}
+
+#preloader {
+	z-index: 99;
+}
+
+#load_logo {
+	position: relative;
+	width: 256px;
+	height: 256px;
+}
+
+#load_bar {
+	position: relative;
+	overflow: hidden;
+	width: 256px;
+	height: 15px;
+	background: transparent;
+	border: 2px solid #888;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#load_bar_inner {
+	position: absolute;
+	top: 0px;
+	left: -256px;
+	width: 256px;
+	height: 15px;
+	background-color: #444;
+}
+
+div.sprite {
+	position: absolute;
+	
+	-webkit-transform: translate3d(0px, 0px, 0px) scale(1);
+	-webkit-transform-origin: 50% 50%;
+	
+	-moz-transform: translate(0px 0px) scale(1);
+	-moz-transform-origin: 50% 50%;
+	
+	-o-transform: translate(0px 0px) scale(1);
+	-o-transform-origin: 50% 50%;
+	
+	transform: translate(0px 0px) scale(1);
+	transform-origin: 50% 50%;
+}
+
+#debug_widget {
+	position: fixed;
+	left: 10px;
+	top: 10px;
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid #aaa;
+	background: rgba(0, 0, 0, 0.75);
+	font-family: Monoaco, Courier, monospace;
+	font-size: 8pt;
+	color: #aaa;
+}
+#debug_widget > input {
+	background: #000;
+	font-family: Monoaco, Courier, monospace;
+	font-size: 8pt;
+}

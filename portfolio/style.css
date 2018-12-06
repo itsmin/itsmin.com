@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+  font-family: helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: -0.5;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h3 {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+a {
+	color: #999;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover {
+	color: #6699CC;
+	text-decoration: none;
+}
+
+del {
+	color: #999;
+}
+del a {
+	text-transform: none;
+}
+
+#viewport {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  margin: 50px auto;
+  padding: 0;
+  width: 1000px;
+  max-height: 100%;
+  background: #FFF;
+	border-top: solid 5px #111;
+}
+
+#title {
+	float: left;
+	clear: none;
+	margin: 0 5px 0 0;
+  width: 95px;
+  height: 200px;
+	border-bottom: solid 5px #111;
+}
+#title span {
+	float: right;
+	clear: right;
+	display: block;
+	margin: 25px 15px 0 0;
+	font-size: 35px;
+	font-weight: 300;
+	line-height: 28px;
+}
+span#name {
+	margin: 0 15px 25px 0;
+	font-weight: 400;
+}
+#title a {
+	float: right;
+	clear: right;
+	margin: 0 15px 0 0;
+}
+
+#canvas {
+	float: left;
+  margin: 0;
+  padding: 0;
+  width: 900px;
+  height: auto;
+}
+
+#nav {
+	float: left;
+	margin: 0 5px 100px 0;
+	padding: 0;
+	width: 195px;
+	min-height: 200px;
+	height: 800px;
+	background: #FFF;
+	border-bottom: solid 5px #111;
+}
+#nav ul {
+	margin: 0 15px 16px 15px;
+	max-width: 165px;
+}
+#nav ul li {
+	font-size: 12px;
+}
+#nav ul li em {
+	text-transform: none;
+}
+
+#nav ul li ul {
+	margin-bottom: 0;
+}
+#nav ul li ul li:last-child {
+	margin-bottom: 0;
+}
+
+#work_casttv li:first-child {
+	margin: 25px 0 0 0;
+}
+#play_effect li:last-child {
+	margin: 0 0 25px 0;
+}
+
+#complete {
+  margin: 25px 0;
+}
+#complete li:last-child {
+  margin: 0 0 25px 0;
+}
+
+#main {
+	float: left;
+  margin: 0 0 100px 0;
+  padding: 0;
+  width: 700px;
+  height: 800px;
+  overflow: auto;
+  background: #EFEFEF url(../images/tile_grid.png) repeat;
+	border: none;
+	border-bottom: solid 5px #111;
+}
