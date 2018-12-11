@@ -100,6 +100,7 @@ del a {
   overflow: auto;
 }
 #viewport #container #canvas #nav ul {
+  margin: 0 15px 16px 15px;
   max-width: 165px;
 }
 #viewport #container #canvas #nav ul li {
