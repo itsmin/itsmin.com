@@ -48,26 +48,23 @@ del a {
   width: 100%;
   height: 100%;
 }
-
-#container {
-  margin: 50px auto;
+#viewport #container {
+  margin: 50px;
   padding: 0;
-  width: 1000px;
-  max-height: 100%;
-  background: #FFF;
-  border-top: solid 5px #111;
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  background: white;
+  border-top: solid 5px #121212;
 }
-
-#title {
+#viewport #container #title {
   float: left;
   clear: none;
   margin: 0 5px 0 0;
   width: 95px;
   height: 200px;
-  border-bottom: solid 5px #111;
+  border-bottom: solid 5px #121212;
 }
-
-#title span {
+#viewport #container #title span {
   float: right;
   clear: right;
   display: block;
@@ -76,72 +73,68 @@ del a {
   font-weight: 300;
   line-height: 28px;
 }
-
-span#name {
+#viewport #container #title span#name {
   margin: 0 15px 25px 0;
   font-weight: 400;
 }
-
-#title a {
+#viewport #container #title a {
   float: right;
   clear: right;
   margin: 0 15px 0 0;
 }
-
-#canvas {
+#viewport #container #canvas {
   float: left;
   margin: 0;
   padding: 0;
-  width: 900px;
-  height: auto;
-  border-bottom: solid 5px #111;
+  width: calc(100% - 100px);
+  height: 100%;
+  border-bottom: solid 5px #121212;
+  overflow: auto;
 }
-
-#nav {
+#viewport #container #canvas #nav {
   float: left;
-  margin: 0 5px 100px 0;
+  margin: 0 5px 0 0;
   padding: 0;
   width: 195px;
   min-height: 200px;
-  height: 800px;
-  background: #FFF;
+  background: white;
 }
-#nav:first-child {
+#viewport #container #canvas #nav:first-child {
   margin-top: 25px;
 }
-#nav ul {
+#viewport #container #canvas #nav ul {
   margin: 0 15px 16px 15px;
   max-width: 165px;
 }
-#nav ul li {
+#viewport #container #canvas #nav ul li {
   font-size: 12px;
 }
-#nav ul li em {
+#viewport #container #canvas #nav ul li em {
   text-transform: none;
 }
-#nav ul li ul {
+#viewport #container #canvas #nav ul li ul {
   margin-bottom: 0;
 }
-#nav ul li ul li:last-child {
+#viewport #container #canvas #nav ul li ul li:last-child {
   margin-bottom: 0;
 }
-#nav ul #play_effect li:last-child {
+#viewport #container #canvas #nav ul #play_effect li:last-child {
   margin: 0 0 25px 0;
 }
-#nav ul #complete {
+#viewport #container #canvas #nav ul #complete {
   margin: 25px 0;
 }
-#nav ul #complete li:last-child {
+#viewport #container #canvas #nav ul #complete li:last-child {
   margin: 0 0 25px 0;
 }
-
-#main {
+#viewport #container #canvas #main {
   float: left;
+  margin: 0;
   padding: 0;
-  width: 700px;
-  height: 800px;
+  width: calc(100% - 200px);
+  height: 100%;
   overflow: auto;
-  background: #EFEFEF url(../images/tile_grid.png) repeat;
+  background: #f0f0f0;
   border: none;
 }
 
