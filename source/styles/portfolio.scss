@@ -1,46 +1,44 @@
 body {
-  margin: 0;
+	margin: 0;
   padding: 0;
-  background: #FFF;
+  background: hsl(0, 0%, 100%);
   font-family: helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: -0.5;
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
 }
 
-ul, li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
+
 
 h3 {
 	margin: 0;
 	font-size: 12px;
 	font-weight: 400;
 }
-
 a {
-	color: #999;
+	color: hsl(0, 0%, 60%);
 	font-size: 12px;
 	font-weight: 400;
 	text-decoration: none;
 	text-transform: uppercase;
+	&:hover {
+		color: hsl(210, 50%, 60%);
+		text-decoration: none;
+	}
 }
-a:hover {
-	color: #6699CC;
-	text-decoration: none;
-}
-
 p {
-	color: #999;
+	color: hsl(0, 0%, 60%);
 }
-
 del {
-	color: #999;
-}
-del a {
-	text-transform: none;
+	color: hsl(0, 0%, 60%);
+	a {
+		text-transform: none;
+	}
 }
 
 #viewport {
@@ -91,7 +89,8 @@ span#name {
   margin: 0;
   padding: 0;
   width: 900px;
-  height: auto;
+	height: auto;
+	border-bottom: solid 5px #111;
 }
 
 #nav {
@@ -102,48 +101,56 @@ span#name {
 	min-height: 200px;
 	height: 800px;
 	background: #FFF;
-	border-bottom: solid 5px #111;
-}
-#nav ul {
-	margin: 0 15px 16px 15px;
-	max-width: 165px;
-}
-#nav ul li {
-	font-size: 12px;
-}
-#nav ul li em {
-	text-transform: none;
+	&:first-child {
+		margin-top: 25px;
+	}
+	ul {
+		margin: 0 15px 16px 15px;
+		max-width: 165px;
+		li {
+			font-size: 12px;
+			em {
+				text-transform: none;
+			}
+			ul {
+				margin-bottom: 0;
+				li {
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		#play_effect {
+			li {
+				&:last-child {
+					margin: 0 0 25px 0;
+				}
+			}
+		}
+		#complete {
+			margin: 25px 0;
+			li {
+				&:last-child {
+					margin: 0 0 25px 0;
+				}
+			}
+		}
+	}
 }
 
-#nav ul li ul {
-	margin-bottom: 0;
-}
-#nav ul li ul li:last-child {
-	margin-bottom: 0;
-}
 
-#work_ge>li:first-child {
-	margin: 25px 0 0 0;
-}
-#play_effect li:last-child {
-	margin: 0 0 25px 0;
-}
 
-#complete {
-  margin: 25px 0;
-}
-#complete li:last-child {
-  margin: 0 0 25px 0;
-}
+
 
 #main {
 	float: left;
-  margin: 0 0 100px 0;
+  // margin: 0 0 100px 0;
   padding: 0;
   width: 700px;
   height: 800px;
   overflow: auto;
   background: #EFEFEF url(../images/tile_grid.png) repeat;
 	border: none;
-	border-bottom: solid 5px #111;
+	// border-bottom: solid 5px #111;
 }
