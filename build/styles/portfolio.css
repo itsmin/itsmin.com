@@ -100,7 +100,6 @@ del a {
   overflow: auto;
 }
 #viewport #container #canvas #nav ul {
-  margin: 0 15px 16px 15px;
   max-width: 165px;
 }
 #viewport #container #canvas #nav ul li {
@@ -116,13 +115,7 @@ del a {
   margin-bottom: 0;
 }
 #viewport #container #canvas #nav ul#work_index {
-  margin-top: 25px;
-}
-#viewport #container #canvas #nav ul #complete {
-  margin: 25px 0;
-}
-#viewport #container #canvas #nav ul #complete li:last-child {
-  margin: 0 0 25px 0;
+  margin: 25px 15px;
 }
 #viewport #container #canvas #main {
   float: left;

@@ -93,7 +93,6 @@ del {
 				background: hsl(0, 0%, 100%);
 				overflow: auto;
 				ul {
-					margin: 0 15px 16px 15px;
 					max-width: 165px;
 					li {
 						font-size: 12px;
@@ -110,15 +109,7 @@ del {
 						}
 					}
 					&#work_index {
-						margin-top: 25px;
-					}
-					#complete {
-						margin: 25px 0;
-						li {
-							&:last-child {
-								margin: 0 0 25px 0;
-							}
-						}
+						margin: 25px 15px;
 					}
 				}
 			}
