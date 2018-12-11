@@ -40,15 +40,15 @@ del {
 }
 
 #viewport {
-  margin: 0;
+  margin: 50px;
   padding: 0;
-  width: 100%;
-	height: 100%;
+  width: calc(100% - 100px);
+	height: calc(100% - 100px);
 	#container {
-		margin: 50px;
+		margin: 0;
 		padding: 0;
-		width: calc(100% - 100px);
-		height: calc(100% - 100px);
+		width: 100%;
+		height: 100%;
 		background: hsl(0, 0%, 100%);
 		border-top: solid 5px hsl(0, 0%, 7%);
 		#title {
@@ -84,20 +84,21 @@ del {
 			width: calc(100% - 100px);
 			height: 100%;
 			border-bottom: solid 5px hsl(0, 0%, 7%);
-			overflow: auto;
+			// overflow: auto;
 			#nav {
 				float: left;
 				margin: 0 5px 0 0;
 				padding: 0;
 				width: 195px;
-				min-height: 200px;
+				height: 100%;
 				background: hsl(0, 0%, 100%);
-				&:first-child {
-					margin-top: 25px;
-				}
+				overflow: auto;
 				ul {
 					margin: 0 15px 16px 15px;
 					max-width: 165px;
+					&:first-child {
+						margin-top: 25px;
+					}
 					li {
 						font-size: 12px;
 						em {

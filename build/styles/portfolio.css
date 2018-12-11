@@ -43,16 +43,16 @@ del a {
 }
 
 #viewport {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-#viewport #container {
   margin: 50px;
   padding: 0;
   width: calc(100% - 100px);
   height: calc(100% - 100px);
+}
+#viewport #container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   background: white;
   border-top: solid 5px #121212;
 }
@@ -89,22 +89,22 @@ del a {
   width: calc(100% - 100px);
   height: 100%;
   border-bottom: solid 5px #121212;
-  overflow: auto;
 }
 #viewport #container #canvas #nav {
   float: left;
   margin: 0 5px 0 0;
   padding: 0;
   width: 195px;
-  min-height: 200px;
+  height: 100%;
   background: white;
-}
-#viewport #container #canvas #nav:first-child {
-  margin-top: 25px;
+  overflow: auto;
 }
 #viewport #container #canvas #nav ul {
   margin: 0 15px 16px 15px;
   max-width: 165px;
+}
+#viewport #container #canvas #nav ul:first-child {
+  margin-top: 25px;
 }
 #viewport #container #canvas #nav ul li {
   font-size: 12px;
