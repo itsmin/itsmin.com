@@ -84,7 +84,6 @@ del {
 			width: calc(100% - 100px);
 			height: 100%;
 			border-bottom: solid 5px hsl(0, 0%, 7%);
-			// overflow: auto;
 			#nav {
 				float: left;
 				margin: 0 5px 0 0;
@@ -96,9 +95,6 @@ del {
 				ul {
 					margin: 0 15px 16px 15px;
 					max-width: 165px;
-					&:first-child {
-						margin-top: 25px;
-					}
 					li {
 						font-size: 12px;
 						em {
@@ -113,12 +109,8 @@ del {
 							}
 						}
 					}
-					#play_effect {
-						li {
-							&:last-child {
-								margin: 0 0 25px 0;
-							}
-						}
+					&#work_ge {
+						margin-top: 25px;
 					}
 					#complete {
 						margin: 25px 0;
