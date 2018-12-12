@@ -62,6 +62,7 @@ del a {
   margin: 0 5px 0 0;
   width: 95px;
   height: 200px;
+  overflow: hidden;
   border-bottom: solid 5px #121212;
 }
 #viewport #container #title span {
