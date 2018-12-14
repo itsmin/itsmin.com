@@ -1,0 +1,325 @@
+@import
+  "reset.scss",
+  "visual_elements.scss",
+  "mantle_components.scss"
+  ;
+
+.notification_pop_dismiss {
+  opacity: 0 !important;
+  z-index: -10;
+}
+.notification_pop_open {
+  top: 0 !important;
+}
+.notification_pop {
+  position: absolute;
+  top: -100%;
+  transition: all 0.8s ease-out;
+}
+
+// CONTENT SPECFIC CLASSES
+#content {
+  .dashboard {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    .dashboard_body {
+      .widget {
+        &:nth-child(1) {
+          animation: widget_build 0.5s ease-in 0.5s 1 forwards;
+        }
+        &:nth-child(2) {
+          animation: widget_build 0.5s ease-in 1s 1 forwards;
+        }
+      }
+      .production-over-time {
+        .action_bar {
+          display: none;
+        }
+        .kpi_bars {
+          float: left;
+          clear: left;
+          margin: 10px 20px;
+          width: calc(100% - calc(20px * 2));
+          li {
+            float: left;
+            clear: left;
+            margin: 15px 0;
+            width: 100%;
+            h4 {
+              float: left;
+              clear: left;
+              line-height: 0;
+            }
+            .kpi_value {
+              float: left;
+              clear: left;
+              font-size: $txt_5;
+            }
+            .kpi_unit {
+              float: left;
+              clear: none;
+              margin: 0 0 -15px 5px;
+              font-size: $txt_1;
+              line-height: $txt_7;
+            }
+            .kpi_avg {
+              float: right;
+              clear: none;
+              margin: 0 0 -15px 0;
+              font-size: $txt_1;
+              line-height: $txt_7;
+              &:before {
+                content: "AVG ";
+                font-size: $txt_1;
+                text-transform: uppercase;
+              }
+            }
+            .kpi_bar {
+              float: left;
+              clear: left;
+              display: block;
+              width: 100%;
+              height: 5px;
+              background: rgba($ui_light_1,0.25);
+              &:last-child {
+                margin-bottom: 5px;
+              }
+              .bar_value {
+                height: 5px;
+                &.bar_oil {
+                  width: 0%;
+                  background: $ui_green_1;
+                  animation: bar_build_oil 0.5s ease-out 0.75s 1 forwards;
+                  @keyframes bar_build_oil {
+                    0%   { width: 1%; filter: blur(10px); }
+                    100% { width: 75%; filter: blur(0); }
+                  }
+                }
+                &.bar_water {
+                  width: 0%;
+                  background: $ui_blue_1;
+                  animation: bar_build_water 0.5s ease-out 1.25s 1 forwards;
+                  @keyframes bar_build_water {
+                    0%   { width: 1%; filter: blur(10px); }
+                    100% { width: 50%; filter: blur(0); }
+                  }
+                }
+                &.bar_gas {
+                  width: 0%;
+                  background: $ui_yellow_1;
+                  animation: bar_build_gas 0.5s ease-out 1.75s 1 forwards;
+                  @keyframes bar_build_gas {
+                    0%   { width: 1%; filter: blur(10px); }
+                    100% { width: 15%; filter: blur(0); }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .production-by-region {
+        .view_map {
+          height: 240px;
+          .pin_icon {
+            display: block;
+            width: 25px;
+            height: 25px;
+            -webkit-mask: url(../media/icon_pin.svg) no-repeat 1px 1px;
+            -webkit-mask-size: 20px;
+
+            &.pin_green {
+              margin: 10% 0 0 50%;
+              background: $ui_green_1;
+              opacity: 0;
+              animation: pin_drop_green 0.25s ease-out 2s 1 forwards;
+              @keyframes pin_drop_green {
+                0%   { opacity: 0; }
+                100% { opacity: 1; }
+              }
+            }
+            &.pin_yellow {
+              margin: 0 0 0 calc(50% - 10px);
+              background: $ui_yellow_1;
+              opacity: 0;
+              animation: pin_drop_yellow 0.25s ease-out 2.25s 1 forwards;
+              @keyframes pin_drop_yellow {
+                0%   { opacity: 0; }
+                100% { opacity: 1; }
+              }
+            }
+            &.pin_red {
+              margin: 0 0 0 calc(50% + 15px);
+              background: $ui_red_1;
+              opacity: 0;
+              animation: pin_drop_red 0.25s ease-out 2.5s 1 forwards;
+              @keyframes pin_drop_red {
+                0%   { opacity: 0; }
+                100% { opacity: 1; }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  .notifications_open {
+    top: 0 !important;
+    transition: all 0.2s ease-out !important;
+    .list {
+      margin: 0 !important;
+      .list_hd {
+        display: block !important;
+      }
+      .list_body {
+        height: calc(100% - 55px) !important;
+        .list_row {
+          // Controls BUILD ANIMATION
+          display: block !important;
+        }
+      }
+    }
+  }
+  .notifications {
+    position: absolute;
+    top: calc(-100% - 55px);
+    z-index: 800;
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s ease-in;
+    .notifications_body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      h2 {
+        float: left;
+        margin-left: 15px;
+        font-size: $txt_2;
+        line-height: $txt_4;
+        text-transform: uppercase;
+      }
+      .icon_facets {
+        float: right;
+        clear: none;
+        display: block;
+        margin: 15px 5px 0 0;
+        width: 40px;
+        height: $txt_4;
+        -webkit-mask: url(../media/icon_facets.svg) no-repeat 4px 4px;
+        mask: url(../media/icon_facets.svg) no-repeat 4px 4px;
+        transition: all 0.2s ease-out;
+        &:hover {
+          transition: all 0.4s ease-out;
+        }
+      }
+      .list {
+        .list_hd {
+          display: none;
+        }
+        .list_body {
+          .list_row {
+            display: none;
+            // opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .results {
+    display: none;
+  }
+  .search_results_open {
+    top: 0 !important;
+    transition: all 0.2s ease-out !important;
+    .search_results_body {
+      .list {
+        position: absolute;
+        top: 55px;
+        z-index: 10;
+        margin: 0 !important;
+        .list_hd {
+          display: block !important;
+        }
+        .list_body {
+          height: calc(100% - 55px) !important;
+          .list_row {
+            // Controls BUILD ANIMATION
+            display: block !important;
+          }
+        }
+      }
+    }
+  }
+  .search_results {
+    position: absolute;
+    top: calc(-100% - 55px);
+    z-index: 700;
+    width: 100%;
+    height: 100%;
+    transition: all 0.1s ease-in;
+    .search_results_body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      .list {
+        .list_hd {
+          display: none;
+        }
+        .list_body {
+          .list_row {
+            display: none;
+            // opacity: 0;
+            height: 5em;
+            .list_row_cell {
+              li {
+                .search_results_tags {
+                  margin: 5px 0 0 0;
+                  font-size: $txt_1;
+                  li {
+                    float: left;
+                    clear: none;
+                    margin: 0 5px 0 0;
+                    width: auto;
+                    line-height: $txt_2;
+                    &::after {
+                      content: ",";
+                    }
+                    &:first-child {
+                      &::after {
+                        content: "";
+                      }
+                    }
+                    &:last-child {
+                      &::after {
+                        content: "";
+                      }
+                    }
+                    a {
+                      float: left;
+                      clear: none;
+                      margin: 0;
+                      width: auto;
+                      font-size: $txt_1;
+                      line-height: $txt_2;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .list_row_clicked {
+            height: 200px;
+          }
+          .list_row_faded {
+            opacity: 0.25 !important;
+          }
+        }
+      }
+    }
+  }
+
+}

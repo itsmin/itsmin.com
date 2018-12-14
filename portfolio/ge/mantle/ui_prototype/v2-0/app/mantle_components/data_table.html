@@ -1,0 +1,382 @@
+<script>
+  // expanding row handler
+  $(function() {
+    $(".dt_row").click(function() {
+      if($(this).hasClass('dt_row_clicked')) {
+        $(this).removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      } else {
+        $(this).addClass('dt_row_clicked').removeClass('dt_row_faded').siblings().removeClass('dt_row_clicked').addClass('dt_row_faded');
+      }
+    });
+  });
+</script>
+
+<div class="dt">
+
+  <!-- dt header -->
+  <div class="dt_hd">
+    <div class="dt_hd_cell">
+      Status
+    </div>
+    <div class="dt_hd_cell">
+      Well Name
+    </div>
+    <div class="dt_hd_cell">
+      Lift Type
+    </div>
+    <div class="dt_hd_cell">
+      Oil
+    </div>
+    <div class="dt_hd_cell">
+      Water
+    </div>
+    <div class="dt_hd_cell">
+      Gas
+    </div>
+    <div class="dt_hd_cell">
+      Energy
+    </div>
+    <div class="dt_hd_cell">
+      Uptime
+    </div>
+    <div class="dt_hd_cell">
+      Gathering
+    </div>
+    <div class="dt_hd_cell">
+      Change
+    </div>
+    <div class="dt_hd_cell">
+      Available Actions
+    </div>
+  </div>
+
+  <!-- dt body -->
+  <div class="dt_body">
+    <div class="dt_content">
+      <div class="dt_row">
+        <div class="dt_row_cell">
+          Value
+        </div>
+        <div class="dt_row_cell">
+          Name
+        </div>
+        <div class="dt_row_cell">
+          ESP
+        </div>
+        <div class="dt_row_cell">
+          134
+        </div>
+        <div class="dt_row_cell">
+          213
+        </div>
+        <div class="dt_row_cell">
+          12
+        </div>
+        <div class="dt_row_cell">
+          42
+        </div>
+        <div class="dt_row_cell">
+          88
+        </div>
+        <div class="dt_row_cell">
+          9
+        </div>
+        <div class="dt_row_cell">
+          % Change
+        </div>
+        <div class="dt_row_cell">
+          Action
+        </div>
+      </div>
+      <!-- start placeholder -->
+      <div class="dt_row">
+        <div class="dt_row_cell">
+          Value
+        </div>
+        <div class="dt_row_cell">
+          Name
+        </div>
+        <div class="dt_row_cell">
+          ESP
+        </div>
+        <div class="dt_row_cell">
+          134
+        </div>
+        <div class="dt_row_cell">
+          213
+        </div>
+        <div class="dt_row_cell">
+          12
+        </div>
+        <div class="dt_row_cell">
+          42
+        </div>
+        <div class="dt_row_cell">
+          88
+        </div>
+        <div class="dt_row_cell">
+          9
+        </div>
+        <div class="dt_row_cell">
+          % Change
+        </div>
+        <div class="dt_row_cell">
+          Action
+        </div>
+      </div>
+      <div class="dt_row">
+        <div class="dt_row_cell">
+          Value
+        </div>
+        <div class="dt_row_cell">
+          Name
+        </div>
+        <div class="dt_row_cell">
+          ESP
+        </div>
+        <div class="dt_row_cell">
+          134
+        </div>
+        <div class="dt_row_cell">
+          213
+        </div>
+        <div class="dt_row_cell">
+          12
+        </div>
+        <div class="dt_row_cell">
+          42
+        </div>
+        <div class="dt_row_cell">
+          88
+        </div>
+        <div class="dt_row_cell">
+          9
+        </div>
+        <div class="dt_row_cell">
+          % Change
+        </div>
+        <div class="dt_row_cell">
+          Action
+        </div>
+      </div>
+      <div class="dt_row">
+        <div class="dt_row_cell">
+          Value
+        </div>
+        <div class="dt_row_cell">
+          Name
+        </div>
+        <div class="dt_row_cell">
+          ESP
+        </div>
+        <div class="dt_row_cell">
+          134
+        </div>
+        <div class="dt_row_cell">
+          213
+        </div>
+        <div class="dt_row_cell">
+          12
+        </div>
+        <div class="dt_row_cell">
+          42
+        </div>
+        <div class="dt_row_cell">
+          88
+        </div>
+        <div class="dt_row_cell">
+          9
+        </div>
+        <div class="dt_row_cell">
+          % Change
+        </div>
+        <div class="dt_row_cell">
+          Action
+        </div>
+      </div>
+      <div class="dt_row">
+        <div class="dt_row_cell">
+          Value
+        </div>
+        <div class="dt_row_cell">
+          Name
+        </div>
+        <div class="dt_row_cell">
+          ESP
+        </div>
+        <div class="dt_row_cell">
+          134
+        </div>
+        <div class="dt_row_cell">
+          213
+        </div>
+        <div class="dt_row_cell">
+          12
+        </div>
+        <div class="dt_row_cell">
+          42
+        </div>
+        <div class="dt_row_cell">
+          88
+        </div>
+        <div class="dt_row_cell">
+          9
+        </div>
+        <div class="dt_row_cell">
+          % Change
+        </div>
+        <div class="dt_row_cell">
+          Action
+        </div>
+      </div>
+      <div class="dt_row">
+        <div class="dt_row_cell">
+          Value
+        </div>
+        <div class="dt_row_cell">
+          Name
+        </div>
+        <div class="dt_row_cell">
+          ESP
+        </div>
+        <div class="dt_row_cell">
+          134
+        </div>
+        <div class="dt_row_cell">
+          213
+        </div>
+        <div class="dt_row_cell">
+          12
+        </div>
+        <div class="dt_row_cell">
+          42
+        </div>
+        <div class="dt_row_cell">
+          88
+        </div>
+        <div class="dt_row_cell">
+          9
+        </div>
+        <div class="dt_row_cell">
+          % Change
+        </div>
+        <div class="dt_row_cell">
+          Action
+        </div>
+      </div>
+      <div class="dt_row">
+        <div class="dt_row_cell">
+          Value
+        </div>
+        <div class="dt_row_cell">
+          Name
+        </div>
+        <div class="dt_row_cell">
+          ESP
+        </div>
+        <div class="dt_row_cell">
+          134
+        </div>
+        <div class="dt_row_cell">
+          213
+        </div>
+        <div class="dt_row_cell">
+          12
+        </div>
+        <div class="dt_row_cell">
+          42
+        </div>
+        <div class="dt_row_cell">
+          88
+        </div>
+        <div class="dt_row_cell">
+          9
+        </div>
+        <div class="dt_row_cell">
+          % Change
+        </div>
+        <div class="dt_row_cell">
+          Action
+        </div>
+      </div>
+      <div class="dt_row">
+        <div class="dt_row_cell">
+          Value
+        </div>
+        <div class="dt_row_cell">
+          Name
+        </div>
+        <div class="dt_row_cell">
+          ESP
+        </div>
+        <div class="dt_row_cell">
+          134
+        </div>
+        <div class="dt_row_cell">
+          213
+        </div>
+        <div class="dt_row_cell">
+          12
+        </div>
+        <div class="dt_row_cell">
+          42
+        </div>
+        <div class="dt_row_cell">
+          88
+        </div>
+        <div class="dt_row_cell">
+          9
+        </div>
+        <div class="dt_row_cell">
+          % Change
+        </div>
+        <div class="dt_row_cell">
+          Action
+        </div>
+      </div>
+      <div class="dt_row">
+        <div class="dt_row_cell">
+          Value
+        </div>
+        <div class="dt_row_cell">
+          Name
+        </div>
+        <div class="dt_row_cell">
+          ESP
+        </div>
+        <div class="dt_row_cell">
+          134
+        </div>
+        <div class="dt_row_cell">
+          213
+        </div>
+        <div class="dt_row_cell">
+          12
+        </div>
+        <div class="dt_row_cell">
+          42
+        </div>
+        <div class="dt_row_cell">
+          88
+        </div>
+        <div class="dt_row_cell">
+          9
+        </div>
+        <div class="dt_row_cell">
+          % Change
+        </div>
+        <div class="dt_row_cell">
+          Action
+        </div>
+      </div>
+      <!-- end placeholder -->
+    </div>
+  </div>
+
+</div>
+
+<!-- {% for item in site.data.sample %}
+<div>
+  <span>{{ sample.status }}</span>
+</div>
+{% endfor %} -->

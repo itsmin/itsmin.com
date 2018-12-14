@@ -1,0 +1,91 @@
+@import
+  "reset.scss",
+  "visual_elements.scss"
+  ;
+
+  // OVERWRITES BOOTSTRAP STYLES
+  .twitter-typeahead {
+    float: left;
+    clear: left;
+    margin: 0;
+    padding: 0;
+    width: calc(100% - calc(15px * 4));
+    background: none;
+  }
+  .tt-input,
+  .tt-hint {
+
+  }
+  .tt-input {
+    -webkit-appearance: none;
+    outline: none;
+    float: left;
+    margin: 12px 0 13px 15px;
+    padding: 0 20px 0 5px;
+    width: calc(100% - 15px);
+    overflow: hidden;
+    min-height: 15px;
+    height: $txt_4;
+    border: none;
+    border-bottom: solid 1px;
+    border-radius: 0;
+    line-height: $txt_4;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &:focus {
+      // background: rgba($px_blue_2,0.15) !important;
+      // border-color: rgba($px_blue_2,1) !important;
+      transition: all 0.4s ease-out;
+    }
+  }
+  .tt-hint {
+    color: rgba($px_neutral_5,1) !important;
+  }
+  .tt-menu {
+    width: calc(100% - calc(15px * 1));
+    margin: -15px 15px 0 15px;
+    transition: 0.4s ease-out;
+    .tt-dataset {
+      .tt-suggestion {
+        margin: 0;
+        padding: 5px 15px;
+        width: calc(100% - 30px);
+        background-color: $px_white;
+        box-shadow: 1px 2px 0px rgba($px_black,0.25);
+        overflow: hidden;
+        font-size: $txt_2;
+        line-height: $txt_3;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: rgba($px_primary_default,1);
+        &:first-child {
+          // margin-top: $txt_2;
+          padding-top: $txt_2;
+        }
+        &:last-child {
+          // margin-bottom: $txt_2;
+          padding-bottom: $txt_2;
+        }
+        .tt-highlight {
+          // margin: 0 1px;
+          // @include px_type_block;
+          font-family: helvetica;
+          // text-shadow: 0 0 1px;
+          // text-transform: uppercase;
+        }
+      }
+      .tt-selectable {
+
+      }
+      .tt-cursor {
+        background-color: $px_primary_default;
+        transition: 0.1s ease-out;
+        color: $px_white;
+      }
+    }
+  }
+  .tt-is-under-cursor {
+    // background-color: $px_primary_default;
+    // transition: 0.1s ease-out;
+    // color: $px_white;
+  }

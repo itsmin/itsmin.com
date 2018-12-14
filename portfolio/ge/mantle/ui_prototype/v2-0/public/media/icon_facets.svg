@@ -1,0 +1,20 @@
+
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="search-/-card" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="search-results-overflow" transform="translate(-339.000000, -39.000000)" stroke="#09819C">
+            <g id="search-box" transform="translate(0.000000, 20.000000)">
+                <g id="facet-icon" transform="translate(350.000000, 29.000000) rotate(-20.000000) translate(-350.000000, -29.000000) translate(340.000000, 19.000000)">
+                    <g id="facets">
+                        <polygon id="Rectangle-7-Copy-6" stroke-width="0.25" points="7.08001471 14.1899986 12.9600148 14.1899986 15.9000149 18.1899986 4.14001465 18.1899986"></polygon>
+                        <polygon id="Rectangle-7-Copy-2" stroke-width="0.25" transform="translate(4.219133, 11.980247) rotate(72.000000) translate(-4.219133, -11.980247) " points="1.27913294 9.98024687 7.15913305 9.98024687 10.0991331 13.9802469 -1.66086712 13.9802469"></polygon>
+                        <polygon id="Rectangle-7-Copy-3" stroke-width="0.25" transform="translate(6.432591, 5.168930) rotate(144.000000) translate(-6.432591, -5.168930) " points="3.49259047 3.16893049 9.37259058 3.16893049 12.3125906 7.16893049 0.55259041 7.16893049"></polygon>
+                        <polygon id="Rectangle-7-Copy-4" stroke-width="0.25" transform="translate(13.592594, 5.168930) rotate(216.000000) translate(-13.592594, -5.168930) " points="10.6525941 3.16893049 16.5325942 3.16893049 19.4725943 7.16893049 7.71259407 7.16893049"></polygon>
+                        <polygon id="Rectangle-7-Copy-5" stroke-width="0.25" transform="translate(15.809129, 11.980247) rotate(288.000000) translate(-15.809129, -11.980247) " points="12.8691293 9.98024687 18.7491294 9.98024687 21.6891294 13.9802469 9.92912922 13.9802469"></polygon>
+                        <polygon id="Polygon-Copy-2" stroke-width="0.5" points="10 5 14.7552826 8.45491503 12.9389263 14.045085 7.06107374 14.045085 5.24471742 8.45491503"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: white;
+  line-height: 12px;
+  background: #FFF;
+}
+
+ul {
+  margin: 25px 0;
+  list-style: none;
+}
+ul li {
+  float: left;
+  clear: left;
+  margin: 10px 0 25px 0;
+  list-style: none;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  line-height: 24px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  line-height: 14px;
+}
+
+h3 {
+  font-weight: 600;
+  color: #333;
+}
+
+h4 {
+  font-weight: 400;
+  color: #999;
+  margin: 25px 0;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #3366cc;
+}
+a:hover {
+  color: #336699;
+}
+
+video {
+  width: calc(50% - 50px);
+  /* min-width: 400px; */
+}
+
+.description {
+  float: left;
+  clear: left;
+  display: block;
+  max-width: 800px;
+  color: #999999;
+}
+
+img {
+  float: left;
+  width: calc(100% - 50px);
+}
+
+/*# sourceMappingURL=mantle_notifications.css.map */

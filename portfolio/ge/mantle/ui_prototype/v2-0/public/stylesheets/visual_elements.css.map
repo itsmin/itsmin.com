@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AA2EA,UAGC;EAFC,WAAW,EAAE,eAAe;EAC5B,GAAG,EAAE,oHAAoH;AA4D3H,UAGC;EAFC,WAAW,EAAE,eAAe;EAC5B,GAAG,EAAE,oHAAoH",
+"sources": ["../../app/sass/visual_elements.scss"],
+"names": [],
+"file": "visual_elements.css"
+}

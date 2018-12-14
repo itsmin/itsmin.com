@@ -1,0 +1,34 @@
+// TYPOGRAPHY  -----------------------------------
+// Will use GE Inpsira Sans until we define a unique Mantle font
+//
+// Rather than defining the complete cascade (Helvetica, Arial, etc) we're using
+// a generic sans-serif.
+// -----------------------------------------------
+
+@font-face {
+  font-family: "GEInspiraSans";
+  src: local("GEInspiraSans"), local("GEInspiraSans-Regular"), url(../media/GEInpiraSans/GEInspiraSans.woff) format("woff");
+}
+$core_type: "GEInspiraSans", sans-serif;
+@mixin desktop_type_block {
+  font-family: $core_type;
+  font-weight: 200;
+  -webkit-font-smoothing: subpixel-rendering !important;
+}
+// Sizes
+$core_txt_1                  :12px;
+$core_txt_2                  :15px;
+$core_txt_3                  :20px;
+$core_txt_4                  :30px;
+$core_txt_5                  :45px;
+$core_txt_6                  :60px;
+$core_txt_7                  :75px;
+
+// Alternative Scale
+$alt_txt_1                  :12px;
+$alt_txt_2                  :14px;
+$alt_txt_3                  :20px;
+$alt_txt_4                  :24px;
+$alt_txt_5                  :34px;
+$alt_txt_6                  :48px;
+$alt_txt_7                  :64px;

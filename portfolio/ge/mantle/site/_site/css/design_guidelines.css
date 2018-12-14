@@ -1,0 +1,2560 @@
+@font-face {
+  font-family: "GEInspiraSans";
+  src: local("GEInspiraSans"), local("GEInspiraSans-Regular"), url(../media/GEInpiraSans/GEInspiraSans.woff) format("woff"); }
+@keyframes swatches_build {
+  0% {
+    margin-top: 15px;
+    opacity: 0; }
+  100% {
+    margin-top: 0;
+    opacity: 1; } }
+.swatches {
+  opacity: 0;
+  animation: swatches_build 0.5s ease-in 0.5s 1 forwards;
+  float: left;
+  clear: none; }
+  .swatches h3, .swatches h4 {
+    float: left;
+    clear: left; }
+  .swatches h3 {
+    margin: 35px 0 0 0;
+    text-transform: uppercase; }
+  .swatches h4 {
+    margin: 35px 0 0 0;
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    text-transform: uppercase; }
+  .swatches .mantle_colors,
+  .swatches .visualization_colors {
+    float: left;
+    clear: left; }
+    .swatches .mantle_colors div,
+    .swatches .visualization_colors div {
+      float: left;
+      clear: left; }
+      .swatches .mantle_colors div ul,
+      .swatches .visualization_colors div ul {
+        list-style: none;
+        float: left;
+        clear: left;
+        padding: 0; }
+        .swatches .mantle_colors div ul li,
+        .swatches .visualization_colors div ul li {
+          float: left;
+          clear: none;
+          margin: 0; }
+          .swatches .mantle_colors div ul li span,
+          .swatches .visualization_colors div ul li span {
+            float: left;
+            clear: left;
+            display: block;
+            margin-right: 1px;
+            width: 120px;
+            height: 120px;
+            line-height: 45px; }
+          .swatches .mantle_colors div ul li a,
+          .swatches .visualization_colors div ul li a {
+            float: left;
+            clear: left;
+            display: block;
+            width: 120px;
+            color: #666d75;
+            font-size: 12px;
+            line-height: 35px;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .swatches .mantle_colors div ul li .second,
+          .swatches .visualization_colors div ul li .second {
+            float: right;
+            margin: 0;
+            color: #a3aab2;
+            font-size: 12px;
+            line-height: 30px; }
+        .swatches .mantle_colors div ul.colors_neutral_01 li,
+        .swatches .visualization_colors div ul.colors_neutral_01 li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(1) span {
+            background-color: white;
+            border: solid 1px #dbe0e6; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(2) span {
+            background-color: #eff2f5; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(3) span {
+            background-color: #eceff3; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(4) span {
+            background-color: #e9ecf2; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(5) span {
+            background-color: #e4e8ec; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(6) span {
+            background-color: #dbe0e6; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(7) span {
+            background-color: #d2d8df; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(8) span {
+            background-color: #cad1d8; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(9) span {
+            background-color: #bdc4cc; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(10) span {
+            background-color: #b3bac2; }
+          .swatches .mantle_colors div ul.colors_neutral_01 li:nth-child(11) span,
+          .swatches .visualization_colors div ul.colors_neutral_01 li:nth-child(11) span {
+            background-color: #a3aab2; }
+        .swatches .mantle_colors div ul.colors_neutral_02 li,
+        .swatches .visualization_colors div ul.colors_neutral_02 li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(1) span {
+            background-color: #9fa5ad; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(2) span {
+            background-color: #9198a1; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(3) span {
+            background-color: #848b94; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(4) span {
+            background-color: #757c84; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(5) span {
+            background-color: #666d75; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(6) span {
+            background-color: #575e66; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(7) span {
+            background-color: #464c53; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(8) span {
+            background-color: #363d44; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(9) span {
+            background-color: #282d33; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(10) span {
+            background-color: #161a1d; }
+          .swatches .mantle_colors div ul.colors_neutral_02 li:nth-child(11) span,
+          .swatches .visualization_colors div ul.colors_neutral_02 li:nth-child(11) span {
+            background-color: black; }
+        .swatches .mantle_colors div ul.colors_actions_primary li,
+        .swatches .visualization_colors div ul.colors_actions_primary li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(1) span {
+            background-color: #0570bd; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(2) span {
+            background-color: #4492ca; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(3) span {
+            background-color: #04538b; }
+          .swatches .mantle_colors div ul.colors_actions_primary li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_actions_primary li:nth-child(4) span {
+            background-color: #f0fbff;
+            border: solid 1px #dbe0e6; }
+        .swatches .mantle_colors div ul.colors_actions_secondary li,
+        .swatches .visualization_colors div ul.colors_actions_secondary li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(1) span {
+            background-color: #575e66; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(2) span {
+            background-color: #848b94; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(3) span {
+            background-color: #363d44; }
+          .swatches .mantle_colors div ul.colors_actions_secondary li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_actions_secondary li:nth-child(4) span {
+            background-color: #eff2f5;
+            border: solid 1px #dbe0e6; }
+        .swatches .mantle_colors div ul.colors_light_theme li,
+        .swatches .visualization_colors div ul.colors_light_theme li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(1) span {
+            background-color: #143c48; }
+          .swatches .mantle_colors div ul.colors_light_theme li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_light_theme li:nth-child(2) span {
+            background-color: #dfe3e7;
+            border: solid 1px #dbe0e6; }
+        .swatches .mantle_colors div ul.colors_blue li,
+        .swatches .visualization_colors div ul.colors_blue li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(1) span {
+            background-color: #e6f5ff;
+            border: solid 1px #dbe0e6; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(2) span {
+            background-color: #58abee; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(3) span {
+            background-color: #1477c8; }
+          .swatches .mantle_colors div ul.colors_blue li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_blue li:nth-child(4) span {
+            background-color: #0c426e; }
+        .swatches .mantle_colors div ul.colors_green li,
+        .swatches .visualization_colors div ul.colors_green li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_green li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_green li:nth-child(1) span {
+            background-color: #ebffed;
+            border: solid 1px #dbe0e6; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_green li:nth-child(2) span {
+            background-color: #b4e34f; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_green li:nth-child(3) span {
+            background-color: #7eac1b; }
+          .swatches .mantle_colors div ul.colors_green li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_green li:nth-child(4) span {
+            background-color: #42580e; }
+        .swatches .mantle_colors div ul.colors_yellow li,
+        .swatches .visualization_colors div ul.colors_yellow li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(1) span {
+            background-color: #fff7db;
+            border: solid 1px #dbe0e6; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(2) span {
+            background-color: #ffe070; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(3) span {
+            background-color: #ffc800; }
+          .swatches .mantle_colors div ul.colors_yellow li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_yellow li:nth-child(4) span {
+            background-color: #a27f01; }
+        .swatches .mantle_colors div ul.colors_orange li,
+        .swatches .visualization_colors div ul.colors_orange li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(1) span {
+            background-color: #fff0e6;
+            border: solid 1px #dbe0e6; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(2) span {
+            background-color: #ffc499; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(3) span {
+            background-color: #ff8b38; }
+          .swatches .mantle_colors div ul.colors_orange li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_orange li:nth-child(4) span {
+            background-color: #cc5500; }
+        .swatches .mantle_colors div ul.colors_red li,
+        .swatches .visualization_colors div ul.colors_red li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_red li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_red li:nth-child(1) span {
+            background-color: #ffebeb;
+            border: solid 1px #dbe0e6; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_red li:nth-child(2) span {
+            background-color: #f9a59f; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_red li:nth-child(3) span {
+            background-color: #b30000; }
+          .swatches .mantle_colors div ul.colors_red li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_red li:nth-child(4) span {
+            background-color: #b30000; }
+        .swatches .mantle_colors div ul.colors_branding_primary li,
+        .swatches .visualization_colors div ul.colors_branding_primary li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(1) span {
+            background-color: #005fb8; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(2) span {
+            background-color: #00b4e0; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(3) span {
+            background-color: white;
+            border: solid 1px #dbe0e6; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(4) span {
+            background-color: #636669; }
+          .swatches .mantle_colors div ul.colors_branding_primary li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_branding_primary li:nth-child(5) span {
+            background-color: #b2b3b3; }
+        .swatches .mantle_colors div ul.colors_branding_secondary li,
+        .swatches .visualization_colors div ul.colors_branding_secondary li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(1) span {
+            background-color: #10069d; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(2) span {
+            background-color: #122849; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(3) span {
+            background-color: #96d600; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(4) span {
+            background-color: #00bd6e; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(5) span {
+            background-color: #ebac00; }
+          .swatches .mantle_colors div ul.colors_branding_secondary li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_branding_secondary li:nth-child(6) span {
+            background-color: #ff5100; }
+        .swatches .mantle_colors div ul.colors_vis_reds li,
+        .swatches .visualization_colors div ul.colors_vis_reds li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(1) span {
+            background-color: #e7a6b0; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(2) span {
+            background-color: #e4969f; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(3) span {
+            background-color: #e28892; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(4) span {
+            background-color: #dc6a76; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(5) span {
+            background-color: #da5863; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(6) span {
+            background-color: #d63d45; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(7) span {
+            background-color: #ae3239; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(8) span {
+            background-color: #7e262a; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(9) span {
+            background-color: #651f23; }
+          .swatches .mantle_colors div ul.colors_vis_reds li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_reds li:nth-child(10) span {
+            background-color: #4e181d; }
+        .swatches .mantle_colors div ul.colors_vis_oranges li,
+        .swatches .visualization_colors div ul.colors_vis_oranges li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(1) span {
+            background-color: #f0c89e; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(2) span {
+            background-color: #eebc87; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(3) span {
+            background-color: #ebb275; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(4) span {
+            background-color: #e6a056; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(5) span {
+            background-color: #e2923c; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(6) span {
+            background-color: #d77914; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(7) span {
+            background-color: #b56612; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(8) span {
+            background-color: #80490f; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(9) span {
+            background-color: #673c0e; }
+          .swatches .mantle_colors div ul.colors_vis_oranges li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_oranges li:nth-child(10) span {
+            background-color: #4f2f0c; }
+        .swatches .mantle_colors div ul.colors_vis_yellows li,
+        .swatches .visualization_colors div ul.colors_vis_yellows li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(1) span {
+            background-color: #ebe593; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(2) span {
+            background-color: #e6df7f; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(3) span {
+            background-color: #e2da6f; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(4) span {
+            background-color: #dbd14d; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(5) span {
+            background-color: #d2ca2d; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(6) span {
+            background-color: #c9bf08; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(7) span {
+            background-color: #a79f06; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(8) span {
+            background-color: #777203; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(9) span {
+            background-color: #5f5a02; }
+          .swatches .mantle_colors div ul.colors_vis_yellows li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_yellows li:nth-child(10) span {
+            background-color: #484504; }
+        .swatches .mantle_colors div ul.colors_vis_limes li,
+        .swatches .visualization_colors div ul.colors_vis_limes li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(1) span {
+            background-color: #b0de87; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(2) span {
+            background-color: #a1d86e; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(3) span {
+            background-color: #94d256; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(4) span {
+            background-color: #82c832; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(5) span {
+            background-color: #73bd05; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(6) span {
+            background-color: #6ab305; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(7) span {
+            background-color: #569103; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(8) span {
+            background-color: #3e6902; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(9) span {
+            background-color: #325601; }
+          .swatches .mantle_colors div ul.colors_vis_limes li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_limes li:nth-child(10) span {
+            background-color: #274101; }
+        .swatches .mantle_colors div ul.colors_vis_greens li,
+        .swatches .visualization_colors div ul.colors_vis_greens li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(1) span {
+            background-color: #b1cda8; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(2) span {
+            background-color: #a0c293; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(3) span {
+            background-color: #95bb86; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(4) span {
+            background-color: #7ca668; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(5) span {
+            background-color: #68974e; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(6) span {
+            background-color: #558632; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(7) span {
+            background-color: #446b29; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(8) span {
+            background-color: #335020; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(9) span {
+            background-color: #2a411b; }
+          .swatches .mantle_colors div ul.colors_vis_greens li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_greens li:nth-child(10) span {
+            background-color: #203215; }
+        .swatches .mantle_colors div ul.colors_vis_teals li,
+        .swatches .visualization_colors div ul.colors_vis_teals li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(1) span {
+            background-color: #c0ded8; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(2) span {
+            background-color: #9eccc4; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(3) span {
+            background-color: #83beb2; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(4) span {
+            background-color: #67ad9f; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(5) span {
+            background-color: #4d9d8d; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(6) span {
+            background-color: #408779; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(7) span {
+            background-color: #31685d; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(8) span {
+            background-color: #264b44; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(9) span {
+            background-color: #1a322e; }
+          .swatches .mantle_colors div ul.colors_vis_teals li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_teals li:nth-child(10) span {
+            background-color: #111d1b; }
+        .swatches .mantle_colors div ul.colors_vis_aquas li,
+        .swatches .visualization_colors div ul.colors_vis_aquas li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(1) span {
+            background-color: #a9c4d6; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(2) span {
+            background-color: #98b8cd; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(3) span {
+            background-color: #87aac4; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(4) span {
+            background-color: #6c96b7; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(5) span {
+            background-color: #5585aa; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(6) span {
+            background-color: #3a6f98; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(7) span {
+            background-color: #315c7d; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(8) span {
+            background-color: #24435c; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(9) span {
+            background-color: #1d3549; }
+          .swatches .mantle_colors div ul.colors_vis_aquas li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_aquas li:nth-child(10) span {
+            background-color: #172836; }
+        .swatches .mantle_colors div ul.colors_vis_cyans li,
+        .swatches .visualization_colors div ul.colors_vis_cyans li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(1) span {
+            background-color: #a6defc; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(2) span {
+            background-color: #98d7fb; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(3) span {
+            background-color: #89d1fa; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(4) span {
+            background-color: #70c5fa; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(5) span {
+            background-color: #5dbaf8; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(6) span {
+            background-color: #4caff6; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(7) span {
+            background-color: #3f93ca; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(8) span {
+            background-color: #2f6993; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(9) span {
+            background-color: #255474; }
+          .swatches .mantle_colors div ul.colors_vis_cyans li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_cyans li:nth-child(10) span {
+            background-color: #1b3d55; }
+        .swatches .mantle_colors div ul.colors_vis_blues li,
+        .swatches .visualization_colors div ul.colors_vis_blues li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(1) span {
+            background-color: #b8bfff; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(2) span {
+            background-color: #adb6ff; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(3) span {
+            background-color: #9ea8ff; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(4) span {
+            background-color: #8593ff; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(5) span {
+            background-color: #6b7fff; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(6) span {
+            background-color: #4d67ff; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(7) span {
+            background-color: #4258d1; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(8) span {
+            background-color: #29347a; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(9) span {
+            background-color: #29347a; }
+          .swatches .mantle_colors div ul.colors_vis_blues li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_blues li:nth-child(10) span {
+            background-color: #202b60; }
+        .swatches .mantle_colors div ul.colors_vis_violets li,
+        .swatches .visualization_colors div ul.colors_vis_violets li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(1) span {
+            background-color: #cfb6f7; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(2) span {
+            background-color: #c8abf7; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(3) span {
+            background-color: #c19ef5; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(4) span {
+            background-color: #b088f1; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(5) span {
+            background-color: #a472ee; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(6) span {
+            background-color: #955ceb; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(7) span {
+            background-color: #774abf; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(8) span {
+            background-color: #563687; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(9) span {
+            background-color: #452c6d; }
+          .swatches .mantle_colors div ul.colors_vis_violets li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_violets li:nth-child(10) span {
+            background-color: #362353; }
+        .swatches .mantle_colors div ul.colors_vis_purples li,
+        .swatches .visualization_colors div ul.colors_vis_purples li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(1) span {
+            background-color: #e5aede; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(2) span {
+            background-color: #e2a2d8; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(3) span {
+            background-color: #df95d4; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(4) span {
+            background-color: #da7cc9; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(5) span {
+            background-color: #d666bc; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(6) span {
+            background-color: #d04ead; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(7) span {
+            background-color: #aa418e; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(8) span {
+            background-color: #91467b; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(9) span {
+            background-color: #622852; }
+          .swatches .mantle_colors div ul.colors_vis_purples li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_purples li:nth-child(10) span {
+            background-color: #4c2041; }
+        .swatches .mantle_colors div ul.colors_vis_pinks li,
+        .swatches .visualization_colors div ul.colors_vis_pinks li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(1) span {
+            background-color: #e193bd; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(2) span {
+            background-color: #de7daf; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(3) span {
+            background-color: #d96da3; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(4) span {
+            background-color: #d54d8b; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(5) span {
+            background-color: #d43a75; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(6) span {
+            background-color: #d52a5a; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(7) span {
+            background-color: #ae244d; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(8) span {
+            background-color: #7b1838; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(9) span {
+            background-color: #61142e; }
+          .swatches .mantle_colors div ul.colors_vis_pinks li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_pinks li:nth-child(10) span {
+            background-color: #61142e; }
+        .swatches .mantle_colors div ul.colors_vis_browns li,
+        .swatches .visualization_colors div ul.colors_vis_browns li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(1) span {
+            background-color: #d9caa1; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(2) span {
+            background-color: #d3be8d; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(3) span {
+            background-color: #cdb77e; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(4) span {
+            background-color: #bea560; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(5) span {
+            background-color: #b19443; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(6) span {
+            background-color: #a38124; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(7) span {
+            background-color: #856a1e; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(8) span {
+            background-color: #624d18; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(9) span {
+            background-color: #4d3e14; }
+          .swatches .mantle_colors div ul.colors_vis_browns li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_browns li:nth-child(10) span {
+            background-color: #3c3110; }
+        .swatches .mantle_colors div ul.colors_vis_grays li,
+        .swatches .visualization_colors div ul.colors_vis_grays li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(1) span {
+            background-color: #d9d9d9; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(2) span {
+            background-color: #c2c2c2; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(3) span {
+            background-color: #ababab; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(4) span {
+            background-color: #919191; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(5) span {
+            background-color: #7d7d7d; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(6) span {
+            background-color: #666666; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(7) span {
+            background-color: #545454; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(8) span {
+            background-color: #3d3d3d; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(9) span {
+            background-color: #2e2e2e; }
+          .swatches .mantle_colors div ul.colors_vis_grays li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_grays li:nth-child(10) span {
+            background-color: #1f1f1f; }
+        .swatches .mantle_colors div ul.colors_vis_salmons li,
+        .swatches .visualization_colors div ul.colors_vis_salmons li {
+          opacity: 0; }
+@keyframes list_row {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(1),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(1) {
+            animation: list_row 0.05s ease-out 0.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(2),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(2) {
+            animation: list_row 0.1s ease-out 0.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(3),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(3) {
+            animation: list_row 0.15s ease-out 0.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(4),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(4) {
+            animation: list_row 0.2s ease-out 0.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(5),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(5) {
+            animation: list_row 0.25s ease-out 0.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(6),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(6) {
+            animation: list_row 0.3s ease-out 0.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(7),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(7) {
+            animation: list_row 0.35s ease-out 0.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(8),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(8) {
+            animation: list_row 0.4s ease-out 0.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(9),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(9) {
+            animation: list_row 0.45s ease-out 0.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(10),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(10) {
+            animation: list_row 0.5s ease-out 1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(11),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(11) {
+            animation: list_row 0.55s ease-out 1.1s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(12),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(12) {
+            animation: list_row 0.6s ease-out 1.2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(13),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(13) {
+            animation: list_row 0.65s ease-out 1.3s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(14),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(14) {
+            animation: list_row 0.7s ease-out 1.4s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(15),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(15) {
+            animation: list_row 0.75s ease-out 1.5s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(16),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(16) {
+            animation: list_row 0.8s ease-out 1.6s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(17),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(17) {
+            animation: list_row 0.85s ease-out 1.7s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(18),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(18) {
+            animation: list_row 0.9s ease-out 1.8s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(19),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(19) {
+            animation: list_row 0.95s ease-out 1.9s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(20),
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(20) {
+            animation: list_row 1s ease-out 2s 1 forwards; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(1) span,
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(1) span {
+            background-color: #f4d3be; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(2) span,
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(2) span {
+            background-color: #f3cbb4; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(3) span,
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(3) span {
+            background-color: #efbfa3; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(4) span,
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(4) span {
+            background-color: #edb08c; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(5) span,
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(5) span {
+            background-color: #eba27a; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(6) span,
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(6) span {
+            background-color: #fd8c63; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(7) span,
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(7) span {
+            background-color: #be7850; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(8) span,
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(8) span {
+            background-color: #8a583d; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(9) span,
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(9) span {
+            background-color: #6d4731; }
+          .swatches .mantle_colors div ul.colors_vis_salmons li:nth-child(10) span,
+          .swatches .visualization_colors div ul.colors_vis_salmons li:nth-child(10) span {
+            background-color: #543727; }
+
+/*# sourceMappingURL=design_guidelines.css.map */

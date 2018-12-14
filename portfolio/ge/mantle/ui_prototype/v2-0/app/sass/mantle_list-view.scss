@@ -1,0 +1,168 @@
+@import
+  "reset.scss",
+  "visual_elements.scss"
+  ;
+
+// BUILD ANIMATION
+.list {
+  .list_hd {
+    animation: list_hd_an 0.6s ease-out 0.4s 1 forwards;
+    @keyframes list_hd_an {
+      0%   { width: 0; }
+      100% { width: 100%; }
+    }
+  }
+  .list_body {
+    .list_content {
+      .list_row {
+        // @for $i from 1 through 9 {
+        //   &:nth-child(#{$i}) {
+        //     animation: list_row #{$i * .1}s ease-out #{$i * .1}s 1 forwards;
+        //   }
+        // }
+        &:nth-child(1) {
+          animation: list_row .2s ease-out 1s 1 forwards;
+        }
+        &:nth-child(2) {
+          animation: list_row .1s ease-out 1.1s 1 forwards;
+        }
+        &:nth-child(3) {
+          animation: list_row .05s ease-out 1.2s 1 forwards;
+        }
+        &:nth-child(4) {
+          animation: list_row .025s ease-out 1.3s 1 forwards;
+        }
+        &:nth-child(5) {
+          animation: list_row .0125s ease-out 1.4s 1 forwards;
+        }
+        &:nth-child(n+6) {
+          animation: list_row .00625s ease-out 1.5s 1 forwards;
+        }
+        @keyframes list_row {
+          0%   { margin-top: -15px; opacity: 0; }
+          100% { margin-top: 0; opacity: 1; }
+        }
+      }
+    }
+  }
+}
+
+.list {
+  float: left;
+  clear: left;
+  width: 100%;
+  height: calc(100% - 30px);
+  .list_hd {
+    float: left;
+    clear: left;
+    width: 1px;
+    height: $txt_4;
+    .list_hd_cell {
+      float: left;
+      clear: none;
+      display: block;
+      margin: 0 0 0 15px;
+      width: calc(100% - 15px);
+      height: $txt_4;
+      font-size: $txt_1;
+      line-height: $txt_4;
+      text-align: left;
+      text-transform: uppercase;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .list_body {
+    float: left;
+    clear: left;
+    display: visible;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    .list_content {
+      margin: 0;
+      width: 100%;
+      height: 100vh;                // controls row stickiness
+      overflow: visible;            // controls row stickiness
+      .list_row {
+        float: left;
+        clear: left;
+        margin: 0 0 1px 0;
+        padding: 0;
+        width: 100%;
+        height: 7.2em;              // override this for different applications
+
+        // CONTROLS PEEK
+        opacity: 0;
+        transition: 0.1s ease-out;
+
+        .list_row_cell {
+          float: left;
+          clear: none;
+          margin: 0 0 14px 15px;
+          width: calc(100% - calc(15px * 2));
+          text-align: left;
+          ul {
+            width: 100%;
+            li {
+              float: left;
+              clear: none;
+              width: 100%;
+              font-size: $txt_2;
+              line-height: $txt_3;
+              &:first-child {
+                margin: 15px 0 0 0;
+              }
+              &:nth-child(2) {
+                width: calc(100% - 15px);
+                a {
+                  clear: both;
+                  display: block;
+                  margin: 0 0 5px 0;
+                  width: 100%;
+                  font-size: $txt_3;
+                  font-weight: 200;
+                  line-height: $txt_3;
+                }
+              }
+              &:last-child {
+                float: right;
+                clear: none;
+                width: 15px;
+                align: right;
+              }
+              h4 {
+                float: left;
+                font-size: $txt_1;
+                line-height: $txt_2;
+                text-transform: none;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+              span {
+                float: right;
+                display: inline-block;
+                font-size: $txt_1;
+                line-height: $txt_2;
+                text-transform: none;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+      .list_row_clicked {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        z-index: 50;
+        height: 250px;
+        opacity: 1;
+        transition: 0.2s ease-out;
+      }
+    }
+  }
+}

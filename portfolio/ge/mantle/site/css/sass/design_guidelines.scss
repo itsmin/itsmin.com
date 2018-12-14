@@ -1,0 +1,1048 @@
+@import
+  "mantle_colors.scss",
+  "mantle_typography.scss"
+;
+
+@mixin swatch_animation {
+  animation: swatches_build 0.5s ease-in 0.5s 1 forwards;
+}
+@keyframes swatches_build {
+  0%   {
+    margin-top: 15px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+// border for color swatches to be visible against backgrounds
+@mixin swatch_border {
+  box-shadow: inset 0 0 1px 0 rgba($core_black,0.75);
+}
+
+@mixin swatch_flow {
+  @keyframes list_row {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @for $i from 1 through 20 {
+    &:nth-child(#{$i}) {
+      animation: list_row #{$i * 0.05}s ease-out #{$i * 0.1}s 1 forwards;
+    }
+  }
+}
+
+.swatches {
+    // animation control
+    opacity: 0;
+    @include swatch_animation;
+    //
+    float: left;
+    clear: none;
+    // margin-right: $core_txt_4;
+    h3, h4 {
+        float: left;
+        clear: left;
+    }
+    h3 {
+        margin: ($core_txt_4 + 5px) 0 0 0;
+        text-transform: uppercase;
+    }
+    h4 {
+        margin: ($core_txt_4 + 5px) 0 0 0;
+        height: $core_txt_4 + 5px;
+        font-size: $core_txt_1;
+        line-height: $core_txt_4 + 5px;
+        text-transform: uppercase;
+    }
+    .mantle_colors,
+    .visualization_colors {
+        float: left;
+        clear: left;
+        div {
+            float: left;
+            clear: left;
+            // margin-right: $core_txt_4;
+            // width: 150px;
+        ul {
+            list-style: none;
+            float: left;
+            clear: left;
+            // margin: 0 0 ($core_txt_4 + 5px) 0;
+            padding: 0;
+            li {
+                float: left;
+                clear: none;
+                // height: $core_txt_4 + 5px;
+                margin: 0;
+            span {
+                float: left;
+                clear: left;
+                display: block;
+                margin-right: 1px;
+                width: (150px - $core_txt_4);
+                height: (150px - $core_txt_4);
+                // width: $core_txt_5;
+                // height: $core_txt_5;
+                // border-radius: $core_txt_4 / 2;
+                line-height: $core_txt_5;
+            }
+            a {
+                float: left;
+                clear: left;
+                display: block;
+                width: (150px - $core_txt_4);
+                color: $core_neutral_15;
+                font-size: $core_txt_1;
+                line-height: $core_txt_4 + 5px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .second {
+              float: right;
+              margin: 0;
+              color: $core_neutral_10;
+              font-size: $core_txt_1;
+              line-height: $core_txt_4;
+            }
+          }
+
+          // neutral colors
+          &.colors_neutral_01 {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $core_white;             
+                        border: solid 1px $core_neutral_5;        
+                        // width: $core_txt_4 - 2px;
+                        // height: $core_txt_4 - 2px;                  
+                    }
+              }
+              &:nth-child(2) {
+                span {  background-color: $core_neutral_1;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $core_neutral_2;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $core_neutral_3;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $core_neutral_4;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $core_neutral_5;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $core_neutral_6;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $core_neutral_7;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $core_neutral_8;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $core_neutral_9;         }
+              }
+              &:nth-child(11) {
+                span {  background-color: $core_neutral_10;        }
+              }
+            }
+          }
+          // neutral colors
+          &.colors_neutral_02 {
+            // margin-right: 120px;
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $core_neutral_11;        }
+              }
+              &:nth-child(2) {
+                span {  background-color: $core_neutral_12;        }
+              }
+              &:nth-child(3) {
+                span {  background-color: $core_neutral_13;        }
+              }
+              &:nth-child(4) {
+                span {  background-color: $core_neutral_14;        }
+              }
+              &:nth-child(5) {
+                span {  background-color: $core_neutral_15;        }
+              }
+              &:nth-child(6) {
+                span {  background-color: $core_neutral_16;        }
+              }
+              &:nth-child(7) {
+                span {  background-color: $core_neutral_17;        }
+              }
+              &:nth-child(8) {
+                span {  background-color: $core_neutral_18;        }
+              }
+              &:nth-child(9) {
+                span {  background-color: $core_neutral_19;        }
+              }
+              &:nth-child(10) {
+                span {  background-color: $core_neutral_20;        }
+              }
+              &:nth-child(11) {
+                span {  background-color: $core_black;             }
+              }
+            }
+          }
+
+          // action colors
+          &.colors_actions_primary {
+            // margin-right: 120px;
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $core_action_1;          }
+              }
+              &:nth-child(2) {
+                span {  background-color: $core_action_2;          }
+              }
+              &:nth-child(3) {
+                span {  background-color: $core_action_3;          }
+              }
+              &:nth-child(4) {
+                span {  background-color: $core_action_4;
+                        border: solid 1px $core_neutral_5;
+                        // width: $core_txt_4 - 2px;
+                        // height: $core_txt_4 - 2px;                  
+                    }
+              }
+            }
+          }
+          &.colors_actions_secondary {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $core_action_5;          }
+              }
+              &:nth-child(2) {
+                span {  background-color: $core_action_6;          }
+              }
+              &:nth-child(3) {
+                span {  background-color: $core_action_7;          }
+              }
+              &:nth-child(4) {
+                span {  background-color: $core_action_8;
+                        border: solid 1px $core_neutral_5;
+                        // width: $core_txt_4 - 2px;
+                        // height: $core_txt_4 - 2px;                  
+                    }
+              }
+            }
+          }
+
+          // theme colors
+          &.colors_light_theme {
+            // margin-right: 120px;
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $light_theme_blue;          }
+              }
+              &:nth-child(2) {
+                span {
+                    background-color: $light_theme_grey;
+                    border: solid 1px $core_neutral_5;
+                    // width: $core_txt_4 - 2px;
+                    // height: $core_txt_4 - 2px;
+                }
+              }
+            }
+          }
+
+          // stat blue colors
+          &.colors_blue {
+            // margin-right: 120px;
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $core_blue_1;
+                        border: solid 1px $core_neutral_5;
+                        // width: $core_txt_4 - 2px;
+                        // height: $core_txt_4 - 2px;                  
+                    }
+              }
+              &:nth-child(2) {
+                span {  background-color: $core_blue_2;            }
+              }
+              &:nth-child(3) {
+                span {  background-color: $core_blue_3;            }
+              }
+              &:nth-child(4) {
+                span {  background-color: $core_blue_4;            }
+              }
+            }
+          }
+          // stat green colors
+          &.colors_green {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $core_green_1;
+                        border: solid 1px $core_neutral_5;
+                        // width: $core_txt_4 - 2px;
+                        // height: $core_txt_4 - 2px;                  
+                    }
+              }
+              &:nth-child(2) {
+                span {  background-color: $core_green_2;           }
+              }
+              &:nth-child(3) {
+                span {  background-color: $core_green_3;           }
+              }
+              &:nth-child(4) {
+                span {  background-color: $core_green_4;           }
+              }
+            }
+          }
+          // stat yellow colors
+          &.colors_yellow {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $core_yellow_1;
+                        border: solid 1px $core_neutral_5;
+                        // width: $core_txt_4 - 2px;
+                        // height: $core_txt_4 - 2px;                  
+                    }
+              }
+              &:nth-child(2) {
+                span {  background-color: $core_yellow_2;          }
+              }
+              &:nth-child(3) {
+                span {  background-color: $core_yellow_3;          }
+              }
+              &:nth-child(4) {
+                span {  background-color: $core_yellow_4;          }
+              }
+            }
+          }
+          // stat orange colors
+          &.colors_orange {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $core_orange_1;
+                        border: solid 1px $core_neutral_5;
+                        // width: $core_txt_4 - 2px;
+                        // height: $core_txt_4 - 2px;                  
+                    }
+              }
+              &:nth-child(2) {
+                span {  background-color: $core_orange_2;          }
+              }
+              &:nth-child(3) {
+                span {  background-color: $core_orange_3;          }
+              }
+              &:nth-child(4) {
+                span {  background-color: $core_orange_4;          }
+              }
+            }
+          }
+          // stat red colors
+          &.colors_red {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $core_red_1;
+                        border: solid 1px $core_neutral_5;
+                        // width: $core_txt_4 - 2px;
+                        // height: $core_txt_4 - 2px;                  
+                    }
+              }
+              &:nth-child(2) {
+                span {  background-color: $core_red_2;             }
+              }
+              &:nth-child(3) {
+                span {  background-color: $core_red_3;             }
+              }
+              &:nth-child(4) {
+                span {  background-color: $core_red_4;             }
+              }
+            }
+          }
+
+          // branding
+          &.colors_branding_primary {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $brand-1_1;               }
+              }
+              &:nth-child(2) {
+                span {  background-color: $brand-1_2;               }
+              }
+              &:nth-child(3) {
+                span {
+                  background-color: $brand-1_3;
+                  border: solid 1px $core_neutral_5;        
+                //   width: $core_txt_4 - 2px;
+                //   height: $core_txt_4 - 2px;
+                }
+              }
+              &:nth-child(4) {
+                span {  background-color: $brand-1_4;               }
+              }
+              &:nth-child(5) {
+                span {  background-color: $brand-1_5;               }
+              }
+            }
+          }
+          // branding secondary
+          &.colors_branding_secondary {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $brand-2_1;           }
+              }
+              &:nth-child(2) {
+                span {  background-color: $brand-2_2;           }
+              }
+              &:nth-child(3) {
+                span {  background-color: $brand-2_3;           }
+              }
+              &:nth-child(4) {
+                span {  background-color: $brand-2_4;           }
+              }
+              &:nth-child(5) {
+                span {  background-color: $brand-2_5;           }
+              }
+              &:nth-child(6) {
+                span {  background-color: $brand-2_6;           }
+              }
+            }
+          }
+
+          // vis reds
+          &.colors_vis_reds {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $red_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $red_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $red_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $red_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $red_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $red_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $red_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $red_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $red_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $red_10;        }
+              }
+            }
+          }
+          // vis oranges
+          &.colors_vis_oranges {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $orange_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $orange_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $orange_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $orange_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $orange_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $orange_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $orange_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $orange_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $orange_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $orange_10;        }
+              }
+            }
+          }
+          // vis yellows
+          &.colors_vis_yellows {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $yellow_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $yellow_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $yellow_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $yellow_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $yellow_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $yellow_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $yellow_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $yellow_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $yellow_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $yellow_10;        }
+              }
+            }
+          }
+          // vis limes
+          &.colors_vis_limes {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $lime_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $lime_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $lime_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $lime_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $lime_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $lime_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $lime_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $lime_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $lime_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $lime_10;        }
+              }
+            }
+          }
+          // vis greens
+          &.colors_vis_greens {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $green_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $green_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $green_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $green_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $green_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $green_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $green_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $green_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $green_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $green_10;        }
+              }
+            }
+          }
+          // vis teals
+          &.colors_vis_teals {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $teal_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $teal_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $teal_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $teal_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $teal_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $teal_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $teal_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $teal_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $teal_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $teal_10;        }
+              }
+            }
+          }
+          // vis aquas
+          &.colors_vis_aquas {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $aqua_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $aqua_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $aqua_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $aqua_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $aqua_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $aqua_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $aqua_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $aqua_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $aqua_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $aqua_10;        }
+              }
+            }
+          }
+          // vis cyans
+          &.colors_vis_cyans {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $cyan_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $cyan_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $cyan_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $cyan_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $cyan_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $cyan_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $cyan_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $cyan_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $cyan_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $cyan_10;        }
+              }
+            }
+          }
+          // vis blues
+          &.colors_vis_blues {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $blue_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $blue_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $blue_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $blue_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $blue_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $blue_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $blue_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $blue_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $blue_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $blue_10;        }
+              }
+            }
+          }
+          // vis violets
+          &.colors_vis_violets {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $violet_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $violet_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $violet_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $violet_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $violet_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $violet_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $violet_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $violet_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $violet_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $violet_10;        }
+              }
+            }
+          }
+          // vis purples
+          &.colors_vis_purples {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $purple_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $purple_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $purple_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $purple_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $purple_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $purple_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $purple_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $purple_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $purple_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $purple_10;        }
+              }
+            }
+          }
+          // vis pinks
+          &.colors_vis_pinks {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $pink_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $pink_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $pink_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $pink_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $pink_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $pink_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $pink_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $pink_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $pink_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $pink_10;        }
+              }
+            }
+          }
+          // vis browns
+          &.colors_vis_browns {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $brown_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $brown_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $brown_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $brown_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $brown_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $brown_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $brown_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $brown_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $brown_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $brown_10;        }
+              }
+            }
+          }
+          // vis grays
+          &.colors_vis_grays {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $gray_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $gray_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $gray_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $gray_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $gray_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $gray_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $gray_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $gray_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $gray_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $gray_10;        }
+              }
+            }
+          }
+          // vis salmons
+          &.colors_vis_salmons {
+            li {
+              // animation control
+              opacity: 0;
+              @include swatch_flow;
+              //
+              &:nth-child(1) {
+                span {  background-color: $salmon_1;         }
+              }
+              &:nth-child(2) {
+                span {  background-color: $salmon_2;         }
+              }
+              &:nth-child(3) {
+                span {  background-color: $salmon_3;         }
+              }
+              &:nth-child(4) {
+                span {  background-color: $salmon_4;         }
+              }
+              &:nth-child(5) {
+                span {  background-color: $salmon_5;         }
+              }
+              &:nth-child(6) {
+                span {  background-color: $salmon_6;         }
+              }
+              &:nth-child(7) {
+                span {  background-color: $salmon_7;         }
+              }
+              &:nth-child(8) {
+                span {  background-color: $salmon_8;         }
+              }
+              &:nth-child(9) {
+                span {  background-color: $salmon_9;         }
+              }
+              &:nth-child(10) {
+                span {  background-color: $salmon_10;        }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }

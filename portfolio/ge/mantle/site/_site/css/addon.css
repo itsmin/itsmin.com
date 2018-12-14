@@ -1,0 +1,38 @@
+#Gdivwrapper {
+   width: 130px;
+    overflow: hidden; /* add this to contain floated children */
+    
+}
+#Gdiv_icon1 {
+     padding: 5px 20px 10px 5px;
+    float:left; /* add this */
+    
+}
+#Gdiv_icon2 {
+     padding: 5px 20px 10px 5px;
+    float: left; /* add this */
+   
+}
+#Gdiv_icon3 {
+     padding: 5px 10px 10px 5px;
+    float: left; /* add this */
+   
+}
+.videobox{
+    width:50%;
+    height:400px;
+}
+#textareaDiv{
+    
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px
+}
+textarea{
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: darkgrey;
+}

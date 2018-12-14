@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1320px" height="357px" viewBox="0 0 1320 357" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-1"></path>
+        <polygon id="path-2" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-4"></path>
+        <polygon id="path-5" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-7"></path>
+        <polygon id="path-8" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-10"></path>
+        <polygon id="path-11" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-13"></path>
+        <polygon id="path-14" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-16"></path>
+        <polygon id="path-17" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-19"></path>
+        <polygon id="path-20" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-22"></path>
+        <polygon id="path-23" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-25"></path>
+        <polygon id="path-26" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-28"></path>
+        <polygon id="path-29" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-31"></path>
+        <polygon id="path-32" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-34"></path>
+        <polygon id="path-35" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-37"></path>
+        <polygon id="path-38" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-40"></path>
+        <polygon id="path-41" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-43"></path>
+        <polygon id="path-44" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-46"></path>
+        <polygon id="path-47" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-49"></path>
+        <polygon id="path-50" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-52"></path>
+        <polygon id="path-53" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-55"></path>
+        <polygon id="path-56" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-58"></path>
+        <polygon id="path-59" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-61"></path>
+        <polygon id="path-62" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-64"></path>
+        <polygon id="path-65" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+    </defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Color-Palettes" transform="translate(-200.000000, -710.000000)">
+            <g id="Group-4" transform="translate(200.000000, 705.000000)">
+                <g id="Group-5" transform="translate(0.000000, 62.000000)">
+                    <g id="Swatch">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-3" fill="white">
+                                    <use xlink:href="#path-2"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-2"></use>
+                                <g id="/$black" mask="url(#mask-3)" fill="#000000">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="42.59" y="24">$black</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(120.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-5"></use>
+                                <g id="/Neutral/$neutral_1" mask="url(#mask-6)" fill="#171A1D">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="31.91" y="24">$neutral_1</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(240.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-9" fill="white">
+                                    <use xlink:href="#path-8"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-8"></use>
+                                <g id="/Neutral/$neutral_2" mask="url(#mask-9)" fill="#282D33">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="31.91" y="24">$neutral_2</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(360.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-10"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-12" fill="white">
+                                    <use xlink:href="#path-11"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-11"></use>
+                                <g id="/Neutral/$neutral_3" mask="url(#mask-12)" fill="#373D44">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="31.91" y="24">$neutral_3</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(480.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-13"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-15" fill="white">
+                                    <use xlink:href="#path-14"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-14"></use>
+                                <g id="/Neutral/$neutral_4" mask="url(#mask-15)" fill="#474D54">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="31.91" y="24">$neutral_4</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(600.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-16"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-18" fill="white">
+                                    <use xlink:href="#path-17"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-17"></use>
+                                <g id="/Neutral/$neutral_5" mask="url(#mask-18)" fill="#575E66">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="31.91" y="24">$neutral_5</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(720.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-19"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-21" fill="white">
+                                    <use xlink:href="#path-20"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-20"></use>
+                                <g id="/Neutral/$neutral_6" mask="url(#mask-21)" fill="#666D76">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="31.91" y="24">$neutral_6</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(840.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-22"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-24" fill="white">
+                                    <use xlink:href="#path-23"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-23"></use>
+                                <g id="/Neutral/$neutral_7" mask="url(#mask-24)" fill="#757C85">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="31.91" y="24">$neutral_7</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(960.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-25"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-27" fill="white">
+                                    <use xlink:href="#path-26"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-26"></use>
+                                <g id="/Neutral/$neutral_8" mask="url(#mask-27)" fill="#838A93">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="31.91" y="24">$neutral_8</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(1080.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-28"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-30" fill="white">
+                                    <use xlink:href="#path-29"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-29"></use>
+                                <g id="/Neutral/$neutral_9" mask="url(#mask-30)" fill="#9299A2">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="31.91" y="24">$neutral_9</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(1200.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-31"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-33" fill="white">
+                                    <use xlink:href="#path-32"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-32"></use>
+                                <g id="/Neutral/$neutral_10" mask="url(#mask-33)" fill="#9FA5AD">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_10</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-5" transform="translate(0.000000, 212.000000)">
+                    <g id="Swatch">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-34"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-36" fill="white">
+                                    <use xlink:href="#path-35"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-35"></use>
+                                <g id="/Neutral/$neutral_11" mask="url(#mask-36)" fill="#A4ABB3">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_11</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(120.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-37"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-39" fill="white">
+                                    <use xlink:href="#path-38"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-38"></use>
+                                <g id="/Neutral/$neutral_12" mask="url(#mask-39)" fill="#B2B9C1">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_12</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(240.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-40"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-42" fill="white">
+                                    <use xlink:href="#path-41"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-41"></use>
+                                <g id="/Neutral/$neutral_13" mask="url(#mask-42)" fill="#BCC3CB">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_13</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(360.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-43"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-45" fill="white">
+                                    <use xlink:href="#path-44"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-44"></use>
+                                <g id="/Neutral/$neutral_14" mask="url(#mask-45)" fill="#CAD1D9">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_14</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(480.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-46"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-48" fill="white">
+                                    <use xlink:href="#path-47"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-47"></use>
+                                <g id="/Neutral/$neutral_15" mask="url(#mask-48)" fill="#D3D9E0">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_15</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(600.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-49"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-51" fill="white">
+                                    <use xlink:href="#path-50"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-50"></use>
+                                <g id="/Neutral/$neutral_16" mask="url(#mask-51)" fill="#DCE1E7">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_16</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(720.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-52"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-54" fill="white">
+                                    <use xlink:href="#path-53"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-53"></use>
+                                <g id="/Neutral/$neutral_17" mask="url(#mask-54)" fill="#E3E7EC">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_17</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(840.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-55"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-57" fill="white">
+                                    <use xlink:href="#path-56"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-56"></use>
+                                <g id="/Neutral/$neutral_17" mask="url(#mask-57)" fill="#E3E7EC">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_18</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(960.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-58"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-60" fill="white">
+                                    <use xlink:href="#path-59"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-59"></use>
+                                <g id="/Neutral/$neutral_18" mask="url(#mask-60)" fill="#E7EBF1">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_19</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(1080.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-61"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-63" fill="white">
+                                    <use xlink:href="#path-62"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-62"></use>
+                                <g id="/Neutral/$neutral_19" mask="url(#mask-63)" fill="#ECEFF3">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="28.718" y="24">$neutral_20</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(1200.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-64"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-66" fill="white">
+                                    <use xlink:href="#path-65"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-65"></use>
+                                <g id="/$white" mask="url(#mask-66)" fill="#FFFFFF">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="41.576" y="24">$white</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <text id="NEUTRALS" font-family="GEInspiraSans, GE Inspira Sans" font-size="24" font-weight="normal" fill="#D96CA3">
+                    <tspan x="0" y="22">NEUTRALS</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

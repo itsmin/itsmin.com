@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAOA,UAGC;EAFC,WAAW,EAAE,eAAe;EAC5B,GAAG,EAAE,oHAAoH",
+"sources": ["sass/mantle_base-styles.scss"],
+"names": [],
+"file": "mantle_base-styles.css"
+}

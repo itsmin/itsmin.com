@@ -1,0 +1,17 @@
+
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="all-analytics" transform="translate(-1209.000000, -168.000000)" fill="#00CCFF">
+            <g id="content" transform="translate(0.000000, 130.000000)">
+                <g id="widget" transform="translate(790.000000, 0.000000)">
+                    <g id="widget-controls" transform="translate(390.000000, 37.000000)">
+                        <g id="move-icon" transform="translate(29.000000, 1.000000)">
+                            <path d="M12.25,7.5 L9.25,7.5 L9.25,4.5 L10.25,4.5 L8.25,0.5 L6.25,4.5 L7.25,4.5 L7.25,7.5 L4.25,7.5 L4.25,6.5 L0.25,8.5 L4.25,10.5 L4.25,9.5 L7.25,9.5 L7.25,12.5 L6.25,12.5 L8.25,16.5 L10.25,12.5 L9.25,12.5 L9.25,9.5 L12.25,9.5 L12.25,10.5 L16.25,8.5 L12.25,6.5 L12.25,7.5 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

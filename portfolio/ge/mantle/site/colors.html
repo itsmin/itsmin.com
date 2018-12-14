@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="css/addons/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/addons/animate.min.css">
+    <link rel="stylesheet"href="css/addons/jquery.scrollbar.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/app.min.css">
+    <!-- <link rel="stylesheet" href="css/app.css"> -->
+    <link rel="stylesheet" href="css/design_guidelines.css">
+     <link rel="stylesheet" href="css/addon.css">
+    <!-- Demo -->
+    <link rel="stylesheet" href="demo/css/demo.css">
+</head>
+
+<body data-ma-theme="blue">
+    <main class="main">
+        <div class="page-loader">
+            <div class="page-loader__spinner">
+                <svg viewBox="25 25 50 50">
+                    <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                </svg>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
+                <div class="navigation-trigger__inner">
+                    <i class="navigation-trigger__line"></i>
+                    <i class="navigation-trigger__line"></i>
+                    <i class="navigation-trigger__line"></i>
+                </div>
+            </div>
+<div id="Gdiv_icon1"><img src="img/globalheader/BHGELG.png" alt="BAKER AND HUGHES"></div>
+            <div class="header__logo hidden-sm-down">
+                <h1>
+                    <a href="index.html">Mantle Design</a>
+                </h1>
+            </div>
+        </header>
+
+        <!-- Sidebar Begins -->
+        <aside class="sidebar">
+            <div class="scrollbar-inner">
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">
+                            <i class="zmdi zmdi-home"></i> Home</a>
+                    </li>
+                    <li class="navigation__sub navigation__sub--active navigation__sub--toggled">
+                        <a href="">
+                            <i class="zmdi zmdi-collection-item"></i>Guidelines</a>
+                        <ul>
+                            <li class="navigation__active">
+                                <a href="colors.html">Colors</a>
+                            </li>
+                            <li>
+                                <a href="typography.html">Typography</a>
+                            </li>
+                            <li>
+                                <a href="icons.html">Iconography</a>
+                            </li>
+                            <li>
+                                <a href="layout.html">Layout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__sub">
+                        <a href="">
+                            <i class="zmdi zmdi-group-work"></i>Components</a>
+                        <ul>
+                            <li>
+                                <a href="headers.html">Headers</a>
+                            </li>
+                            <li>
+                                <a href="cards.html">Cards</a>
+                            </li>
+                            <li>
+                                <a href="tabs.html">Tabs</a>
+                            </li>
+                            <li>
+                                <a href="tables.html">Tables</a>
+                            </li>
+                            <li>
+                                <a href="listview.html">Listviews</a>
+                            </li>
+                            <li>
+                                <a href="buttons.html">Buttons</a>
+                            </li>
+                            <li>
+                                <a href="form-elements.html">Form Elements</a>
+                            </li>
+                            <li>
+                                <a href="badges.html">Badges</a>
+                            </li>
+
+                            <li>
+                                <a href="progress.html">Progress</a>
+                            </li>
+                            <li>
+                                <a href="modals.html">Modals</a>
+                            </li>
+                            <li>
+                                <a href="popover.html">Popover</a>
+                            </li>
+                            <li>
+                                <a href="dropdowns.html">Dropdowns</a>
+                            </li>
+
+                            <li>
+                                <a href="tooltips.html">Tooltips</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__sub">
+                        <a href="">
+                            <i class="zmdi zmdi-widgets"></i>Patterns</a>
+                        <ul>
+                            <li>
+                                <a href="search.html">Search</a>
+                            </li>
+                            <li>
+                                <a href="notifications-alerts.html">Notifications & Alerts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation">
+                        <a href="css-animations.html">
+                            <i class="zmdi zmdi-movie-alt zmdi-hc-fw"></i> Animations</a>
+                    </li>
+                    <li class="navigation">
+                        <a href="data-viz.html">
+                            <i class="zmdi zmdi-trending-up"></i> Data Visualization</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- Sidebar Ends -->
+
+        <section class="content">
+            <header class="content__title">
+                <h1>Colors</h1>
+            </header>
+
+            <div class="card">
+                <div class="card-body">
+                    <section>
+                        <p>All these colors are available as SCSS variables. You include this with any class/ID as mentioned below.</p>
+                        <p>Example usage:</p>
+                        <pre>
+                            <!-- <code> -->
+                                .highlight-block {
+                                    background-color: $primary_hover;
+                                }
+                            <!-- </code> -->
+                        </pre>
+                    </section>
+                    
+
+                    <!-- <h3 class="card-body__title">Available color previews</h3> -->
+                    <!--//
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-6">
+                            <img src="img/palette/primary.svg" height=170px alt="">
+                        </div>
+                        <div class="col-sm-6 col-xs-6">
+                            <img src="img/palette/secondary.svg" height=170px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/neutrals.svg" height=260px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/red.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/orange.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/yellow.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/lime.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/green.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/teal.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/aqua.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/cyan.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/blue.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/violet.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/purple.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/pink.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/brown.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/gray.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <img src="img/palette/salmon.svg" height=165px alt="">
+                        </div>
+                    </div>
+                    //-->
+
+                    <section class="swatches">
+                        <div class="mantle_colors">
+                            <h3>UI Colors</h3>
+                            <!-- neutrals -->
+                            <div>
+                              <h4>Neutrals</h4>
+                              <ul class="colors_neutral_01">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$white</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_10</a>
+                                </li>
+                            </ul>
+                        <!-- </div> -->
+                        <!-- <div> -->
+                            <ul class="colors_neutral_02">
+                                <li>
+                              <span></span>
+                              <a href="#">$neutral_11</a>
+                                </li>
+                                <li>
+                              <span></span>
+                              <a href="#">$neutral_12</a>
+                                </li>
+                                <li>
+                              <span></span>
+                              <a href="#">$neutral_13</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_14</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_15</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_16</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_17</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_18</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_19</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$neutral_20</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$black</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <!-- action colors -->
+                            <div>
+                              <h4>Primary Actions</h4>
+                              <ul class="colors_actions_primary">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$primary-default</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$primary-hover</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$primary-pressed</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$primary-light</a>
+                                </li>
+                              </ul>
+                      
+                              <h4>Secondary Actions</h4>
+                              <ul class="colors_actions_secondary">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$secondary-default</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$secondary-hover</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$secondary-pressed</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$secondary-light</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <!-- alerts & status colors -->
+                            <div>
+                              <h4>Alerts &amp; Status</h4>
+                              <ul class="colors_red">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-red_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-red_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-red_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-red_4</a>
+                                </li>
+                              </ul>
+                              <ul class="colors_orange">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-orange_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-orange_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-orange_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-orange_4</a>
+                                </li>
+                              </ul>
+                              <ul class="colors_yellow">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-yellow_</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-yellow_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-yellow_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-yellow_4</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div>
+                              <h4>&nbsp;</h4>
+                              <ul class="colors_blue">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-blue_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-blue_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-blue_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-blue_4</a>
+                                </li>
+                              </ul>
+                              <ul class="colors_green">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-green_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-green_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-green_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$stat-green_4</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <!-- theme colors -->
+                            <div>
+                                <h4>Light Theme</h4>
+                                <ul class="colors_light_theme">
+                                    <li>
+                                        <span></span>
+                                        <a href="#">$light_theme_blue</a>
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        <a href="#">$light_theme_grey</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- brand colors -->
+                            <div>
+                              <h4>GE Brand</h4>
+                              <ul class="colors_branding_primary">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brand-1_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brand-1_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brand-1_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brand-1_4</a>
+                                </li>
+                              </ul>
+                        
+                              <h4>BHGE Brand</h4>
+                              <ul class="colors_branding_secondary">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brand-2_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brand-2_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brand-2_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brand-2_4</a>
+                                  </li>            
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brand-2_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brand-2_6</a>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                      
+                        <div class="visualization_colors">
+                            <h3>Visualization Colors</h3>
+                            <!-- reds -->
+                            <div>
+                              <h4>Reds</h4>
+                              <ul class="colors_vis_reds">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$red_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$red_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$red_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$red_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$red_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$red_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$red_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$red_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$red_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$red_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- oranges -->
+                            <div>
+                              <h4>Oranges</h4>
+                              <ul class="colors_vis_oranges">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$orange_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$orange_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$orange_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$orange_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$orange_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$orange_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$orange_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$orange_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$orange_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$orange_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- yellow -->
+                            <div>
+                              <h4>Yellows</h4>
+                              <ul class="colors_vis_yellows">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$yellow_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$yellow_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$yellow_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$yellow_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$yellow_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$yellow_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$yellow_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$yellow_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$yellow_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$yellow_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- limes -->
+                            <div>
+                              <h4>Limes</h4>
+                              <ul class="colors_vis_limes">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$lime_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$lime_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$lime_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$lime_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$lime_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$lime_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$lime_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$lime_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$lime_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$lime_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- greens -->
+                            <div>
+                              <h4>Greens</h4>
+                              <ul class="colors_vis_greens">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$green_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$green_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$green_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$ogreen_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$green_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$green_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$green_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$green_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$green_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$green_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- teals -->
+                            <div>
+                              <h4>Teals</h4>
+                              <ul class="colors_vis_teals">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$teal_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$teal_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$teal_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$teal_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$teal_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$teal_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$teal_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$teal_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$teal_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$teal_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- aquas -->
+                            <div>
+                              <h4>Aquas</h4>
+                              <ul class="colors_vis_aquas">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$aqua_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$aqua_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$aqua_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$aqua_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$aqua_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$aqua_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$aqua_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$aqua_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$aqua_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$aqua_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- cyans -->
+                            <div>
+                              <h4>Cyans</h4>
+                              <ul class="colors_vis_cyans">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$cyan_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$cyan_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$cyan_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$cyan_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$cyan_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$cyan_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$cyan_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$cyan_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$cyan_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$cyan_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- blues -->
+                            <div>
+                              <h4>Blues</h4>
+                              <ul class="colors_vis_blues">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$blue_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$blue_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$blue_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$blue_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$blue_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$blue_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$blue_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$blue_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$blue_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$blue_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- violets -->
+                            <div>
+                              <h4>Violets</h4>
+                              <ul class="colors_vis_violets">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$violet_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$violet_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$violet_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$violet_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$violet_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$violet_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$violet_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$violet_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$violet_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$violet_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- purples -->
+                            <div>
+                              <h4>Purples</h4>
+                              <ul class="colors_vis_purples">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$purple_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$purple_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$purple_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$purple_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$purple_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$purple_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$purple_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$purple_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$purple_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$purple_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- pinks -->
+                            <div>
+                              <h4>Pinks</h4>
+                              <ul class="colors_vis_pinks">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$pink_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$pink_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$pink_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$pink_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$pink_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$pink_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$pink_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$pink_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$pink_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$pink_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- browns -->
+                            <div>
+                              <h4>Browns</h4>
+                              <ul class="colors_vis_browns">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brown_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brown_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brown_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brown_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brown_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brown_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brown_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brown_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brown_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$brown_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- grays -->
+                            <div>
+                              <h4>Grays</h4>
+                              <ul class="colors_vis_grays">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$gray_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$gray_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$gray_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$gray_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$gray_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$gray_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$gray_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$gray_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$gray_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$gray_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <!-- salmons -->
+                            <div>
+                              <h4>Salmons</h4>
+                              <ul class="colors_vis_salmons">
+                                <li>
+                                  <span></span>
+                                  <a href="#">$salmon_1</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$salmon_2</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$salmon_3</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$salmon_4</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$salmon_5</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$salmon_6</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$salmon_7</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$salmon_8</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$salmon_9</a>
+                                </li>
+                                <li>
+                                  <span></span>
+                                  <a href="#">$salmon_10</a>
+                                </li>
+                              </ul>
+                            </div>
+                      
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Older IE warning message -->
+    <!--[if IE]>
+                <div class="ie-warning">
+                    <h1>Warning!!</h1>
+                    <p>You are using an outdated version of Internet Explorer, please upgrade to any of the following web browsers to access this website.</p>
+
+                    <div class="ie-warning__downloads">
+                        <a href="http://www.google.com/chrome">
+                            <img src="img/browsers/chrome.png" alt="">
+                        </a>
+
+                        <a href="https://www.mozilla.org/en-US/firefox/new">
+                            <img src="img/browsers/firefox.png" alt="">
+                        </a>
+
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                        </a>
+
+                        <a href="https://support.apple.com/downloads/safari">
+                            <img src="img/browsers/safari.png" alt="">
+                        </a>
+
+                        <a href="https://www.microsoft.com/en-us/windows/microsoft-edge">
+                            <img src="img/browsers/edge.png" alt="">
+                        </a>
+
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                        </a>
+                    </div>
+                    <p>Sorry for the inconvenience!</p>
+                </div>
+            <![endif]-->
+
+    <!-- Javascript -->
+    <!-- Vendors -->
+   <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/jquery-scrollLock.min.js"></script>
+
+    <!-- App functions and actions -->
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

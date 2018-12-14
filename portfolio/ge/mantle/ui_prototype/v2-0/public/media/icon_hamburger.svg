@@ -1,0 +1,11 @@
+
+<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="all-analytics" transform="translate(-30.000000, -28.000000)" stroke="#E1EBF0">
+            <g id="app-header">
+                <path d="M30,29 L50,29 M30,35 L50,35 L30,35 Z M30,41 L50,41 L30,41 Z" id="hamburger-icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

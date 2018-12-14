@@ -1,0 +1,52 @@
+var json = [
+  {
+    "status": "green",
+    "well_name": "Bishop A #10",
+    "lift_type": "ESP",
+    "oil": "134",
+    "water": "213",
+    "gas": "134",
+    "energy": "42",
+    "uptime": "88",
+    "gathering_point": "11",
+    "percent_change": "2%",
+    "actions": [{
+      "action_1": "Run Analysis",
+    }],
+    "peek_content": [{
+      "peek_sample": "media/touch/Artboard.png",
+    }],
+    "status": "yellow",
+    "well_name": "Bishop A #14",
+    "lift_type": "ESP",
+    "oil": "134",
+    "water": "213",
+    "gas": "134",
+    "energy": "42",
+    "uptime": "88",
+    "gathering_point": "11",
+    "percent_change": "2%",
+    "actions": [{
+      "action_1": "Run Analysis",
+    }],
+    "peek_content": [{
+      "peek_sample": "media/touch/Artboard.png",
+    }],
+    "status": "red",
+    "well_name": "Clark A #7",
+    "lift_type": "ESP",
+    "oil": "134",
+    "water": "213",
+    "gas": "134",
+    "energy": "42",
+    "uptime": "88",
+    "gathering_point": "11",
+    "percent_change": "2%",
+    "actions": [{
+      "action_1": "Run Analysis",
+    }],
+    "peek_content": [{
+      "peek_sample": "media/touch/Artboard.png",
+    }],
+  }
+]

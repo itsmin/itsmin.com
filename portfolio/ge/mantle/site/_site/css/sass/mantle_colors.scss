@@ -1,0 +1,802 @@
+// COLORS  ---------------------------------------
+// When possible, please specify RGB or HSL values.
+//
+// This allows us to individually control alpha or perform color mixing in "Core"
+// (rather than having designers specify discrete color values in specification)
+// -----------------------------------------------
+
+// Neutrals
+$core_white:
+  hsl(0, 0%, 100%);
+
+$core_neutral_1:
+  hsl(216, 22%, 95%);
+
+$core_neutral_2:
+  hsl(214, 23%, 94%);
+
+$core_neutral_3:
+  hsl(216, 26%, 93%);
+
+$core_neutral_4:
+  hsl(213, 19%, 91%);
+
+$core_neutral_5:
+  hsl(213, 19%, 88%);
+
+$core_neutral_6:
+  hsl(212, 17%, 85%);
+
+$core_neutral_7:
+  hsl(212, 16%, 82%);
+
+$core_neutral_8:
+  hsl(212, 13%, 77%);
+
+$core_neutral_9:
+  hsl(212, 11%, 73%);
+
+$core_neutral_10:
+  hsl(212, 9%, 67%);
+
+$core_neutral_11:
+  hsl(214, 8%, 65%);
+
+$core_neutral_12:
+  hsl(214, 8%, 60%);
+
+$core_neutral_13:
+  hsl(214, 7%, 55%);
+
+$core_neutral_14:
+  hsl(214, 6%, 49%);
+
+$core_neutral_15:
+  hsl(214, 7%, 43%);
+
+$core_neutral_16:
+  hsl(212, 8%, 37%);
+
+$core_neutral_17:
+  hsl(212, 8%, 30%);
+
+$core_neutral_18:
+  hsl(212, 11%, 24%);
+
+$core_neutral_19:
+  hsl(213, 12%, 18%);
+
+$core_neutral_20:
+  hsl(210, 12%, 10%);
+
+$core_black:
+  hsl(0, 0%, 0%);
+
+
+
+// Actions
+$core_action_1:
+  hsl(205, 95%, 38%);
+
+$core_action_2:
+  hsl(205, 56%, 53%);
+
+$core_action_3:
+  hsl(205, 94%, 28%);
+
+$core_action_4:
+  hsl(194, 100%, 97%);
+
+$core_action_5:
+  hsl(212, 8%, 37%);
+
+$core_action_6:
+  hsl(214, 7%, 55%);
+
+$core_action_7:
+  hsl(212, 11%, 24%);
+
+$core_action_8:
+  hsl(216, 22%, 95%);
+
+
+// ALERTS AND STATUSES
+
+// Reds
+$core_red_1:
+  hsl(0, 100%, 96%);
+
+$core_red_2:
+  hsl(4, 88%, 80%)
+;
+$core_red_3:
+  hsl(0, 100%, 35%);
+
+$core_red_4:
+  hsl(0, 100%, 35%);
+
+// Oranges
+$core_orange_1:
+  hsl(24, 100%, 95%);
+
+$core_orange_2:
+  hsl(25, 100%, 80%);
+
+$core_orange_3:
+  hsl(25, 100%, 61%);
+
+$core_orange_4:
+  hsl(25, 100%, 40%);
+
+// Yellows
+$core_yellow_1:
+  hsl(46, 100%, 93%);
+
+$core_yellow_2:
+  hsl(47, 100%, 72%);
+
+$core_yellow_3:
+  hsl(47, 100%, 50%);
+
+$core_yellow_4:
+  hsl(47, 99%, 32%);
+
+// Blues
+$core_blue_1:
+  hsl(204, 100%, 95%);
+
+$core_blue_2:
+  hsl(207, 82%, 64%);
+
+$core_blue_3:
+  hsl(207, 82%, 43%);
+
+$core_blue_4:
+  hsl(207, 80%, 24%);
+
+// Greens
+$core_green_1:
+  hsl(126, 100%, 96%);
+
+$core_green_2:
+  hsl(79, 73%, 60%);
+
+$core_green_3:
+  hsl(79, 73%, 39%);
+
+$core_green_4:
+  hsl(78, 73%, 20%);
+
+
+
+// NOTES  ----------------------------------------
+// "Functional" colors should be variable mapped to other variables,
+// that have been previously defined.
+// -----------------------------------------------
+
+// Actionable (Primary)
+$core_primary_default:
+  $core_action_1;
+
+$core_primary_hover:
+  $core_action_2;
+
+$core_primary_pressed:
+  $core_action_3;
+
+$core_primary_light:
+  $core_action_4;
+
+// Actionable (Secondary)
+$core_secondary_default:
+  $core_neutral_16;
+
+$core_secondary_hover:
+  $core_neutral_13;
+
+$core_secondary_pressed:
+  $core_neutral_18;
+
+$core_secondary_light:
+  $core_neutral_1;
+
+
+
+// Alerts & Status
+$stat-red_1:
+  $core_red_1;
+
+$stat-red_2:
+  $core_red_2;
+
+$stat-red_3:
+  $core_red_3;
+
+$stat-red_4:
+  $core_red_4;
+
+
+$stat-orange_1:
+  $core_orange_1;
+
+$stat-orange_2:
+  $core_orange_2;
+
+$stat-orange_3:
+  $core_orange_3;
+
+$stat-orange_4:
+  $core_orange_4;
+
+
+$stat-yellow_1:
+  $core_yellow_1;
+
+$stat-yellow_2:
+  $core_yellow_2;
+
+$stat-yellow_3:
+  $core_yellow_3;
+
+$stat-yellow_4:
+  $core_yellow_4;
+
+
+$stat-blue_1:
+  $core_blue_1;
+
+$stat-blue_2:
+  $core_blue_2;
+
+$stat-blue_3:
+  $core_blue_3;
+
+$stat-blue_4:
+  $core_blue_4;
+
+
+$stat-green_1:
+  $core_green_1;
+
+$stat-green_2:
+  $core_green_2;
+
+$stat-green_3:
+  $core_green_3;
+
+$stat-green_4:
+  $core_green_4;
+
+
+// NOTES  ----------------------------------------
+// Branding colors do NOT map into the base color spectrum.
+// Branding colors should only be applied to branding elements and used
+// sparingly on UI elements.
+// -----------------------------------------------
+
+// Predix Brand Colors
+$brand-1_1:
+  hsl(209, 100%, 36%);
+
+$brand-1_2:
+  hsl(192, 100%, 44%);
+
+$brand-1_3:
+  hsl(0, 0%, 100%);
+
+$brand-1_4:
+  hsl(214, 3%, 40%);
+
+$brand-1_5:
+  hsl(180, 1%, 70%);
+
+
+// BHGE Brand Enhancements
+$brand-2_1:
+  hsl(244, 93%, 32%);
+
+$brand-2_2:
+  hsl(216, 60%, 18%);
+
+$brand-2_3:
+  hsl(78, 100%, 42%);
+
+$brand-2_4:
+  hsl(155, 100%, 37%);
+
+$brand-2_5:
+  hsl(44, 100%, 46%);
+
+$brand-2_6:
+  hsl(19, 100%, 50%);
+
+
+// BLR Light Theme
+$light_theme_blue: hsl(194, 57%, 18%);
+$light_theme_grey: hsl(210, 14%, 89%);
+
+
+
+// VISUALIZATION  --------------------------------
+//
+// -----------------------------------------------
+
+// Reds
+$red_1:
+  hsl(351, 58%, 78%)
+;
+$red_2:
+  hsl(353, 59%, 74%)
+;
+$red_3:
+  hsl(353, 61%, 71%)
+;
+$red_4:
+  hsl(354, 62%, 64%)
+;
+$red_5:
+  hsl(355, 64%, 60%)
+;
+$red_6:
+  hsl(357, 65%, 54%)
+;
+$red_7:
+  hsl(357, 55%, 44%)
+;
+$red_8:
+  hsl(357, 54%, 32%)
+;
+$red_9:
+  hsl(357, 53%, 26%)
+;
+$red_10:
+  hsl(355, 52%, 20%)
+;
+
+// Oranges
+$orange_1:
+  hsl(31, 73%, 78%)
+;
+$orange_2:
+  hsl(31, 75%, 73%)
+;
+$orange_3:
+  hsl(31, 75%, 69%)
+;
+$orange_4:
+  hsl(31, 74%, 62%)
+;
+$orange_5:
+  hsl(31, 74%, 56%)
+;
+$orange_6:
+  hsl(31, 83%, 46%)
+;
+$orange_7:
+  hsl(31, 82%, 39%)
+;
+$orange_8:
+  hsl(31, 79%, 28%)
+;
+$orange_9:
+  hsl(31, 76%, 23%)
+;
+$orange_10:
+  hsl(31, 73%, 18%)
+;
+
+// Yellows
+$yellow_1:
+  hsl(56, 69%, 75%)
+;
+$yellow_2:
+  hsl(56, 67%, 70%)
+;
+$yellow_3:
+  hsl(56, 66%, 66%)
+;
+$yellow_4:
+  hsl(56, 66%, 58%)
+;
+$yellow_5:
+  hsl(57, 65%, 50%)
+;
+$yellow_6:
+  hsl(57, 92%, 41%)
+;
+$yellow_7:
+  hsl(57, 93%, 34%)
+;
+$yellow_8:
+  hsl(57, 95%, 24%)
+;
+$yellow_9:
+  hsl(57, 96%, 19%)
+;
+$yellow_10:
+  hsl(57, 89%, 15%)
+;
+
+// Limes
+$lime_1:
+  hsl(92, 57%, 70%)
+;
+$lime_2:
+  hsl(91, 58%, 64%)
+;
+$lime_3:
+  hsl(90, 58%, 58%)
+;
+$lime_4:
+  hsl(88, 60%, 49%)
+;
+$lime_5:
+  hsl(84, 95%, 38%)
+;
+$lime_6:
+  hsl(85, 95%, 36%)
+;
+$lime_7:
+  hsl(85, 96%, 29%)
+;
+$lime_8:
+  hsl(85, 96%, 21%)
+;
+$lime_9:
+  hsl(85, 98%, 17%)
+;
+$lime_10:
+  hsl(85, 97%, 13%)
+;
+
+// Greens
+$green_1:
+  hsl(104, 27%, 73%)
+;
+$green_2:
+  hsl(104, 28%, 67%)
+;
+$green_3:
+  hsl(103, 28%, 63%)
+;
+$green_4:
+  hsl(101, 26%, 53%)
+;
+$green_5:
+  hsl(99, 32%, 45%)
+;
+$green_6:
+  hsl(95, 46%, 36%)
+;
+$green_7:
+  hsl(95, 45%, 29%)
+;
+$green_8:
+  hsl(96, 43%, 22%)
+;
+$green_9:
+  hsl(96, 42%, 18%)
+;
+$green_10:
+  hsl(97, 41%, 14%)
+;
+
+// Teals
+$teal_1:
+  hsl(168, 31%, 81%)
+;
+$teal_2:
+  hsl(169, 31%, 71%)
+;
+$teal_3:
+  hsl(168, 31%, 63%)
+;
+$teal_4:
+  hsl(168, 30%, 54%)
+;
+$teal_5:
+  hsl(168, 34%, 46%)
+;
+$teal_6:
+  hsl(168, 36%, 39%)
+;
+$teal_7:
+  hsl(168, 36%, 30%)
+;
+$teal_8:
+  hsl(169, 33%, 22%)
+;
+$teal_9:
+  hsl(168, 32%, 15%)
+;
+$teal_10:
+  hsl(171, 28%, 9%)
+;
+
+// Aquas
+$aqua_1:
+  hsl(204, 35%, 75%)
+;
+$aqua_2:
+  hsl(204, 34%, 70%)
+;
+$aqua_3:
+  hsl(206, 34%, 65%)
+;
+$aqua_4:
+  hsl(206, 34%, 57%)
+;
+$aqua_5:
+  hsl(206, 33%, 50%)
+;
+$aqua_6:
+  hsl(206, 45%, 41%)
+;
+$aqua_7:
+  hsl(206, 44%, 34%)
+;
+$aqua_8:
+  hsl(206, 44%, 25%)
+;
+$aqua_9:
+  hsl(207, 43%, 20%)
+;
+$aqua_10:
+  hsl(206, 41%, 15%)
+;
+
+// Cyans
+$cyan_1:
+  hsl(201, 93%, 82%)
+;
+$cyan_2:
+  hsl(202, 93%, 79%)
+;
+$cyan_3:
+  hsl(202, 92%, 76%)
+;
+$cyan_4:
+  hsl(203, 93%, 71%)
+;
+$cyan_5:
+  hsl(204, 92%, 67%)
+;
+$cyan_6:
+  hsl(205, 90%, 63%)
+;
+$cyan_7:
+  hsl(204, 57%, 52%)
+;
+$cyan_8:
+  hsl(205, 52%, 38%)
+;
+$cyan_9:
+  hsl(204, 52%, 30%)
+;
+$cyan_10:
+  hsl(205, 51%, 22%)
+;
+
+// Blues
+$blue_1:
+  hsl(234, 100%, 86%)
+;
+$blue_2:
+  hsl(234, 100%, 84%)
+;
+$blue_3:
+  hsl(234, 100%, 81%)
+;
+$blue_4:
+  hsl(233, 100%, 76%)
+;
+$blue_5:
+  hsl(232, 100%, 71%)
+;
+$blue_6:
+  hsl(231, 100%, 65%)
+;
+$blue_7:
+  hsl(231, 61%, 54%)
+;
+$blue_8:
+  hsl(232, 50%, 32%)
+;
+$blue_9:
+  hsl(232, 50%, 32%)
+;
+$blue_10:
+  hsl(230, 50%, 25%)
+;
+
+// Violets
+$violet_1:
+  hsl(263, 80%, 84%)
+;
+$violet_2:
+  hsl(263, 83%, 82%)
+;
+$violet_3:
+  hsl(264, 81%, 79%)
+;
+$violet_4:
+  hsl(263, 79%, 74%)
+;
+$violet_5:
+  hsl(264, 78%, 69%)
+;
+$violet_6:
+  hsl(264, 78%, 64%)
+;
+$violet_7:
+  hsl(263, 48%, 52%)
+;
+$violet_8:
+  hsl(264, 43%, 37%)
+;
+$violet_9:
+  hsl(263, 42%, 30%)
+;
+$violet_10:
+  hsl(264, 41%, 23%)
+;
+
+// Purples
+$purple_1:
+  hsl(308, 52%, 79%)
+;
+$purple_2:
+  hsl(309, 52%, 76%)
+;
+$purple_3:
+  hsl(309, 54%, 73%)
+;
+$purple_4:
+  hsl(311, 56%, 67%)
+;
+$purple_5:
+  hsl(314, 58%, 62%)
+;
+$purple_6:
+  hsl(316, 58%, 56%)
+;
+$purple_7:
+  hsl(316, 45%, 46%)
+;
+$purple_8:
+  hsl(317, 35%, 42%)
+;
+$purple_9:
+  hsl(316, 42%, 27%)
+;
+$purple_10:
+  hsl(315, 41%, 21%)
+;
+
+// Pinks
+$pink_1:
+  hsl(328, 57%, 73%)
+;
+$pink_2:
+  hsl(329, 59%, 68%)
+;
+$pink_3:
+  hsl(330, 59%, 64%)
+;
+$pink_4:
+  hsl(333, 62%, 57%)
+;
+$pink_5:
+  hsl(337, 64%, 53%)
+;
+$pink_6:
+  hsl(343, 67%, 50%)
+;
+$pink_7:
+  hsl(342, 66%, 41%)
+;
+$pink_8:
+  hsl(341, 67%, 29%)
+;
+$pink_9:
+  hsl(340, 66%, 23%)
+;
+$pink_10:
+  hsl(340, 66%, 23%)
+;
+
+// Browns
+$brown_1:
+  hsl(44, 42%, 74%)
+;
+$brown_2:
+  hsl(42, 44%, 69%)
+;
+$brown_3:
+  hsl(43, 44%, 65%)
+;
+$brown_4:
+  hsl(44, 42%, 56%)
+;
+$brown_5:
+  hsl(44, 45%, 48%)
+;
+$brown_6:
+  hsl(44, 64%, 39%)
+;
+$brown_7:
+  hsl(44, 63%, 32%)
+;
+$brown_8:
+  hsl(43, 60%, 24%)
+;
+$brown_9:
+  hsl(44, 59%, 19%)
+;
+$brown_10:
+  hsl(45, 57%, 15%)
+;
+
+// Grays
+$gray_1:
+  hsl(0, 0%, 85%)
+;
+$gray_2:
+  hsl(0, 0%, 76%)
+;
+$gray_3:
+  hsl(0, 0%, 67%)
+;
+$gray_4:
+  hsl(0, 0%, 57%)
+;
+$gray_5:
+  hsl(0, 0%, 49%)
+;
+$gray_6:
+  hsl(0, 0%, 40%)
+;
+$gray_7:
+  hsl(0, 0%, 33%)
+;
+$gray_8:
+  hsl(0, 0%, 24%)
+;
+$gray_9:
+  hsl(0, 0%, 18%)
+;
+$gray_10:
+  hsl(0, 0%, 12%)
+;
+
+// Salmons
+$salmon_1:
+  hsl(24, 71%, 85%)
+;
+$salmon_2:
+  hsl(22, 73%, 83%)
+;
+$salmon_3:
+  hsl(22, 71%, 79%)
+;
+$salmon_4:
+  hsl(22, 73%, 74%)
+;
+$salmon_5:
+  hsl(21, 74%, 70%)
+;
+$salmon_6:
+  hsl(16, 97%, 69%)
+;
+$salmon_7:
+  hsl(22, 46%, 53%)
+;
+$salmon_8:
+  hsl(21, 39%, 39%)
+;
+$salmon_9:
+  hsl(22, 38%, 31%)
+;
+$salmon_10:
+  hsl(22, 37%, 24%)
+;

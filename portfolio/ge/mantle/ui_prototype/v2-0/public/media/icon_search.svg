@@ -1,0 +1,13 @@
+
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="all-analytics" transform="translate(-852.000000, -22.000000)" stroke="#B6C3CC">
+            <g id="app-header">
+                <g id="search" transform="translate(853.000000, 23.000000)">
+                    <path d="M10,5 C10,7.761 7.761,10 5,10 C2.238,10 -3.52429197e-12,7.761 -3.52429197e-12,5 C-3.52429197e-12,2.239 2.238,0 5,0 C7.761,0 10,2.239 10,5 Z M8.2363,8.9162 L11.7623,12.4432 L8.2363,8.9162 Z" id="search-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

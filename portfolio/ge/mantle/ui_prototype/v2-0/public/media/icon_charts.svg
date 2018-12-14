@@ -1,0 +1,14 @@
+
+<svg width="31px" height="19px" viewBox="0 0 31 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="app-drawer-2" transform="translate(-154.000000, -221.000000)" stroke="#FFFFFF">
+            <g id="Group-6" transform="translate(123.000000, 204.000000)">
+                <g id="Group-2" transform="translate(31.000000, 17.000000)">
+                    <polyline id="Path-5" points="1 0 1 18.4129037 30.255364 18.4129037"></polyline>
+                    <path d="M0.875976562,12.7441406 C6.25748698,6.54882812 10.4928385,5 13.5820312,8.09765625 C16.671224,11.1953125 21.9375,10.2828776 29.3808594,5.36035156" id="Path-6"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

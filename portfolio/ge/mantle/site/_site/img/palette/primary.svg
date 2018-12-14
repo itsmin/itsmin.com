@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480px" height="206px" viewBox="0 0 480 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-1"></path>
+        <polygon id="path-2" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-4"></path>
+        <polygon id="path-5" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-7"></path>
+        <polygon id="path-8" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+        <path d="M2,0 L118,0 C119.104569,-2.02906125e-16 120,0.8954305 120,2 L120,150 L0,150 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="path-10"></path>
+        <polygon id="path-11" points="3.2682689e-13 -3.99680289e-15 120 -3.99680289e-15 120 109 -1.01307851e-15 109"></polygon>
+    </defs>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Color-Palettes" transform="translate(-200.000000, -433.000000)">
+            <g id="Group-4" transform="translate(200.000000, 427.000000)">
+                <g id="Group-5" transform="translate(0.000000, 62.000000)">
+                    <g id="Swatch">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-3" fill="white">
+                                    <use xlink:href="#path-2"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-2"></use>
+                                <g id="/Primary/$primary-default" mask="url(#mask-3)" fill="#0572BF">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="16.19" y="24">$primary-default</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(120.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-6" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-5"></use>
+                                <g id="/Primary/$primary-hover" mask="url(#mask-6)" fill="#4291CA">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="19.718" y="24">$primary-hover</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(240.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-9" fill="white">
+                                    <use xlink:href="#path-8"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-8"></use>
+                                <g id="/Primary/$primary-pressed" mask="url(#mask-9)" fill="#04548C">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="14.138" y="24">$primary-pressed</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Swatch" transform="translate(360.000000, 0.000000)">
+                        <g id="Group-2">
+                            <g id="Rectangle-4">
+                                <use fill="#F8F8F8" fill-rule="evenodd" xlink:href="#path-10"></use>
+                                <path stroke="#E9E9E9" stroke-width="1" d="M0.5,149.5 L119.5,149.5 L119.5,2 C119.5,1.17157288 118.828427,0.5 118,0.5 L2,0.5 C1.17157288,0.5 0.5,1.17157288 0.5,2 L0.5,149.5 Z"></path>
+                            </g>
+                            <g id="Rectangle">
+                                <mask id="mask-12" fill="white">
+                                    <use xlink:href="#path-11"></use>
+                                </mask>
+                                <use id="Mask" fill="#EBE594" xlink:href="#path-11"></use>
+                                <g id="/Primary/$primary-light" mask="url(#mask-12)" fill="#EEFBFF">
+                                    <rect id="Rectangle" x="0" y="0" width="120" height="109"></rect>
+                                </g>
+                            </g>
+                            <g id="Group" transform="translate(1.000000, 109.000000)">
+                                <path d="M0,0 L118,0 L118,39 C118,39.5522847 117.552285,40 117,40 L1,40 C0.44771525,40 6.76353751e-17,39.5522847 0,39 L0,0 Z" id="Rectangle-2" fill="#F8F8F8"></path>
+                                <text id="$color_num" font-family="GEInspiraSans, GE Inspira Sans" font-size="12" font-weight="normal" fill="#000000">
+                                    <tspan x="23.012" y="24">$primary-light</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <text id="PRIMARY" font-family="GEInspiraSans, GE Inspira Sans" font-size="24" font-weight="normal" fill="#D96CA3">
+                    <tspan x="0" y="22">PRIMARY</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

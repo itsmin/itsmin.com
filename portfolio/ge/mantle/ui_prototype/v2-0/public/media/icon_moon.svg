@@ -1,0 +1,15 @@
+
+<svg width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="user-preferences" transform="translate(-954.000000, -452.000000)" fill="#FFFFFF">
+            <g transform="translate(885.000000, 80.000000)" id="preferences">
+                <g transform="translate(15.000000, 330.000000)">
+                    <g id="dark-theme" transform="translate(10.000000, 25.000000)">
+                        <path d="M44,26.7486537 C44.6780504,26.9576014 45.3983956,27.0700865 46.1450132,27.0700865 C50.1623675,27.0700865 53.4190767,23.8133773 53.4190767,19.796023 C53.4190767,18.805273 53.221003,17.8607855 52.8622948,17 C55.8326571,17.9153456 57.9913453,20.6818939 57.9913453,23.9526307 C57.9913453,27.9699851 54.7346361,31.2266943 50.7172817,31.2266943 C47.6906773,31.2266943 45.0958039,29.3782345 44,26.7486537 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

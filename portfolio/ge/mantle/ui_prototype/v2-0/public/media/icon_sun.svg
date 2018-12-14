@@ -1,0 +1,25 @@
+
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="user-preferences" transform="translate(-913.000000, -449.000000)">
+            <g transform="translate(885.000000, 80.000000)" id="preferences">
+                <g transform="translate(15.000000, 330.000000)">
+                    <g id="dark-theme" transform="translate(10.000000, 25.000000)">
+                        <g id="Group" transform="translate(4.000000, 15.000000)">
+                            <circle id="Oval-4" fill="#8BD6FF" cx="8.85416667" cy="8.85416667" r="4.60416667"></circle>
+                            <path d="M8.85416667,2.125 L8.85416667,0" id="Line" stroke="#8BD6FF" stroke-width="0.7" stroke-linecap="square"></path>
+                            <path d="M8.85416667,17 L8.85416667,14.875" id="Line-Copy" stroke="#8BD6FF" stroke-width="0.7" stroke-linecap="square"></path>
+                            <path d="M14.1280175,4.48568949 L14.1280175,2.36068949" id="Line" stroke="#8BD6FF" stroke-width="0.7" stroke-linecap="square" transform="translate(14.128018, 3.423189) rotate(-315.000000) translate(-14.128018, -3.423189) "></path>
+                            <path d="M3.60980414,15.0039029 L3.60980414,12.8789029" id="Line-Copy" stroke="#8BD6FF" stroke-width="0.7" stroke-linecap="square" transform="translate(3.609804, 13.941403) rotate(-315.000000) translate(-3.609804, -13.941403) "></path>
+                            <path d="M15.9375,9.5625 L15.9375,7.4375" id="Line" stroke="#8BD6FF" stroke-width="0.7" stroke-linecap="square" transform="translate(15.937500, 8.500000) rotate(-270.000000) translate(-15.937500, -8.500000) "></path>
+                            <path d="M1.0625,9.5625 L1.0625,7.4375" id="Line-Copy" stroke="#8BD6FF" stroke-width="0.7" stroke-linecap="square" transform="translate(1.062500, 8.500000) rotate(-270.000000) translate(-1.062500, -8.500000) "></path>
+                            <path d="M14.1280175,15.0039029 L14.1280175,12.8789029" id="Line" stroke="#8BD6FF" stroke-width="0.7" stroke-linecap="square" transform="translate(14.128018, 13.941403) rotate(-225.000000) translate(-14.128018, -13.941403) "></path>
+                            <path d="M3.60980414,4.48568949 L3.60980414,2.36068949" id="Line-Copy" stroke="#8BD6FF" stroke-width="0.7" stroke-linecap="square" transform="translate(3.609804, 3.423189) rotate(-225.000000) translate(-3.609804, -3.423189) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="all-analytics" transform="translate(-29.000000, -23.000000)" stroke="#B6C3CC">
+            <g id="app-header">
+                <path d="M30,29 L30,24 L35,24 L35,29 L30,29 Z M38,29 L38,24 L43,24 L43,29 L38,29 Z M46,29 L46,24 L51,24 L51,29 L46,29 Z M30,37 L30,32 L35,32 L35,37 L30,37 Z M38,37 L38,32 L43,32 L43,37 L38,37 Z M30,45 L30,40 L35,40 L35,45 L30,45 Z M38,45 L38,40 L43,40 L43,45 L38,45 Z M46,37 L46,32 L51,32 L51,37 L46,37 Z M46,45 L46,40 L51,40 L51,45 L46,45 Z" id="apps-icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

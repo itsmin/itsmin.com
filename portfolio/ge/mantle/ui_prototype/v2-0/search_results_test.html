@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1.0">
+
+  <!-- fullscreen on iOS add to home -->
+  <link rel="apple-touch-icon" href="public/media/touch/Artboard.png">
+  <meta name = "viewport" content = "user-scalable=no, width=device-width">
+
+  <title>Search Results Test</title>
+
+  <link href="public/stylesheets/reset.css" rel="stylesheet" />
+  <link href="public/stylesheets/visual_elements.css" rel="stylesheet" />
+  <link href="public/stylesheets/mantle_components.css" rel="stylesheet" />
+  <link href="public/stylesheets/themes.css" rel="stylesheet" />
+  <!-- content styles -->
+  <link href="public/stylesheets/content_styles.css" rel="stylesheet" />
+
+
+  <script src="public/js/jquery-3.2.1.min.js"></script>
+  <script src="public/js/jquery.easing.1.3.js"></script>
+  <script src="public/js/w3.js"></script>
+
+  <script src="public/js/typeahead.bundle.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      var substringMatcher = function (strs) {
+        return function findMatches(q, cb) {
+          var matches, substringRegex;
+
+          // an array that will be populated with substring matches
+          matches = [];
+
+          // regex used to determine if a string contains the substring `q`
+          substrRegex = new RegExp(q, 'i');
+
+          // iterate through the pool of strings and for any string that
+          // contains the substring `q`, add it to the `matches` array
+          $.each(strs, function (i, str) {
+            if (substrRegex.test(str)) {
+              // the typeahead jQuery plugin expects suggestions to a
+              // JavaScript object, refer to typeahead docs for more info
+              matches.push({
+                value: str
+              });
+            }
+          });
+
+          cb(matches);
+        };
+      };
+
+      var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
+        'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
+        'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
+        'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
+        'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+        'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
+        'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+        'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+        'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+      ];
+
+      $('#search_panel .typeahead').typeahead({
+          hint: true,
+          highlight: true,
+          minLength: 1
+      }, {
+          name: 'states',
+          displayKey: 'value',
+          source: substringMatcher(states)
+      });
+    });
+  </script>
+
+  <script>
+    // expanding row handler
+    $(function() {
+      $('.list_row').click(function() {
+        if($(this).hasClass('list_row_clicked')) {
+          $(this).removeClass('list_row_clicked').siblings().removeClass('list_row_faded');
+        } else {
+          $(this).addClass('list_row_clicked').removeClass('list_row_faded').siblings().removeClass('list_row_clicked').addClass('list_row_faded');
+        }
+      });
+    });
+  </script>
+</head>
+
+<body id="container" class="theme-light">
+
+  <div id="search_panel">
+    <input type="search" class="typeahead" placeholder="Search" name="mantle_search">
+    <button type="submit" class="search_button"></button>
+    <a href="#" class="icon_facets"></a>
+  </div>
+
+  <div class="list">
+    <!-- list header -->
+    <div class="list_hd">
+      <div class="list_hd_cell">
+        All Results
+      </div>
+    </div>
+    <!-- list body -->
+    <div class="list_body">
+      <div class="list_content">
+
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list_row">
+          <div class="list_row_cell">
+            <ul>
+              <li>
+                <!-- <h4>Well 1A</h4> -->
+                <!-- <span>last updated: 1/1/2018</span> -->
+              </li>
+              <li>
+                <a href="#">Well 1A</a>
+                <ul class="search_results_tags">
+                  <li>Tags:</li>
+                  <li><a href="#">ESP</a></li>
+                  <li><a href="#">Total Liquid</a></li>
+                  <li><a href="#">bbl/day</a></li>
+                </ul>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener("touchstart", function(){}, true);
+</script>
+
+</body>
+</html>

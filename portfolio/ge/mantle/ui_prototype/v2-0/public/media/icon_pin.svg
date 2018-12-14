@@ -1,0 +1,24 @@
+
+<svg width="17px" height="21px" viewBox="0 0 17 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M8.5,21 C2.83333333,15.7962802 0,11.6296136 0,8.5 C0,3.80557963 3.80557963,0 8.5,0 C13.1944204,0 17,3.80557963 17,8.5 C17,11.6296136 14.1666667,15.7962802 8.5,21 Z M8.5,13 C10.9852814,13 13,10.9852814 13,8.5 C13,6.01471863 10.9852814,4 8.5,4 C6.01471863,4 4,6.01471863 4,8.5 C4,10.9852814 6.01471863,13 8.5,13 Z" id="path-1"></path>
+    </defs>
+    <g id="stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dashboard" transform="translate(-354.000000, -677.000000)">
+            <g id="widget-(map---production-by-region)" transform="translate(0.000000, 369.000000)">
+                <g id="pins" transform="translate(15.000000, 84.000000)">
+                    <g id="green" transform="translate(49.000000, 28.000000)">
+                        <g id="pin-copy-23" transform="translate(290.000000, 190.000000)">
+                            <g id="flag" transform="translate(0.000000, 6.000000)">
+                                <g id="Combined-Shape">
+                                    <use fill="#17D300" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    <path stroke="#FFFFFF" stroke-width="1" d="M8.5,20.3192461 C13.8442658,15.3503998 16.5,11.3858988 16.5,8.5 C16.5,4.081722 12.918278,0.5 8.5,0.5 C4.081722,0.5 0.5,4.081722 0.5,8.5 C0.5,11.3858988 3.15573417,15.3503998 8.5,20.3192461 Z M8.5,13.5 C5.73857625,13.5 3.5,11.2614237 3.5,8.5 C3.5,5.73857625 5.73857625,3.5 8.5,3.5 C11.2614237,3.5 13.5,5.73857625 13.5,8.5 C13.5,11.2614237 11.2614237,13.5 8.5,13.5 Z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

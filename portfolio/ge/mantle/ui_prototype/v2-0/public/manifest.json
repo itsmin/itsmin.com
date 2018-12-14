@@ -1,0 +1,11 @@
+{
+  "name": "Mantle (Mobile)",
+  "short_name": "Mantle",
+  "start_url": ".",
+  "display": "standalone",
+  "icons": [{
+    "src": "media/touch/homescreen192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+}
