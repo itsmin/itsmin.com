@@ -70,10 +70,18 @@ video {
 }
 
 .definition {
+	float: left;
+	clear: left;
+	display: block;
+	// max-width: calc(100% - 50px);
+	max-width: 800px;
 	padding: 15px;
 	border-left: solid 1px;
 }
 .attribution {
+	float: left;
+	clear: left;
+	display: block;
 	margin: 15px 0;
 }
 
