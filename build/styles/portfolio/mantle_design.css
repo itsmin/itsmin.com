@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: normal;
+  color: #141414;
+  line-height: 14px;
+  background: whitesmoke;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 25px 0;
+  list-style: none;
+}
+ul li {
+  float: left;
+  clear: left;
+  margin: 10px 0 25px 0;
+  list-style: none;
+}
+ul li em {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #141414;
+  line-height: 24px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #141414;
+  line-height: 14px;
+}
+
+h3 {
+  font-weight: 600;
+  color: #141414;
+}
+
+h4 {
+  font-weight: 400;
+  color: #141414;
+  margin: 25px 0;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #3366cc;
+}
+a:hover {
+  color: #336699;
+}
+
+video {
+  width: calc(100% - 50px);
+}
+
+.description {
+  float: left;
+  clear: left;
+  display: block;
+  max-width: 800px;
+  color: #141414;
+}
+
+.definition {
+  padding: 15px;
+  border-left: solid 1px;
+}
+
+.attribution {
+  margin: 15px 0;
+}
+
+img {
+  float: left;
+  width: calc(100% - 50px);
+}
+
+/*# sourceMappingURL=mantle_design.css.map */

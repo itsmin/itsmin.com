@@ -107,6 +107,9 @@ del a {
 #viewport #container #canvas #nav ul li {
   font-size: 12px;
 }
+#viewport #container #canvas #nav ul li span {
+  text-transform: none;
+}
 #viewport #container #canvas #nav ul li em {
   text-transform: none;
 }

@@ -1,8 +1,8 @@
 body {
 	margin: 0;
-  padding: 0;
-  background: hsl(0, 0%, 100%);
-  font-family: helvetica, sans-serif;
+  	padding: 0;
+  	background: hsl(0, 0%, 100%);
+  	font-family: helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: -0.5;
@@ -98,6 +98,9 @@ del {
 					max-width: 165px;
 					li {
 						font-size: 12px;
+						span {
+							text-transform: none;
+						}
 						em {
 							text-transform: none;
 						}
