@@ -1,0 +1,28 @@
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<desc>Pulse</desc>
+  <defs>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+      <stop stop-color="#C6E9F3" offset="0%"></stop>
+      <stop stop-color="#95E2CF" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="white" fill-rule="evenodd">
+    <path class="pulse_small"
+      d="M178.377176,79.0986306 C180.197839,85.8711506 181.168831,92.9917784 181.168831,100.339194 C181.168831,115.136259 177.230633,129.013508 170.3452,140.979979 L100,100.084918 L178.377176,79.0986306 Z"
+      id="Combined-Shape-Copy-29"
+      fill="url(#linearGradient-1)"
+    ></path>
+    <path class="pulse_oultine"
+      d="M100,200 C44.771525,200 0,155.228475 0,100 C0,44.771525 44.771525,0 100,0 C155.228475,0 200,44.771525 200,100 C200,155.228475 155.228475,200 100,200 Z M100,177.435065 C142.766205,177.435065 177.435065,142.766205 177.435065,100 C177.435065,57.2337945 142.766205,22.5649351 100,22.5649351 C57.2337945,22.5649351 22.5649351,57.2337945 22.5649351,100 C22.5649351,142.766205 57.2337945,177.435065 100,177.435065 Z"
+      id="Combined-Shape-Copy-30"
+      fill=""
+    ></path>
+    <path class="pulse_large"
+      d="M199.86621,190.440132 C186.910891,196.570929 172.427326,200 157.142857,200 C101.914382,200 57.1428571,155.228475 57.1428571,100 L156.929289,100 C177.795433,144.207835 192.10774,174.354546 199.86621,190.440132 Z"
+      id="Combined-Shape-Copy-31"
+      fill-opacity="0.7"
+      fill="#A1F7EA"
+      transform="translate(128.504534, 150.000000) scale(-1, 1) translate(-128.504534, -150.000000) "
+    ></path>
+  </g>
+</svg>

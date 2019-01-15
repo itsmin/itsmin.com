@@ -1,0 +1,871 @@
+@import "colors_type.scss", "reset.scss";
+
+
+// data table
+$dt_col_count:           6;
+
+$dt_width:               1600px;
+$dt_height:              640px;
+$dt_adjusted_height:     $dt_height - 243px;
+$dt_hd_height:           50px;
+$dt_cell_width:          $dt_width / $dt_col_count;
+
+$dt_scroller_adjusted_height: $dt_adjusted_height - 33px;
+
+// Data Player ARL height values
+$arl_count:              10;
+
+$arl_0_ht:               0.10;
+$arl_1_ht:               0.10;
+$arl_2_ht:               0.21;
+$arl_3_ht:               0.10;
+$arl_4_ht:               0.10;
+$arl_5_ht:               0.21;
+$arl_6_ht:               0.05;
+$arl_7_ht:               0.06;
+$arl_8_ht:               0.05;
+$arl_9_ht:               0.02;
+
+
+$chevron_border:          6px;
+$chevron_height:          $chevron_border * 2;
+
+.chevron {
+  float: right;
+  position:relative;
+  display:block;
+  margin: 6px 10px 0 0;
+  height: $chevron_height;
+  color: $ui_light_blue;
+  font-weight: 600;
+  font-size: 1em;
+  transition: 0.2s ease-out;
+  &:before,
+  &:after {
+    position:absolute;
+    display:block;
+    content:"";
+    border: $chevron_border solid transparent;
+  }
+  &:before {
+    top: 0;
+    border-top-color: $ui_bright_blue;        /*  Chevron Color  */
+  }
+  &:after{
+    top: -2px;                                /*  adjust thickness  */
+    border-top-color: $ui_dark_blue;          /*  Match background colour */
+  }
+  &.chevron_rotated {
+    margin: 0 -2px 0 0;
+    transform: rotate(180deg);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+
+$chart_dimension: 200px;
+
+.data_gauges {
+  float: left;
+  clear: left;
+  margin: 160px 0 0 0;
+  width: $dt_width;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: border-box;
+    li {
+      float: left;
+      clear: none;
+      margin: 0;
+      padding: 0;
+      display: border-box;
+
+      .chart_pie {
+        float: left;
+        clear: none;
+        width: $chart_dimension;
+        height: $chart_dimension;
+        .chart_pie_labels {
+          position: absolute;
+          z-index: 100;
+          display: border-box;
+          width: $chart_dimension / 8;
+          height: $chart_dimension / 4;
+          pointer-events: none;
+
+          &:nth-child(1){
+            margin: 0 0 0 ($chart_dimension - ($chart_dimension / 8));
+          }
+          &:nth-child(2) {
+            margin: ($chart_dimension - ($chart_dimension / 4)) 0 0 ($chart_dimension - ($chart_dimension / 8));
+            .chart_attributes {
+              margin: 2em 0 0 0;
+            }
+          }
+          &:nth-child(3) {
+            margin: ($chart_dimension - ($chart_dimension / 4)) 0 0 0;
+            .chart_attributes {
+              margin: 2em 0 0 0;
+            }
+          }
+          &:nth-child(4) {
+
+          }
+
+          .chart_arl_count {
+            display: block;
+            margin: 0;
+            color: $ui_dark_blue;
+            font-size: 1.2em;
+            line-height: 1.2em;
+            font-weight: 400;
+            text-align: center;
+            pointer-events: none;
+          }
+          .chart_attributes {
+            display: block;
+            margin: 0;
+            color: $ui_dark_blue;
+            font-size: 0.4em;
+            font-weight: 400;
+            line-height: 1.2em;
+            text-align: center;
+            text-transform: uppercase;
+            pointer-events: none;
+          }
+        }
+      }
+
+      .chart_donut {
+        float: left;
+        clear: none;
+        width: $chart_dimension;
+        height: $chart_dimension;
+        .chart_donut_labels {
+          position: absolute;
+          z-index: 100;
+          display: border-box;
+          margin: 50px;
+          width: $chart_dimension / 2;
+          height: $chart_dimension / 2;
+          pointer-events: none;
+          .chart_donut_count {
+            display: block;
+            color: $ui_dark_blue;
+            font-size: 4em;
+            font-weight: 400;
+            text-align: center;
+            pointer-events: none;
+          }
+          .chart_attributes {
+            display: block;
+            font-size: 0.8em;
+            font-weight: 400;
+            line-height: 0.2em;
+            text-align: center;
+            text-transform: uppercase;
+            pointer-events: none;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+svg {
+  float: left;
+  clear: left;
+  width: $chart_dimension;
+  height: $chart_dimension;
+  // transform: rotate(-90deg);
+  // background: $arl_1;
+  // border-radius: 50%;
+}
+
+@-webkit-keyframes inv_pie_load {
+  0%   {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+#inv_pie_arl_none {
+  fill: $arl_0;
+  // fill-opacity: 0;
+  animation: inv_pie_load 1s 1;
+  animation-delay: 0s;
+  transition: 2.4 ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: 1.2 ease-out;
+    // fill: $arl_0_bkgd;
+  }
+}
+#inv_pie_arl_1 {
+  fill: $arl_1;
+  // fill-opacity: 0;
+  animation: inv_pie_load 1s 1;
+  animation-delay: 0.1s;
+  transition: 2.4 ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: 1.2 ease-out;
+    // fill: $arl_1_bkgd;
+  }
+}
+#inv_pie_arl_2 {
+  fill: $arl_2;
+  // fill-opacity: 0;
+  animation: inv_pie_load 1s 1;
+  animation-delay: 0.2s;
+  transition: 2.4 ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: 1.2 ease-out;
+    // fill: $arl_2_bkgd;
+  }
+}
+#inv_pie_arl_3 {
+  fill: $arl_3;
+  // fill-opacity: 0;
+  animation: inv_pie_load 1s 1;
+  animation-delay: 0.3s;
+  transition: 2.4 ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: 1.2 ease-out;
+    // fill: $arl_3_bkgd;
+  }
+}
+#inv_pie_arl_4 {
+  fill: $arl_4;
+  // fill-opacity: 0;
+  animation: inv_pie_load 1s 1;
+  animation-delay: 0.4s;
+  transition: 2.4 ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: 1.2 ease-out;
+    // fill: $arl_4_bkgd;
+  }
+}
+#inv_pie_arl_5 {
+  fill: $arl_5;
+  // fill-opacity: 0;
+  animation: inv_pie_load 1s 1;
+  animation-delay: 0.5s;
+  transition: 2.4 ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: 1.2 ease-out;
+    // fill: $arl_5_bkgd;
+  }
+}
+#inv_pie_arl_6 {
+  fill: $arl_6;
+  // fill-opacity: 0;
+  animation: inv_pie_load 1s 1;
+  animation-delay: 0.6s;
+  transition: 2.4 ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: 1.2 ease-out;
+    // fill: $arl_6_bkgd;
+  }
+}
+#inv_pie_arl_7 {
+  fill: $arl_7;
+  // fill-opacity: 0;
+  animation: inv_pie_load 1s 1;
+  animation-delay: 0.7s;
+  transition: 2.4 ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: 1.2 ease-out;
+    // fill: $arl_7_bkgd;
+  }
+}
+#inv_pie_arl_8 {
+  fill: $arl_8;
+  // fill-opacity: 0;
+  animation: inv_pie_load 1s 1;
+  animation-delay: 0.8s;
+  transition: 2.4 ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: 1.2 ease-out;
+    // fill: $arl_8_bkgd;
+  }
+}
+#inv_pie_arl_9 {
+  fill: $arl_9;
+  // fill-opacity: 0;
+  animation: inv_pie_load 1s 1;
+  animation-delay: 0.9s;
+  transition: 2.4 ease-out;
+  &:hover {
+    opacity: 0.5;
+    transition: 1.2 ease-out;
+    // fill: $arl_9_bkgd;
+  }
+}
+
+$scroller_offset:       100px;
+
+
+.detail_view {
+  position: absolute;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background: $screen;
+  opacity: 0;
+  transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: 0.3s;
+  pointer-events: none;
+  & .detail_img {
+    opacity: 0;
+    margin: 0 auto;
+    width: 1060px;
+    height: 100%;
+    background: transparent url("../../public/media/detail.png") 0 50px no-repeat;
+    background-size: 1060px;
+    box-shadow: 0 100px 128px rgba($ui_bright_blue,0.6);
+  }
+}
+.detail_toggle {
+  color: rgba(180,230,255,1);
+}
+
+.detail_open {
+  opacity: 1;
+  transition: all 2.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: all;
+  & .detail_img {
+    opacity: 1;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 0.6s;
+  }
+}
+
+
+#dt_my {
+  width: ($dt_width - ($dt_cell_width * 2)) + 40px;
+  height: $dt_height + $dt_hd_height;
+  .dt_hd {
+    width: $dt_width - ($dt_cell_width * 2);
+  }
+  .dt_hd_cell,
+  .dt_row_cell {
+    &:first-child,
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+#dt_inventory {
+  height: $dt_height + $dt_hd_height;
+}
+
+#dt_inventory .dt_body::-webkit-scrollbar {
+  width: 30px;
+}
+#dt_inventory .dt_body::-webkit-scrollbar-thumb {
+  width: 60px;
+  min-height: 30px;
+  border: 4px solid $ui_dark_blue;
+  border-radius: 15px;
+  background: rgba(0,0,0,0);
+}
+
+.dt {
+  float: left;
+  clear: left;
+  margin: 30px 0 0 -20px;
+  width: $dt_width + ($scroller_offset - 20px);
+  min-height: 200px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  // CHART BUTTON STYLE
+  // a {
+  //   border-bottom: 2px solid $white;
+  //   &:hover {
+  //     color: $ui_dark_blue;
+  //     border-bottom: 2px solid $ui_bright_blue;
+  //     transition: 0.8s ease-out;
+  //   }
+  // }
+
+  // sizing
+  .dt_hd,
+  .dt_row {
+    box-sizing: border-box;
+    white-space: nowrap;
+    > div {
+      width: $dt_cell_width;
+      &:nth-child(2) {
+        width: $dt_cell_width * 2;
+      }
+      &:nth-child(3) {
+        width: $dt_cell_width / 2;
+      }
+      &:nth-child(4) {
+        width: $dt_cell_width / 2;
+      }
+    }
+  }
+
+
+  .dt_hd {
+    height: $dt_hd_height;
+  }
+
+  @debug $dt_cell_width;
+
+  .dt_body,
+  .dt_short {
+    position: relative;
+    margin: $dt_hd_height 0 0 0;
+    padding: 0 0 0 20px;
+    height: $dt_adjusted_height;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 0 0 12px 12px;
+
+    .dt_content {
+      position: absolute;
+      min-height: $dt_height;
+      background-image: -webkit-linear-gradient(bottom, $white 3px, $ui_dark_blue 3px);
+      // overflow: hidden;           // controls row stickiness
+    }
+  }
+
+  // styling
+  .dt_column_filter {
+    position: absolute;
+    z-index: 1100;
+    display: border-box;
+    box-sizing: border-box;
+    margin-top: -160px;
+    padding: 8px 12px;
+    width: $dt_cell_width;
+    height: 100px;
+    background: $white;
+    border: solid $white 2px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba($ui_medium_blue,0.5);
+    color: $ui_dark_blue;
+    transform: scale(0.01);
+    transition: 0.2s ease-out;
+    transition-delay: 0.1s;
+    b {
+      float: left;
+      clear: left;
+      display: block;
+      margin: 4px 0 16px 0;
+      font-weight: 600;
+    }
+    input {
+      float: left;
+      clear: left;
+    }
+  }
+  #settings_author {
+    margin-left: -16px;
+  }
+  #settings_title {
+    margin-left: ($dt_cell_width / 2) - 14px;
+  }
+  #settings_arl {
+    margin-left: (($dt_cell_width / 2) * -0.5) - 14px;
+    margin-top: -260px;
+    height: 200px;
+    background: $white url(../media/arl_filter_placeholder.png) no-repeat 16px 46px;
+    background-size: $dt_cell_width / 1.7;
+  }
+  #settings_updated {
+    margin-left: (($dt_cell_width / 2) * -0.5) - 14px;
+    margin-top: -365px;
+    height: 300px;
+    background: $white url(../media/calendar_filter_placeholder.png) no-repeat 8px 46px;
+    background-size: $dt_cell_width / 1.1;
+  }
+  #settings_owner {
+    margin-left: -16px;
+  }
+
+  .dt_hd {
+    position: absolute;
+    z-index: 100;
+    display: block;
+    margin: 0 20px;
+    padding: 0;
+    width: $dt_width;
+    background: $ui_dark_blue;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    white-space: nowrap;
+
+    .dt_hd_cell {
+      float: left;
+      clear: none;
+      display: block;
+      padding: 1em 1em 0.6em 1em;
+      height: 3.2em;
+      border-bottom: 0.4em solid $ui_dark_blue;
+      box-sizing: border-box;
+      color: $white;
+      font-weight: 400;
+      text-align: left;
+      text-transform: uppercase;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      transition: 0.6s ease-out;
+
+        &:hover {
+          border-bottom: 0.4em solid $ui_bright_blue;
+
+          .dt_column_filter {
+            transition: all 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform: scale(1);
+            z-index: 1110;
+          }
+        }
+
+        &.dt_hd_active {
+          margin: 5px 0 -5px 0;
+          height: 2.9em;
+          box-sizing: border-box;
+          background: $ui_medium_blue;
+          border-bottom: 0.4em solid transparent;
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+          line-height: 0.6em;
+          // box-shadow: inset 0 2px 3px $ui_light_green;
+          &:hover {
+            border-bottom: 0.4em solid $ui_bright_blue;
+          }
+
+          a {
+            display: none;
+          }
+
+        }
+      }
+    }
+  }
+
+  .dt_row {
+    position: relative;
+    float: left;
+    clear: left;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    height: 3.1em;
+    background: $white;
+    border-bottom: 1px solid rgba($ui_dark_blue,0.25);
+    border-radius: 0;
+    overflow: hidden;
+    transition: 0.4s ease-out;
+
+    &:last-child {
+      margin:  0 0 3px 0;
+      border: none;
+    }
+
+    &.dt_row_clicked {
+      position: sticky;
+      top: 3px;
+      z-index: 50;
+      margin: 2px 0 2px 0;
+      height: 15em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      border: none;
+      border-radius: 12px;
+      opacity: 1;
+      transition: all 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transform: scale(1.020);
+    }
+    &.dt_row_faded {
+      opacity: 0.85;
+    }
+
+    .dt_row_cell {
+      float: left;
+      clear: none;
+      padding: 1em;
+      box-sizing: border-box;
+      color: $ui_dark_blue;
+      font-weight: 400;
+      text-align: left;
+
+      .dt_analytic_title {
+        float: left;
+        clear: left;
+        display: inline-block;
+        width: ($dt_cell_width * 2) - ($dt_cell_width / 3);
+        height: 1.6em;
+        overflow-x: hidden;
+        overflow-y: visible;
+        color: $ui_bright_blue;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        a {
+          margin: 0 0 0 -2px;
+          padding: 0 2px;
+          border-bottom: 1px solid $white;
+          color: $ui_medium_green;
+          // font-family: "Lato-Bold";
+          // font-size: 1.2em;
+          // line-height: 0.8em;
+          &:hover {
+            color: $ui_dark_green;
+            border-bottom: 1px solid $ui_dark_green;
+            transition: 0.8s ease-out;
+          }
+        }
+      }
+
+      .dt_summary {
+        float: left;
+        clear: left;
+        display: block;
+        margin: 30px 0 0 0;
+        width: $dt_cell_width * 2;
+        transition: 0.6s ease-in;
+
+        .dt_summary_report {
+          float: left;
+          clear: left;
+          display: block;
+          margin: 0;
+          width: ($dt_cell_width + ($dt_cell_width / 3)) - 20px;
+
+          .dt_summary_text {
+            float: left;
+            clear: left;
+            display: block;
+            margin: 0;
+            padding: 8px 0;
+            width: ($dt_cell_width + ($dt_cell_width / 3)) - 40px;
+            height: 8em;
+            border-top: 1px solid $ui_dark_blue;
+            border-bottom: 1px solid $ui_medium_blue;
+            // border-radius: 8px;
+            font-size: 0.8em;
+            line-height: 16px;
+            white-space: pre-line;
+            overflow-y: scroll;
+            i {
+              display: block;
+              margin: 8px 0 0 88px;
+
+              color: #999;
+            }
+          }
+        }
+
+        .dt_summary_tags {
+          float: left;
+          clear: none;
+          display: block;
+          margin: 0;
+          width: ($dt_cell_width / 3) * 2;
+
+          ul {
+            width: ($dt_cell_width / 3) * 2;
+            border-top: 1px solid $ui_dark_blue;
+            li {
+              float: left;
+              clear: left;
+              margin: 0 0 0 0;
+              font-size: 0.8em;
+              line-height: 16px;
+              color: $ui_dark_blue;
+              &:first-child {
+                margin: 8px 0 0 0;
+              }
+              &:before {
+                color: $ui_bright_blue;
+                font-weight: bold;
+                content: "> ";
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+  .cell_active {
+    &.score_0 {
+      background: $arl_0_bkgd;
+    }
+    &.score_1 {
+      background: $arl_1_bkgd;
+    }
+    &.score_2 {
+      background: $arl_2_bkgd;
+    }
+    &.score_3 {
+      background: $arl_3_bkgd;
+    }
+    &.score_4 {
+      background: $arl_4_bkgd;
+    }
+    &.score_5 {
+      background: $arl_5_bkgd;
+    }
+    &.score_6 {
+      background: $arl_6_bkgd;
+    }
+    &.score_7 {
+      background: $arl_7_bkgd;
+    }
+    &.score_8 {
+      background: $arl_8_bkgd;
+    }
+    &.score_9 {
+      background: $arl_9_bkgd;
+    }
+    span {
+      display: block;
+      margin: 0 0 0 -5px;
+      padding: 0 5px;
+      width: 100px;
+      height: 15em;
+      color: $ui_dark_blue;
+      font-family: "Lato-Bold";
+      font-size: 1.2em;
+      line-height: 0.8em;
+      transition: 0.2s ease-in;
+      &:hover {
+        font-size: 2.4em;
+        line-height: 0.5em;
+        transition: 0.4s ease-out;
+        &::after {
+          @include tooltip_style;
+          content: "more info about ARL score(s)";
+        }
+      }
+    }
+  }
+
+}
+
+// scroller
+.scroller {
+  position: absolute;
+  z-index: 1;
+  left: $dt_width + ($scroller_offset + 30px);
+  display: block;
+  margin: -(($dt_height - $chart_dimension) - 45px) 0 0 0 ;
+  padding: 0;
+  width: 30px;
+  height: $dt_scroller_adjusted_height;
+  border: none;
+  border-radius: 15px;
+
+  .scroller_queue {
+    position: absolute;
+    z-index: -10;
+    margin: 0 0 0 2px;
+    width: 22px;
+    height: $dt_scroller_adjusted_height / 2;
+    border: 2px solid rgba($ui_dark_blue,0.25);
+    border-radius: 15px;
+    pointer-events: none;
+  }
+
+  .scroller_arl {
+    // positions within scroller
+    position: absolute;
+    margin: 11px 0 0 11px;
+    width: 8px;
+
+    :first-child {
+      border-radius: 4px;
+    }
+    :nth-child(2) {
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+    :last-child {
+      border-radius: 0 0 4px 4px;
+    }
+
+    a {
+      border: none;
+      transition: 0.2s ease-out;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    .arl_0 {
+      display: block;
+      margin: 0 0 8px 0;
+      width: 8px;
+      height: ($dt_scroller_adjusted_height * $arl_0_ht);
+      background: $arl_0;
+    }
+    .arl_1,
+    .arl_2,
+    .arl_3,
+    .arl_4,
+    .arl_5,
+    .arl_6,
+    .arl_7,
+    .arl_8,
+    .arl_9, {
+      display: block;
+      margin: 0;
+      width: 8px;
+    }
+    .arl_1 {
+      background: $arl_1;
+      height: ($dt_scroller_adjusted_height * $arl_1_ht);
+    }
+    .arl_2 {
+      background: $arl_2;
+      height: ($dt_scroller_adjusted_height * $arl_2_ht);
+    }
+    .arl_3 {
+      background: $arl_3;
+      height: ($dt_scroller_adjusted_height * $arl_3_ht);
+    }
+    .arl_4 {
+      background: $arl_4;
+      height: ($dt_scroller_adjusted_height * $arl_4_ht);
+    }
+    .arl_5 {
+      background: $arl_5;
+      height: ($dt_scroller_adjusted_height * $arl_5_ht);
+    }
+    .arl_6 {
+      background: $arl_6;
+      height: ($dt_scroller_adjusted_height * $arl_6_ht);
+    }
+    .arl_7 {
+      background: $arl_7;
+      height: ($dt_scroller_adjusted_height * $arl_7_ht);
+    }
+    .arl_8 {
+      background: $arl_8;
+      height: ($dt_scroller_adjusted_height * $arl_8_ht);
+    }
+    .arl_9 {
+      background: $arl_9;
+      height: ($dt_scroller_adjusted_height * $arl_9_ht);
+    }
+  }
+}

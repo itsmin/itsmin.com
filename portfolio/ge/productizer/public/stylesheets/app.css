@@ -1,0 +1,664 @@
+@charset "UTF-8";
+body {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Lato", helvetica, sans-serif;
+  font-weight: 400;
+  color: #333;
+  -webkit-font-smoothing: subpixel-rendering !important;
+  font-size: 1em; }
+
+h1, h2, h3, h4 {
+  font-family: "Lato", helvetica, sans-serif;
+  font-weight: 400;
+  color: #333;
+  -webkit-font-smoothing: subpixel-rendering !important;
+  color: #a4a4a4; }
+
+h1 {
+  position: fixed;
+  float: left;
+  clear: left;
+  margin: 10px 0 30px 100px;
+  color: #FFF;
+  font-size: 1.4em;
+  font-family: "Lato-light";
+  text-transform: uppercase;
+  z-index: 1110; }
+
+h4 {
+  margin: 0 0 5px 0;
+  font-size: 0.8em;
+  text-transform: uppercase; }
+
+h5 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 0.8em;
+  text-transform: uppercase; }
+
+ul, li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  color: #14be82;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none; }
+
+a:hover {
+  color: #25515c;
+  transition: 0.8s ease-out; }
+
+input[type=text], input[type=password], textarea {
+  outline: none;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #6896a6;
+  border-radius: 6px;
+  color: #25515c;
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 1em;
+  transition: all 0.2s ease-out; }
+  input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    background-color: #d8f5ff; }
+  input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: rgba(164, 164, 164, 0.5);
+    font-style: italic; }
+
+textarea {
+  width: 360px;
+  min-height: 4em; }
+
+input[type=button] {
+  padding: 8px;
+  border: none;
+  background: #6896a6;
+  border-radius: 1.5em;
+  color: #FFF;
+  outline: none; }
+  input[type=button]:hover {
+    background: #25515c;
+    transition: all 0.2s ease-out; }
+
+input[type=date], select {
+  outline: none;
+  margin: 0 0 20px 0;
+  padding: 8px;
+  border: 1px solid #6896a6;
+  border-radius: 6px;
+  color: #25515c;
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 1em;
+  transition: all 0.2s ease-out; }
+  input[type=date]:focus, select:focus {
+    background-color: #d8f5ff; }
+
+input[type=date] {
+  max-width: 150px; }
+
+.ui_bt {
+  margin: 0 32px 0 0; }
+  .ui_bt:before {
+    content: "↓ "; }
+
+#sso {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background: url(../media/SSObackground.png) no-repeat;
+  background-size: cover; }
+  #sso img {
+    width: 25%;
+    max-width: 300px; }
+  #sso .sso_login {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -40px 0 0 -280px;
+    padding: 40px 80px;
+    width: 450px;
+    height: 300px;
+    background: #FFF;
+    border-radius: 8px; }
+    #sso .sso_login h2 {
+      color: #222;
+      font-weight: 400; }
+    #sso .sso_login input {
+      margin: 0 0 20px 0;
+      width: 450px;
+      height: 40px;
+      color: #25515c;
+      font-weight: 400;
+      font-size: 1.4em;
+      text-indent: 8px; }
+    #sso .sso_login .sso_button {
+      float: left;
+      display: block;
+      margin: 40px 100px;
+      width: 250px;
+      height: 30px;
+      background: #0099FF;
+      border-radius: 4px;
+      color: #FFF;
+      font-weight: 600;
+      text-align: center;
+      line-height: 30px; }
+
+#primary_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  background: #6896a6 url(../media/pulse.svg) 30px 10px no-repeat;
+  background-size: 40px;
+  z-index: 100;
+  font-size: 0.8em;
+  transition: 0.5s ease-in-out; }
+  #primary_nav:hover {
+    height: 30%;
+    background: rgba(17, 36, 41, 0.8) url(../media/pulse.svg) 30px 30px no-repeat;
+    background-size: 90px;
+    z-index: 1111; }
+    #primary_nav:hover li {
+      float: left;
+      clear: left;
+      margin: 20px 0 0 150px;
+      opacity: 1;
+      pointer-events: all;
+      transition: 0.5s ease-in-out; }
+      #primary_nav:hover li:first-child {
+        margin: 65px 0 0 150px; }
+      #primary_nav:hover li span {
+        float: left;
+        clear: left;
+        display: inline-block;
+        color: #b4e6ff;
+        font-size: 1.2em;
+        font-weight: 800; }
+      #primary_nav:hover li ul {
+        float: left;
+        clear: left;
+        margin: -45px 0 0 -130px;
+        opacity: 1; }
+        #primary_nav:hover li ul li {
+          float: left;
+          clear: left; }
+  #primary_nav:first-child {
+    margin: 65px 0 0 100px; }
+  #primary_nav li {
+    float: left;
+    clear: left;
+    margin: 20px 0 0 100px;
+    opacity: 0;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: 0.5s ease-in-out; }
+    #primary_nav li:first-child {
+      margin: 65px 0 0 150px; }
+    #primary_nav li span {
+      float: left;
+      clear: left;
+      display: inline-block;
+      color: #b4e6ff;
+      font-size: 1.2em;
+      font-weight: 800; }
+    #primary_nav li a {
+      float: left;
+      clear: left;
+      color: #FFF;
+      font-size: 1.2em;
+      transition: 0.5s ease-in-out; }
+      #primary_nav li a:hover {
+        color: #b4e6ff; }
+    #primary_nav li ul {
+      float: left;
+      clear: left;
+      opacity: 0; }
+      #primary_nav li ul li {
+        float: left;
+        clear: left; }
+
+#submit_analytic {
+  float: left;
+  display: border-box;
+  margin: 100px 0 0 0;
+  width: 800px; }
+  #submit_analytic > li {
+    float: left;
+    clear: left;
+    display: border-box;
+    margin: 0 0 40px -20px;
+    padding: 0 0 40px 20px;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0 1px 0 rgba(104, 150, 166, 0.5);
+    transition: 0.4s ease-out; }
+    #submit_analytic > li:hover {
+      background: rgba(216, 245, 255, 0.5);
+      border-radius: 16px;
+      box-shadow: 0 2px 0 rgba(104, 150, 166, 0.25);
+      transition: 1s ease-out; }
+    #submit_analytic > li:last-child {
+      background: rgba(164, 164, 164, 0.15);
+      border-radius: 16px;
+      box-shadow: 0 0 0 #FFF; }
+    #submit_analytic > li > a {
+      float: left;
+      clear: none;
+      margin: 20px 0 0 -65px;
+      color: #6896a6;
+      font-size: 0.8em;
+      text-align: center;
+      line-height: 30px;
+      text-transform: uppercase; }
+      #submit_analytic > li > a .meta_tab {
+        float: left;
+        clear: none;
+        display: block;
+        margin: 0 35px 0 0;
+        width: 30px;
+        height: 30px;
+        background: #6896a6;
+        border-radius: 15px;
+        color: #FFF; }
+      #submit_analytic > li > a .code_tab {
+        float: left;
+        clear: none;
+        display: block;
+        margin: 0 35px 0 0;
+        width: 30px;
+        height: 30px;
+        background: #6896a6;
+        border-radius: 15px 0 0 15px;
+        color: #FFF; }
+        #submit_analytic > li > a .code_tab::before {
+          font-size: 2em;
+          font-weight: bold;
+          line-height: 1.1em;
+          content: "<"; }
+  #submit_analytic .submit_section_clicked {
+    display: border-box;
+    width: 100%;
+    height: 2em;
+    transition: 2s ease-out; }
+    #submit_analytic .submit_section_clicked > ul > * {
+      display: none; }
+  #submit_analytic .meta_background {
+    opacity: 0.2; }
+  #submit_analytic .meta_analytic,
+  #submit_analytic .meta_business {
+    display: border-box;
+    width: 100%;
+    transition: 1s ease-out; }
+    #submit_analytic .meta_analytic .submit_section_hd:hover::after,
+    #submit_analytic .meta_business .submit_section_hd:hover::after {
+      position: sticky;
+      z-index: 300;
+      display: inline-block;
+      margin: 0 0 0 8px;
+      padding: 0 8px;
+      height: 16px;
+      background: #FFF;
+      border-radius: 8px;
+      box-shadow: 0 1px 1px rgba(104, 150, 166, 0.5);
+      color: #25515c;
+      font-size: 10px;
+      font-style: italic;
+      text-transform: none;
+      line-height: 16px;
+      vertical-align: top;
+      content: "Required"; }
+    #submit_analytic .meta_analytic ul,
+    #submit_analytic .meta_business ul {
+      display: border-box;
+      width: 100%; }
+      #submit_analytic .meta_analytic ul > li,
+      #submit_analytic .meta_business ul > li {
+        float: left;
+        clear: none;
+        display: border-box;
+        width: 50%; }
+        #submit_analytic .meta_analytic ul > li div,
+        #submit_analytic .meta_business ul > li div {
+          float: left;
+          clear: left;
+          width: 100%;
+          min-height: 100px; }
+          #submit_analytic .meta_analytic ul > li div h5,
+          #submit_analytic .meta_business ul > li div h5 {
+            margin: 30px 0 10px 0; }
+          #submit_analytic .meta_analytic ul > li div input,
+          #submit_analytic .meta_analytic ul > li div textarea,
+          #submit_analytic .meta_business ul > li div input,
+          #submit_analytic .meta_business ul > li div textarea {
+            width: 360px; }
+          #submit_analytic .meta_analytic ul > li div.meta_languages li,
+          #submit_analytic .meta_business ul > li div.meta_languages li {
+            width: 100%;
+            color: #a4a4a4;
+            font-style: italic; }
+            #submit_analytic .meta_analytic ul > li div.meta_languages li:hover::after,
+            #submit_analytic .meta_business ul > li div.meta_languages li:hover::after {
+              position: sticky;
+              z-index: 300;
+              display: inline-block;
+              margin: 0 0 0 8px;
+              padding: 0 8px;
+              height: 16px;
+              background: #FFF;
+              border-radius: 8px;
+              box-shadow: 0 1px 1px rgba(104, 150, 166, 0.5);
+              color: #25515c;
+              font-size: 10px;
+              font-style: italic;
+              text-transform: none;
+              line-height: 16px;
+              vertical-align: top;
+              content: "only Python is currently supported"; }
+          #submit_analytic .meta_analytic ul > li div.meta_tags ul,
+          #submit_analytic .meta_business ul > li div.meta_tags ul {
+            margin: 0 0 10px 0;
+            padding: 0 0 10px 0; }
+          #submit_analytic .meta_analytic ul > li div.meta_tags li,
+          #submit_analytic .meta_business ul > li div.meta_tags li {
+            float: left;
+            margin: 0 5px 0 0;
+            padding: 0;
+            width: auto; }
+            #submit_analytic .meta_analytic ul > li div.meta_tags li a,
+            #submit_analytic .meta_business ul > li div.meta_tags li a {
+              float: left;
+              display: inline-block;
+              margin: 0;
+              padding: 4px 16px;
+              width: auto;
+              background: #6896a6;
+              border-radius: 1em;
+              color: #FFF;
+              font-size: 0.8em; }
+              #submit_analytic .meta_analytic ul > li div.meta_tags li a:hover,
+              #submit_analytic .meta_business ul > li div.meta_tags li a:hover {
+                background: #25515c; }
+              #submit_analytic .meta_analytic ul > li div.meta_tags li a.tags_user_defined,
+              #submit_analytic .meta_business ul > li div.meta_tags li a.tags_user_defined {
+                font-style: italic;
+                background: #14be82; }
+                #submit_analytic .meta_analytic ul > li div.meta_tags li a.tags_user_defined:hover,
+                #submit_analytic .meta_business ul > li div.meta_tags li a.tags_user_defined:hover {
+                  background: #018a42; }
+                #submit_analytic .meta_analytic ul > li div.meta_tags li a.tags_user_defined::before,
+                #submit_analytic .meta_business ul > li div.meta_tags li a.tags_user_defined::before {
+                  content: "_"; }
+                #submit_analytic .meta_analytic ul > li div.meta_tags li a.tags_user_defined::after,
+                #submit_analytic .meta_business ul > li div.meta_tags li a.tags_user_defined::after {
+                  content: "_"; }
+          #submit_analytic .meta_analytic ul > li div.meta_tags .add_user_defined,
+          #submit_analytic .meta_business ul > li div.meta_tags .add_user_defined {
+            font-size: 0.8em;
+            border-radius: 1em;
+            line-height: 1em;
+            transition: 1s ease-out; }
+            #submit_analytic .meta_analytic ul > li div.meta_tags .add_user_defined::before,
+            #submit_analytic .meta_business ul > li div.meta_tags .add_user_defined::before {
+              display: inline-block;
+              margin: 0 5px 0 0;
+              width: 1em;
+              height: 1em;
+              background: #14be82;
+              border-radius: 0.5em;
+              color: #FFF;
+              text-align: center;
+              line-height: 1em;
+              content: "+"; }
+            #submit_analytic .meta_analytic ul > li div.meta_tags .add_user_defined:hover::after,
+            #submit_analytic .meta_business ul > li div.meta_tags .add_user_defined:hover::after {
+              position: sticky;
+              z-index: 300;
+              display: inline-block;
+              margin: 0 0 0 8px;
+              padding: 0 8px;
+              height: 16px;
+              background: #FFF;
+              border-radius: 8px;
+              box-shadow: 0 1px 1px rgba(104, 150, 166, 0.5);
+              color: #25515c;
+              font-size: 10px;
+              font-style: italic;
+              text-transform: none;
+              line-height: 16px;
+              vertical-align: top;
+              content: "add from list or create a custom tag"; }
+
+.meta_code {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  display: border-box;
+  margin: 0;
+  padding: 100px 0 0 35px;
+  min-width: 800px;
+  width: 1000px;
+  height: 100%;
+  background: #25515c;
+  transition: 1s ease-out; }
+  .meta_code.meta_code_expand {
+    width: calc(100% - 100px);
+    transition: 0.5s ease-out; }
+    .meta_code.meta_code_expand .submit_code_hd .code_tab::before {
+      content: ">"; }
+    .meta_code.meta_code_expand ul li textarea {
+      width: calc(100% - 120px);
+      transition: 0.5s ease-out; }
+    .meta_code.meta_code_expand ul li .test_output .test_tabs {
+      width: calc(100% - 100px);
+      transition: 0.5s ease-out; }
+      .meta_code.meta_code_expand ul li .test_output .test_tabs li {
+        width: 33%; }
+    .meta_code.meta_code_expand ul li .test_output textarea {
+      width: calc(100% - 120px);
+      transition: 0.5s ease-out; }
+  .meta_code > a {
+    float: left;
+    clear: none;
+    margin: 20px 0 0 -65px;
+    color: #6896a6;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase; }
+    .meta_code > a .meta_tab {
+      float: left;
+      clear: none;
+      display: block;
+      margin: 0 35px 0 0;
+      width: 30px;
+      height: 30px;
+      background: #6896a6;
+      border-radius: 15px;
+      color: #FFF; }
+    .meta_code > a .code_tab {
+      float: left;
+      clear: none;
+      display: block;
+      margin: 0 35px 0 0;
+      width: 30px;
+      height: 30px;
+      background: #6896a6;
+      border-radius: 15px 0 0 15px;
+      color: #FFF; }
+      .meta_code > a .code_tab::before {
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 1.1em;
+        content: "<"; }
+    .meta_code > a.submit_code_hd {
+      color: #FFF; }
+      .meta_code > a.submit_code_hd:hover::after {
+        position: sticky;
+        z-index: 300;
+        display: inline-block;
+        margin: 0 0 0 8px;
+        padding: 0 8px;
+        height: 16px;
+        background: #FFF;
+        border-radius: 8px;
+        box-shadow: 0 1px 1px rgba(104, 150, 166, 0.5);
+        color: #25515c;
+        font-size: 10px;
+        font-style: italic;
+        text-transform: none;
+        line-height: 16px;
+        vertical-align: top;
+        content: "Steps 1 and 2 required to submit"; }
+  .meta_code ul {
+    display: border-box;
+    width: 100%; }
+    .meta_code ul > li {
+      float: left;
+      clear: none;
+      display: border-box;
+      width: calc(50% - 50px); }
+      .meta_code ul > li.code_run_button {
+        margin: 300px auto 0 auto;
+        width: auto; }
+        .meta_code ul > li.code_run_button input[type=button] {
+          width: auto;
+          padding-right: 16px;
+          padding-left: 16px; }
+          .meta_code ul > li.code_run_button input[type=button]:hover {
+            background: rgba(104, 150, 166, 0.5); }
+      .meta_code ul > li div {
+        float: left;
+        clear: left;
+        width: 100%;
+        min-height: 100px; }
+        .meta_code ul > li div h5 {
+          margin: 30px 0 10px 0;
+          color: #FFF; }
+        .meta_code ul > li div input,
+        .meta_code ul > li div textarea {
+          width: calc(($input_width * 1.25)); }
+        .meta_code ul > li div textarea {
+          margin: 0;
+          opacity: 1;
+          transition: 1s ease-out;
+          transition-delay: 0.2s;
+          height: 580px;
+          color: #333;
+          font-family: "Source Code Pro", Courier, monospace;
+          font-size: 1em;
+          font-weight: 600;
+          line-height: 1.6em; }
+          .meta_code ul > li div textarea:focus {
+            background-color: #FFF; }
+        .meta_code ul > li div.meta_source_data input[type=button] {
+          width: 100px; }
+          .meta_code ul > li div.meta_source_data input[type=button]:hover {
+            background: rgba(104, 150, 166, 0.5); }
+        .meta_code ul > li div.source_input textarea::after {
+          margin: 0 20px 0 0;
+          border-right: solid 1px #d8f5ff; }
+        .meta_code ul > li div.test_output {
+          margin: 0;
+          opacity: 1;
+          transition: 1s ease-out;
+          transition-delay: 0.4s; }
+          .meta_code ul > li div.test_output .test_tabs {
+            float: right;
+            display: border-box;
+            width: 400px;
+            transition: 1s ease-out;
+            transition-delay: 0.4s; }
+            .meta_code ul > li div.test_output .test_tabs li {
+              display: border-box;
+              width: 33%;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+              .meta_code ul > li div.test_output .test_tabs li h5 {
+                display: border-box;
+                padding: 0 8px;
+                color: #6896a6;
+                white-space: nowrap;
+                overflow: hidden;
+                text-align: center;
+                text-overflow: ellipsis; }
+              .meta_code ul > li div.test_output .test_tabs li .active_test_state {
+                color: #FFF; }
+          .meta_code ul > li div.test_output textarea {
+            float: right;
+            display: border-box;
+            width: calc(($input_width * 1.25));
+            height: 580px;
+            background: #333;
+            color: #FFF;
+            font-family: "Source Code Pro", Courier, monospace;
+            font-size: 1em;
+            font-weight: 600;
+            line-height: 1.6em; }
+    .meta_code ul.source_data_selection {
+      width: calc(100% - 50px);
+      border-top: solid 1px #6896a6;
+      border-bottom: solid 1px #6896a6; }
+  .meta_code .submit_analytic {
+    float: left;
+    clear: left;
+    margin: 40px auto 0 auto;
+    min-width: 800px;
+    width: calc(100% - 40px);
+    border-top: solid 1px #6896a6; }
+    .meta_code .submit_analytic input[type=button] {
+      margin: 40px 0 0 0;
+      padding-right: 32px;
+      padding-left: 32px; }
+      .meta_code .submit_analytic input[type=button]:hover {
+        background-color: rgba(104, 150, 166, 0.5); }
+        .meta_code .submit_analytic input[type=button]:hover::after {
+          position: sticky;
+          z-index: 300;
+          display: inline-block;
+          margin: 0 0 0 8px;
+          padding: 0 8px;
+          height: 16px;
+          background: #FFF;
+          border-radius: 8px;
+          box-shadow: 0 1px 1px rgba(104, 150, 166, 0.5);
+          color: #25515c;
+          font-size: 10px;
+          font-style: italic;
+          text-transform: none;
+          line-height: 16px;
+          vertical-align: top;
+          content: "Submit Analytic"; }
+
+#contact_page {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  margin-top: 80px;
+  width: 100%;
+  min-height: 1280px;
+  background: white url(../media/contact_placeholder.png) no-repeat 105px 160px;
+  background-size: 1060px; }
+
+.content {
+  float: left;
+  clear: left;
+  display: border-box;
+  margin: 0 0 0 100px;
+  padding: 0;
+  width: auto; }
+
+/*# sourceMappingURL=app.css.map */

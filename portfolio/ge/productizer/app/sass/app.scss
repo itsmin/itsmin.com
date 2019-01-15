@@ -1,0 +1,584 @@
+@import "colors_type.scss", "reset.scss";
+
+
+// Links
+@mixin form_header {
+  float: left;
+  clear: none;
+  margin: 20px 0 0 -65px;
+  color: $ui_medium_blue;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  .meta_tab {
+    float: left;
+    clear: none;
+    display: block;
+    margin: 0 35px 0 0;
+    width: 30px;
+    height: 30px;
+    background: $ui_medium_blue;
+    border-radius: 15px;
+    color: $white;
+  }
+  .code_tab {
+    float: left;
+    clear: none;
+    display: block;
+    margin: 0 35px 0 0;
+    width: 30px;
+    height: 30px;
+    background: $ui_medium_blue;
+    border-radius: 15px 0 0 15px;
+    color: $white;
+    &::before {
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 1.1em;
+      content: "<";
+    }
+  }
+}
+
+$ui_bt_height:      1.5em;
+
+.ui_bt {
+  margin: 0 32px 0 0;
+  &:before {
+    content: "↓ ";
+  }
+}
+
+// SSO
+#sso {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background: url(../media/SSObackground.png) no-repeat;
+  background-size: cover;
+
+  img {
+    width: 25%;
+    max-width: 300px;
+  }
+  .sso_login {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -40px 0 0 -280px;
+    padding: 40px 80px;
+    width: 450px;
+    height: 300px;
+    background: $white;
+    border-radius: 8px;
+
+    h2 {
+      color: #222;
+      font-weight: 400;
+    }
+    input {
+      margin: 0 0 20px 0;
+      width: 450px;
+      height: 40px;
+      color: $ui_dark_blue;
+      font-weight: 400;
+      font-size: 1.4em;
+      text-indent: 8px;
+    }
+    .sso_button {
+      float: left;
+      display: block;
+      margin: 40px 100px;
+      width: 250px;
+      height: 30px;
+      background: #0099FF;
+      border-radius: 4px;
+      color: $white;
+      font-weight: 600;
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+}
+
+// Navigation
+#primary_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  background: $ui_medium_blue url(../media/pulse.svg) 30px 10px no-repeat;
+  background-size: 40px;
+  z-index: 100;
+  font-size: 0.8em;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    height: 30%;
+    background: rgba($screen,0.8) url(../media/pulse.svg) 30px 30px no-repeat;
+    background-size: 90px;
+    z-index: 1111;
+    li {
+      float: left;
+      clear: left;
+      margin: 20px 0 0 150px;
+      opacity: 1;
+      pointer-events: all;
+      transition: 0.5s ease-in-out;
+      &:first-child {
+        margin: 65px 0 0 150px;
+      }
+      span {
+        float: left;
+        clear: left;
+        display: inline-block;
+        color: $ui_bright_blue;
+        font-size: 1.2em;
+        font-weight: 800;
+      }
+      ul {
+        float: left;
+        clear: left;
+        margin: -45px 0 0 -130px;
+        opacity: 1;
+        li {
+          float: left;
+          clear: left;
+        }
+      }
+    }
+  }
+  &:first-child {
+    margin: 65px 0 0 100px;
+  }
+  li {
+    float: left;
+    clear: left;
+    margin: 20px 0 0 100px;
+    opacity: 0;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+    &:first-child {
+      margin: 65px 0 0 150px;
+    }
+    span {
+      float: left;
+      clear: left;
+      display: inline-block;
+      color: $ui_bright_blue;
+      font-size: 1.2em;
+      font-weight: 800;
+    }
+    a {
+      float: left;
+      clear: left;
+      color: $white;
+      font-size: 1.2em;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        color: $ui_bright_blue;
+      }
+    }
+    ul {
+      float: left;
+      clear: left;
+      opacity: 0;
+      li {
+        float: left;
+        clear: left;
+      }
+    }
+  }
+}
+
+#submit_analytic {
+  float: left;
+  display: border-box;
+  margin: 100px 0 0 0;
+  width: $form_width;
+  > li {
+    float: left;
+    clear: left;
+    display: border-box;
+    margin: 0 0 40px -20px;
+    padding: 0 0 40px 20px;
+    width: 100%;
+    background: $white;
+    box-shadow: 0 1px 0 rgba($ui_medium_blue,0.5);
+    transition: 0.4s ease-out;
+    &:hover {
+      background: rgba($ui_light_blue,0.5);
+      border-radius: 16px;
+      box-shadow: 0 2px 0 rgba($ui_medium_blue,0.25);
+      transition: 1s ease-out;
+    }
+    &:last-child {
+      background: rgba($grey,0.15);
+      border-radius: 16px;
+      box-shadow: 0 0 0 $white;
+    }
+    > a {
+      @include form_header;
+    }
+  }
+
+  .submit_section_clicked {
+    display: border-box;
+    width: 100%;
+    height: 2em;
+    transition: 2s ease-out;
+    > ul > * {
+      display: none;
+    }
+  }
+
+  .meta_background {
+    opacity: 0.2;
+  }
+
+  .meta_analytic,
+  .meta_business {
+    display: border-box;
+    width: 100%;
+    transition: 1s ease-out;
+    .submit_section_hd {
+      &:hover {
+        &::after {
+          @include tooltip_style;
+          content: "Required";
+        }
+      }
+    }
+    ul {
+      display: border-box;
+      width: 100%;
+      > li {
+        float: left;
+        clear: none;
+        display: border-box;
+        width: 50%;
+        div {
+          float: left;
+          clear: left;
+          width: 100%;
+          min-height: 100px;
+          h5 {
+            margin: 30px 0 10px 0;
+          }
+          input,
+          textarea {
+            width: $input_width;
+          }
+          &.meta_languages {
+            li {
+              width: 100%;
+              color: $grey;
+              font-style: italic;
+              &:hover {
+                &::after {
+                  @include tooltip_style;
+                  content: "only Python is currently supported";
+                }
+              }
+            }
+          }
+          &.meta_tags {
+            ul {
+              margin: 0 0 10px 0;
+              padding: 0 0 10px 0;
+            }
+            li {
+              float: left;
+              margin: 0 5px 0 0;
+              padding: 0;
+              width: auto;
+              a {
+                float: left;
+                display: inline-block;
+                margin: 0;
+                padding: 4px 16px;
+                width: auto;
+                background: $ui_medium_blue;
+                border-radius: 1em;
+                color: $white;
+                font-size: 0.8em;
+                &:hover {
+                  background: $ui_dark_blue;
+                }
+                &.tags_user_defined {
+                  font-style: italic;
+                  background: $ui_medium_green;
+                  &:hover {
+                    background: $ui_dark_green;
+                  }
+                  &::before {
+                    content: "_";
+                  }
+                  &::after {
+                    content: "_";
+                  }
+                }
+              }
+            }
+            .add_user_defined {
+              font-size: 0.8em;
+              border-radius: 1em;
+              line-height: 1em;
+              transition: 1s ease-out;
+              &::before {
+                display: inline-block;
+                margin: 0 5px 0 0;
+                width: 1em;
+                height: 1em;
+                background: $ui_medium_green;
+                border-radius: 0.5em;
+                color: $white;
+                text-align: center;
+                line-height: 1em;
+                content: "+";
+              }
+              &:hover {
+                &::after {
+                  @include tooltip_style;
+                  content: "add from list or create a custom tag";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.meta_code {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  display: border-box;
+  margin: 0;
+  padding: 100px 0 0 35px;
+  min-width: 800px;
+  width: $form_width * 1.25;
+  height: 100%;
+  background: $ui_dark_blue;
+  transition: 1s ease-out;
+
+  &.meta_code_expand {
+    width: calc(100% - 100px);
+    transition: 0.5s ease-out;
+    .submit_code_hd {
+      .code_tab {
+        &::before {
+          content: ">";
+        }
+      }
+    }
+    ul {
+      li {
+        textarea {
+          width: calc(100% - 120px);
+          transition: 0.5s ease-out;
+        }
+        .test_output {
+          .test_tabs {
+            width: calc(100% - 100px);
+            li {
+              width: 33%;
+            }
+            transition: 0.5s ease-out;
+          }
+          textarea {
+            width: calc(100% - 120px);
+            transition: 0.5s ease-out;
+          }
+        }
+      }
+    }
+  }
+
+  > a {
+    @include form_header;
+    &.submit_code_hd {
+      color: $white;
+      &:hover {
+        &::after {
+          @include tooltip_style;
+          content: "Steps 1 and 2 required to submit";
+        }
+      }
+    }
+  }
+
+  ul {
+    display: border-box;
+    width: 100%;
+    > li {
+      float: left;
+      clear: none;
+      display: border-box;
+      width: calc(50% - 50px);
+
+      &.code_run_button {
+        margin: 300px auto 0 auto;
+        width: auto;
+        input[type=button] {
+          width: auto;
+          padding-right: 16px;
+          padding-left: 16px;
+          &:hover {
+            background: rgba($ui_medium_blue,0.5);
+          }
+        }
+      }
+
+      div {
+        float: left;
+        clear: left;
+        width: 100%;
+        min-height: 100px;
+        h5 {
+          margin: 30px 0 10px 0;
+          color: $white;
+        }
+        input,
+        textarea {
+          width: calc(($input_width * 1.25));
+        }
+        textarea {
+          margin: 0;
+          opacity: 1;
+          transition: 1s ease-out;
+          transition-delay: 0.2s;
+          height: 580px;
+          color: $dark_grey;
+          font-family: "Source Code Pro", Courier, monospace;
+          font-size: 1em;
+          font-weight: 600;
+          line-height: 1.6em;
+          &:focus {
+            background-color: $white;
+          }
+        }
+
+        &.meta_source_data {
+          input[type=button] {
+            width: 100px;
+            &:hover {
+              background: rgba($ui_medium_blue,0.5);
+            }
+          }
+        }
+        &.source_input {
+          textarea {
+            &::after {
+              margin: 0 20px 0 0;
+              border-right: solid 1px $ui_light_blue;
+            }
+          }
+        }
+        &.test_output {
+          margin: 0;
+          opacity: 1;
+          transition: 1s ease-out;
+          transition-delay: 0.4s;
+          .test_tabs {
+            float: right;
+            display: border-box;
+            width: ($input_width * 1.25) - 50px;
+            transition: 1s ease-out;
+            transition-delay: 0.4s;
+            li {
+              display: border-box;
+              width: 33%;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              h5 {
+                display: border-box;
+                padding: 0 8px;
+                color: $ui_medium_blue;
+                white-space: nowrap;
+                overflow: hidden;
+                text-align: center;
+                text-overflow: ellipsis;
+              }
+              .active_test_state {
+                color: $white;
+                // background: $ui_medium_blue;
+                // border-radius: 8px 8px 0 0;
+              }
+            }
+          }
+          textarea {
+            float: right;
+            display: border-box;
+            width: calc(($input_width * 1.25));
+            height: 580px;
+            background: $dark_grey;
+            color: $white;
+            font-family: "Source Code Pro", Courier, monospace;
+            font-size: 1em;
+            font-weight: 600;
+            line-height: 1.6em;
+          }
+        }
+      }
+    }
+
+    &.source_data_selection {
+      width: calc(100% - 50px);
+      border-top: solid 1px $ui_medium_blue;
+      border-bottom: solid 1px $ui_medium_blue;
+    }
+
+  }
+
+  .submit_analytic {
+    float: left;
+    clear: left;
+    margin: 40px auto 0 auto;
+    min-width: 800px;
+    width: calc(100% - 40px);
+    border-top: solid 1px $ui_medium_blue;
+    input[type=button] {
+      margin: 40px 0 0 0;
+      padding-right: 32px;
+      padding-left: 32px;
+      &:hover {
+        background-color: rgba($ui_medium_blue, 0.5);
+        &::after {
+          @include tooltip_style;
+          content: "Submit Analytic";
+        }
+      }
+    }
+  }
+
+}
+
+
+#contact_page {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  margin-top: 80px;
+  width: 100%;
+  min-height: 1280px;
+  background: white url(../media/contact_placeholder.png) no-repeat 105px 160px;
+  background-size: 1060px;
+}
+
+.content {
+  float: left;
+  clear: left;
+  display: border-box;
+  margin: 0 0 0 100px;
+  padding: 0;
+  width: auto;
+}

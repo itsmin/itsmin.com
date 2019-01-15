@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carbon Productizer - Inventory</title>
+
+  <link href="public/stylesheets/colors_type.css" rel=stylesheet />
+  <link href="public/stylesheets/reset.css" rel=stylesheet />
+  <link href="public/stylesheets/app.css" rel=stylesheet />
+  <link href="public/stylesheets/data_table.css" rel=stylesheet />
+
+  <script src="public/js/jquery-3.2.1.min.js"></script>
+  <script src="public/js/jquery.easing.1.3.js"></script>
+
+  <script>
+    // detail lightbox
+    $(function() {
+      $("a.detail_toggle").click(function() {
+        $(".detail_view").toggleClass('detail_open');
+      });
+      $(".detail_view").click(function() {
+        $(this).toggleClass('detail_open');
+      });
+    });
+
+    // pie chart scroll table
+    jQuery.easing.def = 'easeOutQuad';
+    $(function() {
+      $("#inv_pie_arl_none, .arl_0").click(function() {
+        var container = $(".dt_body"), scrollTo = $('#dt_row_arl_0');
+        container.animate ({
+          scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+        }, 900);
+        $(".dt_row").removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      });
+      $("#inv_pie_arl_1, .arl_1").click(function() {
+        var container = $(".dt_body"), scrollTo = $('#dt_row_arl_1');
+        container.animate ({
+          scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+        }, 900);
+        $(".dt_row").removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      });
+      $("#inv_pie_arl_2, .arl_2").click(function() {
+        var container = $(".dt_body"), scrollTo = $('#dt_row_arl_2');
+        container.animate ({
+          scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+        }, 900);
+        $(".dt_row").removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      });
+      $("#inv_pie_arl_3, .arl_3").click(function() {
+        var container = $(".dt_body"), scrollTo = $('#dt_row_arl_3');
+        container.animate ({
+          scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+        }, 900);
+        $(".dt_row").removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      });
+      $("#inv_pie_arl_4, .arl_4").click(function() {
+        var container = $(".dt_body"), scrollTo = $('#dt_row_arl_4');
+        container.animate ({
+          scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+        }, 900);
+        $(".dt_row").removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      });
+      $("#inv_pie_arl_5, .arl_5").click(function() {
+        var container = $(".dt_body"), scrollTo = $('#dt_row_arl_5');
+        container.animate ({
+          scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+        }, 900);
+        $(".dt_row").removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      });
+      $("#inv_pie_arl_6, .arl_6").click(function() {
+        var container = $(".dt_body"), scrollTo = $('#dt_row_arl_6');
+        container.animate ({
+          scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+        }, 900);
+        $(".dt_row").removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      });
+      $("#inv_pie_arl_7, .arl_7").click(function() {
+        var container = $(".dt_body"), scrollTo = $('#dt_row_arl_7');
+        container.animate ({
+          scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+        }, 900);
+        $(".dt_row").removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      });
+      $("#inv_pie_arl_8, .arl_8").click(function() {
+        var container = $(".dt_body"), scrollTo = $('#dt_row_arl_8');
+        container.animate ({
+          scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+        }, 900);
+        $(".dt_row").removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      });
+      $("#inv_pie_arl_9, .arl_9").click(function() {
+        var container = $(".dt_body"), scrollTo = $('#dt_row_arl_9');
+        container.animate ({
+          scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+        }, 900);
+        $(".dt_row").removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+      });
+    });
+
+    // chevron rotation
+    $(function() {
+      $(".dt_hd_cell").click(function() {
+        $(this).find("a").toggleClass('chevron_rotated');
+      });
+    });
+
+    // expanding row handler
+    $(function() {
+      $(".dt_row").click(function() {
+        if($(this).hasClass('dt_row_clicked')) {
+          $(this).removeClass('dt_row_clicked').siblings().removeClass('dt_row_faded');
+        } else {
+          $(this).addClass('dt_row_clicked').removeClass('dt_row_faded').siblings().removeClass('dt_row_clicked').addClass('dt_row_faded');
+        }
+      });
+    });
+  </script>
+
+</head>
+<body>
+
+  <div class="detail_view">
+    <div class="detail_img"></div>
+  </div>
+
+  <h1>Analytics Inventory</h1>
+
+  <ul id="primary_nav">
+    <li>
+      <a href="developer_01.html" target="_self">My Analytics</a>
+    </li>
+    <li><span>Analytics Inventory</span></li>
+    <li><a href="help.html" target="_self">Help</a></li>
+    <li><a href="contact.html" target="_self">Contact Us</a></li>
+  </ul>
+
+  <div class="content">
+
+    <div class="data_gauges">
+      <ul>
+        <li>
+          <div class="chart_donut">
+            <div class="chart_donut_labels">
+              <span class="chart_donut_count">38</span>
+              <span class="chart_attributes">Analytics</span>
+            </div>
+            <svg width="244px" height="244px" viewBox="0 0 244 244" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>Inventory Overview</desc>
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path
+                      d="M122.156557,35.000128 L122.156557,0.231456 C148.875557,0.231456 173.583557,8.847456 193.650557,23.453456 L173.175126,51.6354547 C158.853358,41.2015236 141.224472,35.0337216 122.156557,35.0001379 Z"
+                      id="inv_pie_arl_none"
+                      fill="#8E8E8E"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M204.737207,95.0251019 L237.836857,84.270956 C230.186857,60.657956 215.262857,39.164956 193.645857,23.459956 L173.174938,51.6353173 C187.818986,62.3039816 199.005425,77.4329259 204.737207,95.0251019 Z"
+                      id="inv_pie_arl_1"
+                      fill="#FF1200"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M204.737209,95.0251084 L237.828657,84.273456 C254.693657,136.178456 234.775657,191.208456 192.447657,221.152456 L172.442393,192.892587 C194.570362,177.119484 209,151.244853 209,122 C209,112.584114 207.504181,103.517595 204.737209,95.0251084 Z"
+                      id="inv_pie_arl_2"
+                      fill="#FF7800"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M172.442232,192.892701 L192.428557,221.126456 C170.620557,236.564456 145.475557,243.807456 120.657557,243.481456 L121.082591,208.995263 C121.38802,208.998418 121.693825,209 122,209 C140.803849,209 158.214371,203.034456 172.442232,192.892701 Z"
+                      id="inv_pie_arl_3"
+                      fill="#FFC000"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M121.083228,208.99527 L120.658557,243.472456 C93.940557,243.143456 69.341557,234.223456 49.454557,219.372456 L70.0280097,191.777055 C84.3015161,202.425663 101.952618,208.797763 121.083228,208.99527 Z"
+                      id="inv_pie_arl_4"
+                      fill="#F4E100"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M39.9851217,92.9021361 L7.413457,81.424856 C-9.833543,130.320856 5.704457,186.743856 49.459457,219.364856 L70.0276927,191.776819 C48.7668664,175.915241 35,150.565332 35,122 C35,111.794993 36.757046,102.000366 39.9851217,92.9021361 Z"
+                      id="inv_pie_arl_5"
+                      fill="#9AF400"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M39.985162,92.9020223 L7.443557,81.435456 C11.804557,69.059456 17.964557,57.833456 25.524557,47.943456 L53.020878,68.9751595 C47.4985812,76.1483404 43.0701306,84.2071733 39.985162,92.9020223 Z"
+                      id="inv_pie_arl_6"
+                      fill="#00ECA4"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M53.0211041,68.9748658 L25.551557,47.963456 C37.630557,32.170456 52.823557,20.162456 69.610557,12.138456 L84.595983,43.4285822 C72.155534,49.3614796 61.3455479,58.161934 53.0211041,68.9748658 Z"
+                      id="inv_pie_arl_7"
+                      fill="#00BEFD"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M84.5962775,43.4284418 L69.622557,12.162456 C81.456557,6.494456 93.750557,2.910456 106.089557,1.263456 L110.681587,35.7295438 C101.454344,36.9283101 92.6810109,39.5728391 84.5962775,43.4284418 Z"
+                      id="inv_pie_arl_8"
+                      fill="#0082FC"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M122.155657,35.0001363 L122.155657,0.222656 C116.778657,0.226656 111.414657,0.608656 106.095657,1.317656 L110.680539,35.7296799 C114.385572,35.2482911 118.16379,35 122,35 C122.051896,35 122.103782,35.0000454 122.155657,35.0001363 Z"
+                      id="inv_pie_arl_9"
+                      fill="#8326FF"
+                      fill-rule="nonzero"
+                    ></path>
+                </g>
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="dt_inventory" class="dt">
+      <!-- dt header -->
+      <div class="dt_hd">
+        <div class="dt_hd_cell">
+          Author
+          <a href="#" class="chevron"></a>
+
+          <!-- dt settings -->
+          <div id="settings_author" class="dt_column_filter">
+            <b>Search By Name</b>
+            <input type="text">
+          </div>
+
+        </div>
+        <div class="dt_hd_cell">
+          Title
+          <a href="#" class="chevron"></a>
+
+          <!-- dt settings -->
+          <div id="settings_title" class="dt_column_filter">
+            <b>Search By Title</b>
+            <input type="text">
+          </div>
+
+        </div>
+        <div class="dt_hd_cell dt_hd_active">
+          ARL
+          <a href="#" class="chevron"></a>
+
+          <!-- dt settings -->
+          <div id="settings_arl" class="dt_column_filter">
+            <b>Toggle ARL Visibility</b>
+          </div>
+
+        </div>
+        <div class="dt_hd_cell">
+          Updated
+          <a href="#" class="chevron"></a>
+
+          <!-- dt settings -->
+          <div id="settings_updated" class="dt_column_filter">
+            <b>Specify Date Range</b>
+          </div>
+
+        </div>
+        <div class="dt_hd_cell">
+          Downloads
+        </div>
+        <div class="dt_hd_cell">
+          Owner
+          <a href="#" class="chevron"></a>
+
+          <!-- dt settings -->
+          <div id="settings_owner" class="dt_column_filter">
+            <b>Search By Name</b>
+            <input type="text">
+          </div>
+
+        </div>
+      </div>
+      <div class="dt_body">
+        <div class="dt_content">
+
+          <!-- dt row NO SCORE  -->
+          <div id="dt_row_arl_0" class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Not Reviewed Yet
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">
+                    <i>Review not written yet</i>
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_0">
+              <span>
+                --
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Not Reviewed Yet
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">
+                    <i>Review not written yet</i>
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_0">
+              <span>
+                --
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Not Reviewed Yet
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">
+                    <i>Review not written yet</i>
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_0">
+              <span>
+                --
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Not Reviewed Yet
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">
+                    <i>Review not written yet</i>
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_0">
+              <span>
+                --
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+
+          <!-- dt row 01 -->
+          <div id="dt_row_arl_1" class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Latest Model for Something
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_1">
+              <span class="dt_arl">
+                1
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Latest Model for Something
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_1">
+              <span class="dt_arl">
+                1
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Latest Model for Something
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_1">
+              <span class="dt_arl">
+                1
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Latest Model for Something
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_1">
+              <span class="dt_arl">
+                1
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+
+          <!-- dt row 02 -->
+          <div id="dt_row_arl_2" class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Model for Review
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_2">
+              <span class="dt_arl">
+                2
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Model for Review
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_2">
+              <span class="dt_arl">
+                2
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Model for Review
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_2">
+              <span class="dt_arl">
+                2
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Model for Review
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_2">
+              <span class="dt_arl">
+                2
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Model for Review
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_2">
+              <span class="dt_arl">
+                2
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Model for Review
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_2">
+              <span class="dt_arl">
+                2
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Model for Review
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_2">
+              <span class="dt_arl">
+                2
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Analytic Model for Review
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_2">
+              <span class="dt_arl">
+                2
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+
+          <!-- dt row 03 -->
+          <div id="dt_row_arl_3" class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Python analytic for Tradeshow &amp; trying a really long title to see if ellipsis trunctation works &nbsp;
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_3">
+              <span class="dt_arl">
+                3
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Python analytic for Tradeshow &amp; trying a really long title to see if ellipsis trunctation works &nbsp;
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_3">
+              <span class="dt_arl">
+                3
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Python analytic for Tradeshow &amp; trying a really long title to see if ellipsis trunctation works &nbsp;
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_3">
+              <span class="dt_arl">
+                3
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Python analytic for Tradeshow &amp; trying a really long title to see if ellipsis trunctation works &nbsp;
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_3">
+              <span class="dt_arl">
+                3
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+
+          <!-- dt row 04 -->
+          <div id="dt_row_arl_4" class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Different Title Styles
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_4">
+              <span class="dt_arl">
+                4
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Different Title Styles
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_4">
+              <span class="dt_arl">
+                4
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Different Title Styles
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_4">
+              <span class="dt_arl">
+                4
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Different Title Styles
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_4">
+              <span class="dt_arl">
+                4
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+
+          <!-- dt row 05 -->
+          <div id="dt_row_arl_5" class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  python analytic for upstream
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_5">
+              <span class="dt_arl">
+                5
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  python analytic for upstream
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_5">
+              <span class="dt_arl">
+                5
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  python analytic for upstream
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_5">
+              <span class="dt_arl">
+                5
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  python analytic for upstream
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_5">
+              <span class="dt_arl">
+                5
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  python analytic for upstream
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_5">
+              <span class="dt_arl">
+                5
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  python analytic for upstream
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_5">
+              <span class="dt_arl">
+                5
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  python analytic for upstream
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_5">
+              <span class="dt_arl">
+                5
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  python analytic for upstream
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_5">
+              <span class="dt_arl">
+                5
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+
+          <!-- dt row 06 -->
+          <div id="dt_row_arl_6" class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Examining Differnt Title Styles for Analytics
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_6">
+              <span class="dt_arl">
+                6
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Examining Differnt Title Styles for Analytics
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_6">
+              <span class="dt_arl">
+                6
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+
+          <!-- dt row 07 -->
+          <div id="dt_row_arl_7" class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  still a useful analytic
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_7">
+              <span class="dt_arl">
+                7
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  still a useful analytic
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_7">
+              <span class="dt_arl">
+                7
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  still a useful analytic
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_7">
+              <span class="dt_arl">
+                7
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+
+          <!-- dt row 08 -->
+          <div id="dt_row_arl_8" class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Running out of clever titles
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_8">
+              <span class="dt_arl">
+                8
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+          <div class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Running out of clever titles
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_8">
+              <span class="dt_arl">
+                8
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+
+          <!-- dt row 09 -->
+          <div id="dt_row_arl_9" class="dt_row">
+            <div class="dt_row_cell">
+              Firstname Lastname
+            </div>
+            <div class="dt_row_cell">
+              <div class="dt_analytic_title">
+                <a href="#" class="detail_toggle">
+                  Best. Analytic. Ever!
+                </a>
+              </div>
+              <div class="dt_summary">
+                <div class="dt_summary_report">
+                  <h5>Summary Report</h5>
+                  <span class="dt_summary_text">ARL score reflects intentional mid-range score for illustrative purposes. Unit Test, Code Profiler and Static Code Analysis results will be taken into consideration in assigning the ARL score. Other factors including appropriateness for stated Sector and Project can also influence the score.
+
+                    Extra long text to demonstrate that there'll be a scrollbar in this area. Scrollbar appears only if text overflows the box.
+                  </span>
+                </div>
+                <div class="dt_summary_tags">
+                  <h5>Tags</h5>
+                  <ul>
+                    <li>Upstream</li>
+                    <li>Downstream</li>
+                    <li>PCM</li>
+                    <li><i>user defined</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="dt_row_cell cell_active score_9">
+              <span class="dt_arl">
+                9
+              </span>
+            </div>
+            <div class="dt_row_cell">
+              04/25/2017
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Docs</a> <a href="#" class="ui_bt">Source</a>
+            </div>
+            <div class="dt_row_cell">
+              <a href="#" class="ui_bt">Take</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="scroller">
+        <div class="scroller_playhead"></div>
+        <!-- ARL  -->
+        <div class="scroller_arl">
+          <a href="#" class="arl_0"></a>
+          <a href="#" class="arl_1"></a>
+          <a href="#" class="arl_2"></a>
+          <a href="#" class="arl_3"></a>
+          <a href="#" class="arl_4"></a>
+          <a href="#" class="arl_5"></a>
+          <a href="#" class="arl_6"></a>
+          <a href="#" class="arl_7"></a>
+          <a href="#" class="arl_8"></a>
+          <a href="#" class="arl_9"></a>
+        </div>
+        <div class="scroller_queue"></div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

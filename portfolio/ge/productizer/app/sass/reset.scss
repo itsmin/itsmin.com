@@ -1,0 +1,141 @@
+@import "colors_type.scss";
+
+// "Reset"
+body {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  @include type_block;
+  font-size: 1em;
+}
+
+h1,h2,h3,h4 {
+  @include type_block;
+  color: $grey;
+}
+h1 {
+  position: fixed;
+  float: left;
+  clear: left;
+  margin: 10px 0 30px 100px;
+  color: $white;
+  font-size: 1.4em;
+  font-family: "Lato-light";
+  text-transform: uppercase;
+  z-index: 1110;
+}
+h4 {
+  margin: 0 0 5px 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+h5 {
+  margin: 0 0 5px 0;
+  color: $dark_grey;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+ul,li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: $ui_medium_green;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: $ui_dark_blue;
+  transition: 0.8s ease-out;
+}
+
+
+// components
+$form_width:      800px;
+$input_width:     ($form_width / 2) - 40px;
+
+
+input[type=text], input[type=password], textarea {
+  outline: none;
+  margin: 0;
+  padding: 8px;
+  // width: $input_width;
+  border: 1px solid $ui_medium_blue;
+  border-radius: 6px;
+  color: $ui_dark_blue;
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 1em;
+  transition: all 0.2s ease-out;
+  &:focus {
+    background-color: $ui_light_blue;
+  }
+  &::-webkit-input-placeholder {
+    color: rgba($grey,0.5);
+    font-style: italic;
+  }
+}
+
+textarea {
+  width: $input_width;
+  min-height: 4em;
+}
+
+input[type=button] {
+  padding: 8px;
+  border: none;
+  background: $ui_medium_blue;
+  border-radius: 1.5em;
+  color: $white;
+  outline: none;
+  &:hover {
+    background: $ui_dark_blue;
+    transition: all 0.2s ease-out;
+  }
+}
+
+input[type=date], select {
+  outline: none;
+  margin: 0 0 20px 0;
+  padding: 8px;
+  // min-width: 120px;
+  border: 1px solid $ui_medium_blue;
+  border-radius: 6px;
+  color: $ui_dark_blue;
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 1em;
+  transition: all 0.2s ease-out;
+  &:focus {
+    background-color: $ui_light_blue;
+  }
+}
+
+input[type=date] {
+  max-width: 150px;
+}
+
+@mixin tooltip_style {
+  position: sticky;
+  z-index: 300;
+  display: inline-block;
+  margin: 0 0 0 8px;
+  padding: 0 8px;
+  height: 16px;
+  background: $white;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px rgba($ui_medium_blue,0.5);
+  color: $ui_dark_blue;
+  font-size: 10px;
+  font-style: italic;
+  text-transform: none;
+  line-height: 16px;
+  vertical-align: top;
+}

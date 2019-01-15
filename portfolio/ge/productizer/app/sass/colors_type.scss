@@ -1,0 +1,80 @@
+// BASE COLORS
+$white:              #FFF;
+$grey:               rgb(164,164,164);
+$dark_grey:          #333;
+$red:                rgb(254,60,16);
+$tangerine:          rgb(254,138,48);
+$orange:             rgb(250,208,100);
+$yellow:             rgb(238,226,0);
+$wasabi:             rgb(154,244,0);
+$green:              rgb(0,236,164);
+$blue:               rgb(92,200,244);
+$indigo:             rgb(0,130,252);
+$purple:             rgb(190,92,244);
+
+
+// DATA PLAYER COLORS
+$arl_0               :$grey;
+$arl_1               :$red;
+$arl_2               :$tangerine;
+$arl_3               :$orange;
+$arl_4               :$yellow;
+$arl_5               :$wasabi;
+$arl_6               :$green;
+$arl_7               :$blue;
+$arl_8               :$indigo;
+$arl_9               :$purple;
+
+// DATA TABLE CORRESPONDING COLORS
+$dt_bkgd_opacity:        0.15;
+//
+$arl_0_bkgd          :rgba($grey,       $dt_bkgd_opacity);
+$arl_1_bkgd          :rgba($red,        $dt_bkgd_opacity);
+$arl_2_bkgd          :rgba($tangerine,  $dt_bkgd_opacity);
+$arl_3_bkgd          :rgba($orange,     $dt_bkgd_opacity);
+$arl_4_bkgd          :rgba($yellow,     $dt_bkgd_opacity);
+$arl_5_bkgd          :rgba($wasabi,     $dt_bkgd_opacity);
+$arl_6_bkgd          :rgba($green,      $dt_bkgd_opacity);
+$arl_7_bkgd          :rgba($blue,       $dt_bkgd_opacity);
+$arl_8_bkgd          :rgba($indigo,     $dt_bkgd_opacity);
+$arl_9_bkgd          :rgba($purple,     $dt_bkgd_opacity);
+
+
+// UI Colors
+$ui_dark_blue:        rgb(37,81,92);
+$ui_medium_blue:      rgb(104,150,166);
+$ui_light_blue:       rgb(216,245,255);
+$ui_bright_blue:      rgb(180,230,255);
+
+$ui_dark_green:       rgb(1,138,66);
+$ui_medium_green:     rgb(20,190,130);
+$ui_light_green:      rgb(0,224,148);
+$ui_bright_green:     rgb(0,224,148);
+
+
+// UI Function States
+$ui_normal            :$ui_light_blue;
+$ui_active            :$ui_medium_blue;
+$ui_hover             :$ui_bright_blue;
+$ui_disabled          :rgba($ui_light_blue,0.3);
+
+//  UI Link States
+$ui_link_normal       :$ui_medium_green;
+$ui_link_active       :$ui_bright_green;
+$ui_link_hover        :$ui_dark_green;
+$ui_linkl_disabled    :rgba($ui_medium_green,0.3);
+
+$screen:              mix(black, rgba($ui_dark_blue,0.9), 50%);
+
+
+
+// Typography
+$type: 'Lato', helvetica,sans-serif;
+
+@mixin type_block {
+  font-family: $type;
+  font-weight: 400;
+  color: $dark_grey;
+  // keep people from messing with antialiasing!
+  -webkit-font-smoothing: subpixel-rendering !important;
+}

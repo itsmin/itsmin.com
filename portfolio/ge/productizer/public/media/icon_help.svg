@@ -1,0 +1,19 @@
+<!-- help -->
+<svg width="15px" height="18px" viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="0 5.80800018 5.80800018 0 14.5200005 0 14.5200005 17.4240005 0 17.4240005"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OGSURF-245-New-analytic-submission-(02)" transform="translate(-17.000000, -116.000000)">
+            <g id="side-nav-closed">
+                <g id="icon-page" transform="translate(17.000000, 116.000000)">
+                    <g id="Rectangle">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#979797" stroke-width="1" d="M0.5,6.01510696 L6.01510696,0.5 L14.0200005,0.5 L14.0200005,16.9240005 L0.5,16.9240005 L0.5,6.01510696 Z"></path>
+                    </g>
+                    <polygon id="Triangle" fill="#D8D8D8" points="6.6026783 1 6.6026783 6.80800018 1 6.80800018"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
