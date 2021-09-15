@@ -9,3 +9,9 @@ portfolio/.DS_Store
 .DS_Store
 portfolio/ge/.DS_Store
 portfolio/ge/mantle/.DS_Store
+.DS_Store
+.gitignore
+portfolio/ge/mantle/.DS_Store
+.gitignore
+portfolio/ge/tm/.DS_Store
+source/styles/.DS_Store
